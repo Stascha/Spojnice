@@ -109,4 +109,6 @@ Emailovi se šalju putem SMTP protokola. Tako da se može povezati da radi i sa 
 
 ●	\userMicroservice\User\Data\UserEmailSender.cs
 
+### Student koji je uradio projekat
+
  - [Staša Rašić](https://github.com/Stascha)
