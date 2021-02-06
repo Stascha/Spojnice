@@ -5,7 +5,7 @@ Igra traje 60 sekundi. Igrač ima deset pokušaja da spoji odgovarajuće nazive.
 Za svaki uspešno spojeni par igrač dobija poen.
 
 
-# Pokretanje aplikacije igra Spojnice
+## Pokretanje aplikacije igra Spojnice
 
 Aplikacija sadrži foldere: gameMicroservice, scoreMicroservice, userMicroservice, View
 
