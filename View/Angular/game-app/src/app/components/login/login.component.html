@@ -1,0 +1,72 @@
+<div class="logincompclass">
+
+  <div class="d-flex justify-content-center">
+    <h1 >Login</h1>
+  </div>
+
+  <div id="additionalLinksBtn" class="d-flex justify-content-center">
+    <a routerLink="/">
+      <button type="button" class="btn btn-outline-danger">Pocetna</button>
+    </a>
+  </div>
+  <div class="d-flex justify-content-center">
+    <section class="formSection justify-content-center">
+      <ul class="nav nav-tabs d-flex justify-content-center">
+        <li class="nav-item">
+          <a
+          [ngClass]="{'nav-link' : true,
+                      'active' : this.showUserLoginForm
+                    }"
+          data-toggle="tab"
+          (click)="this.showUserLoginForm = true;"
+          > Login</a>
+        </li>
+        <li class="nav-item">
+          <a 
+          [ngClass]="{'nav-link' : true,
+                      'active' : !this.showUserLoginForm
+                    }"
+           data-toggle="tab"
+           (click)="this.showUserLoginForm = false;"
+           > Register</a>
+        </li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="d-flex justify-content-center">
+          <form>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter username"
+                     ngModel name="usrName" required #usernameInput="ngModel" [(ngModel)]="this.usr">
+            </div>
+      
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Password"
+                     ngModel name="pwdName" required #pwdInput="ngModel" [(ngModel)]="this.pwd">
+            </div>
+      
+            <div *ngIf="!this.showUserLoginForm" class="form-group">
+              <label for="exampleInputEmail2">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email"
+                     ngModel name="emlName" required #emlInput="ngModel" [(ngModel)]="this.eml">
+            </div>
+           
+            <div class="d-flex justify-content-center">
+              <button *ngIf="this.showUserLoginForm" (click)="onLogin()"
+                      id="loginBtn" class="btn btn-dark">
+                Login
+              </button>
+              <button *ngIf="!this.showUserLoginForm" (click)="onRegister()"
+                      id="registerBtn" class="btn btn-dark">
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</div>

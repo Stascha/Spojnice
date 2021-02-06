@@ -1,0 +1,38 @@
+#ifadmin button{
+    margin-left: 35px;
+    margin-top: 5px;
+    display: block;
+    width: 180px;
+}
+
+#createGameInputElements h5{
+    margin-top:8px;
+}
+
+.a-btn-bgcolor{
+    background-color:#0A1B2A;
+}
+.modal{
+    color:black;
+}
+
+form button {
+    margin-top:10px;
+    margin-right:10px;
+}
+#ifadmin{
+    position: absolute;
+}
+a{
+    text-decoration:none; 
+    display: block;
+    width: 180px;
+}
+.edit-games-a{
+    opacity: 0.7;
+    color:white;
+}
+.edit-games-a:hover{
+    opacity: 1;
+    color:black;
+}

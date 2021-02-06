@@ -1,0 +1,1733 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>game-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">game-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>GameComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/game/game.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Component - GameComponent </p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-game</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./game.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./game.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentActiveGameName">currentActiveGameName</a>
+                            </li>
+                            <li>
+                                <a href="#flagSelectedItems">flagSelectedItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#gameService">gameService</a>
+                            </li>
+                            <li>
+                                <a href="#interval">interval</a>
+                            </li>
+                            <li>
+                                <a href="#numOfTries">numOfTries</a>
+                            </li>
+                            <li>
+                                <a href="#scoreNum">scoreNum</a>
+                            </li>
+                            <li>
+                                <a href="#serverData">serverData</a>
+                            </li>
+                            <li>
+                                <a href="#timerHeight">timerHeight</a>
+                            </li>
+                            <li>
+                                <a href="#timerTxt">timerTxt</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userService">userService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#disableClickOnItems">disableClickOnItems</a>
+                            </li>
+                            <li>
+                                <a href="#gameEndedSendScoreResult">gameEndedSendScoreResult</a>
+                            </li>
+                            <li>
+                                <a href="#isNumberOfTriesEqualToTen">isNumberOfTriesEqualToTen</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onColumnOneClick">onColumnOneClick</a>
+                            </li>
+                            <li>
+                                <a href="#onColumnTwoClick">onColumnTwoClick</a>
+                            </li>
+                            <li>
+                                <a href="#shuffleArray">shuffleArray</a>
+                            </li>
+                            <li>
+                                <a href="#startTheGame">startTheGame</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(userService: <a href="../injectables/UserService.html">UserService</a>, gameService: <a href="../injectables/GameService.html">GameService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, scoreService: <a href="../injectables/ScoreService.html">ScoreService</a>, scoreTabComponent: <a href="../interfaces/Score.html">ScoreTabComponent</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/game/game.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor - reddirects user to the /login if user is not loggedin to our app.</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>to use the loggedin user data</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>gameService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GameService.html" target="_self" >GameService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>to send and receive data from our microservice API</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>to change component page</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>scoreService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ScoreService.html" target="_self" >ScoreService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>to send and receive data from our microservice API</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>scoreTabComponent</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/Score.html" target="_self" >ScoreTabComponent</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="disableClickOnItems"></a>
+                    <span class="name">
+                        <b>
+                            disableClickOnItems
+                        </b>
+                        <a href="#disableClickOnItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>disableClickOnItems()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="161"
+                            class="link-to-prism">src/app/components/game/game.component.ts:161</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Disasble pointer cursor - cursor change to pointer on hover on all column elements </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="gameEndedSendScoreResult"></a>
+                    <span class="name">
+                        <b>
+                            gameEndedSendScoreResult
+                        </b>
+                        <a href="#gameEndedSendScoreResult"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>gameEndedSendScoreResult()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="170"
+                            class="link-to-prism">src/app/components/game/game.component.ts:170</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>When game has ended. Collects the input from the game abd sends the data to our microservice API via gameService.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isNumberOfTriesEqualToTen"></a>
+                    <span class="name">
+                        <b>
+                            isNumberOfTriesEqualToTen
+                        </b>
+                        <a href="#isNumberOfTriesEqualToTen"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isNumberOfTriesEqualToTen()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/components/game/game.component.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks if numOfTries attribute is equal to ten.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/app/components/game/game.component.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Empty ngOnInit </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onColumnOneClick"></a>
+                    <span class="name">
+                        <b>
+                            onColumnOneClick
+                        </b>
+                        <a href="#onColumnOneClick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onColumnOneClick(item: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, pointerFlag: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/components/game/game.component.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks if game has ended, if it did end disable the click event.
+When we select one item from the column other items that were selected are set as unselected.
+Set clicked element as selected.
+Save that it is selected in our flagSelectedItems attribute.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Column Game data Item</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>pointerFlag</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>if flag is true this column answer has not been marked as a correct match answer</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onColumnTwoClick"></a>
+                    <span class="name">
+                        <b>
+                            onColumnTwoClick
+                        </b>
+                        <a href="#onColumnTwoClick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onColumnTwoClick(item: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/app/components/game/game.component.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if element from the first column is selected. iF not return noothing which will exist the execution of this method.
+Set selected element as clicked.
+Do numOfTries + 1.
+If elements from first and second column match add one to scoreNum attribute.
+Set both fields as not selected.
+Check if number of tries is equal to 10, if it is end the game.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Column Game data Item</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shuffleArray"></a>
+                    <span class="name">
+                        <b>
+                            shuffleArray
+                        </b>
+                        <a href="#shuffleArray"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>shuffleArray(array: Array<any>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/components/game/game.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Used to shuffle the array by random chance.
+We use this function to shuffle the both columns array that us being displayed to the end user.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>array</td>
+                                    <td>
+                                            <code>Array&lt;any&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startTheGame"></a>
+                    <span class="name">
+                        <b>
+                            startTheGame
+                        </b>
+                        <a href="#startTheGame"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>startTheGame()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="193"
+                            class="link-to-prism">src/app/components/game/game.component.ts:193</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Method that will initialize all the parameters when new game starts.
+It is going to reset numOfTries and scoreNum to zero.
+Set game as active.
+Grab new random game data from our microservise API via GameService.
+Shuffle array for both columns.
+Set the new timer to run.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentActiveGameName"></a>
+                        <span class="name">
+                            <b>
+                            currentActiveGameName</b>
+                            <a href="#currentActiveGameName"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/game/game.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Contains the currect active game name. </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="flagSelectedItems"></a>
+                        <span class="name">
+                            <b>
+                            flagSelectedItems</b>
+                            <a href="#flagSelectedItems"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{ // sluzi za cuvanje selectovanih polja iz kolona radi lakse provere
+    one: &quot;&quot;,
+    two: &quot;&quot;
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/game/game.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>We yse ut ti set the selected fields from both columns, makes it easier to check the matching pairs. </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="gameService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            gameService</b>
+                            <a href="#gameService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/GameService.html" target="_self" >GameService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/components/game/game.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">to send and receive data from our microservice API</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="interval"></a>
+                        <span class="name">
+                            <b>
+                            interval</b>
+                            <a href="#interval"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>undefined</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/game/game.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Time interval that will run for our timer, undefined at the beginning </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="numOfTries"></a>
+                        <span class="name">
+                            <b>
+                            numOfTries</b>
+                            <a href="#numOfTries"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/components/game/game.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Number of how many tries has user used while mathing the game pairs. Logic is built in for the 10 tries to be max, when number 10 is reached the game will end. </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="scoreNum"></a>
+                        <span class="name">
+                            <b>
+                            scoreNum</b>
+                            <a href="#scoreNum"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/game/game.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Number of correctly mathced game pairs. Number of correct answers by the user. </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="serverData"></a>
+                        <span class="name">
+                            <b>
+                            serverData</b>
+                            <a href="#serverData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/game/game.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>List that will contains the game data obtained from the server. </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="timerHeight"></a>
+                        <span class="name">
+                            <b>
+                            timerHeight</b>
+                            <a href="#timerHeight"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>100</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/components/game/game.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Represents the precent of how much time has left on the timer. We use it to draw and manipulate with the timer animation. </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="timerTxt"></a>
+                        <span class="name">
+                            <b>
+                            timerTxt</b>
+                            <a href="#timerTxt"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;Sekunde...&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/components/game/game.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Represents the number of seconds that is shown above our timer while the game is active. </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            userService</b>
+                            <a href="#userService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/components/game/game.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">to use the loggedin user data</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { GameService } from &#x27;src/app/services/game.service&#x27;;
+import { ScoreService } from &#x27;src/app/services/score.service&#x27;;
+import { UserService } from &#x27;src/app/services/user.service&#x27;;
+import { ScoreTabComponent } from &#x27;./score-tab/score-tab.component&#x27;;
+/** JS function defined in the index.html file. Function that will show the modal to the end user with the text as input. */
+declare const sendMessageUserModal: any;
+
+/** Component - GameComponent */
+@Component({
+  selector: &#x27;app-game&#x27;,
+  templateUrl: &#x27;./game.component.html&#x27;,
+  styleUrls: [&#x27;./game.component.css&#x27;]
+})
+/**
+ * This component allows the user to play our game.
+ * It also uses to other components to function properly: app-score-tab and app-user-actions-btns
+ */
+export class GameComponent implements OnInit {
+  /** Represents the number of seconds that is shown above our timer while the game is active. */
+  timerTxt : string &#x3D; &quot;Sekunde...&quot;; // prikaz koliko sekundi je ostalo
+  /** Represents the precent of how much time has left on the timer. We use it to draw and manipulate with the timer animation. */
+  timerHeight : number &#x3D; 100; // procenat koliko vremena je ostalo, sluzi za istravanje timer-a vizualnog
+  /** Number of how many tries has user used while mathing the game pairs. Logic is built in for the 10 tries to be max, when number 10 is reached the game will end. */
+  numOfTries : number &#x3D; 0; // broj pokusaja, kada je 10 igra &#x3D; zavrsena
+  /** Number of correctly mathced game pairs. Number of correct answers by the user. */
+  scoreNum : number &#x3D; 0; // broj tacnih
+  /** List that will contains the game data obtained from the server. */
+  serverData : any &#x3D; []; // podaci dobijeni od servera
+  /** Contains the currect active game name. */
+  currentActiveGameName &#x3D; &quot;&quot;;
+  /** We yse ut ti set the selected fields from both columns, makes it easier to check the matching pairs. */
+  flagSelectedItems &#x3D; { // sluzi za cuvanje selectovanih polja iz kolona radi lakse provere
+    one: &quot;&quot;,
+    two: &quot;&quot;
+  }
+  /** Time interval that will run for our timer, undefined at the beginning */
+  interval : any &#x3D; undefined;
+
+  /**
+   * Constructor - reddirects user to the /login if user is not loggedin to our app.
+   * @param userService {UserService} to use the loggedin user data
+   * @param gameService {GameService} to send and receive data from our microservice API
+   * @param router {Router} to change component page
+   * @param scoreService {ScoreService} to send and receive data from our microservice API
+   * @param scoreTabComponent {ScoreTabComponent}
+   */
+  constructor(public userService : UserService,
+     public gameService : GameService, // kontaktiranje APIja
+     private router:Router, // za promenu komponente kao strane
+     private scoreService: ScoreService, // kontaktira API
+     private scoreTabComponent : ScoreTabComponent) {
+    if(userService.getLoggedinUser().id &#x3D;&#x3D;&#x3D; -1){
+      // ako nije logovan radi reddirect na /login stranu
+      // -1 smo stavili kao defaultni i za logout kada nema user-a logovanog
+      this.router.navigateByUrl(&#x27;/&#x27;, {skipLocationChange: true}).then(()&#x3D;&gt;
+      this.router.navigate([&quot;/login&quot;]));
+    }
+    this.serverData &#x3D; [];
+  }
+  /** Empty ngOnInit */
+  ngOnInit(): void {
+   
+  
+  } //ngOnInit end;
+  /**
+   * Used to shuffle the array by random chance.
+   * We use this function to shuffle the both columns array that us being displayed to the end user.
+   */
+  shuffleArray(array:Array&lt;any&gt;) { // da rasporedi random elemente liste
+    for (var i &#x3D; array.length - 1; i &gt; 0; i--) {
+        var j &#x3D; Math.floor(Math.random() * (i + 1));         
+        var temp &#x3D; array[i]; 
+        array[i] &#x3D; array[j]; 
+        array[j] &#x3D; temp; 
+    }
+    return array;
+}
+
+/**
+ * Checks if game has ended, if it did end disable the click event.
+ * When we select one item from the column other items that were selected are set as unselected.
+ * Set clicked element as selected.
+ * Save that it is selected in our flagSelectedItems attribute.
+ * @param item {string} Column Game data Item
+ * @param pointerFlag {boolean} if flag is true this column answer has not been marked as a correct match answer
+ */
+  onColumnOneClick(item:string, pointerFlag:boolean){
+    if(!pointerFlag){return;}
+    //(click)&#x3D;&quot;onColumnOneClick(item.columnOne)&quot; u html fajlu
+    // za elemente prve kolone
+    if(this.gameService.getGameEndedFlag()){ // ako je igra zavrsena nema korisnik prava da igra na dalje
+      return;
+    }
+    this.serverData.dataOne.forEach((e:any) &#x3D;&gt;{ 
+      // kada se 1 selektuje samo on moze da bude selektovan,
+      // stavi svaki da nije selektovan
+      e.selectedOne &#x3D; false;
+    })
+    let foundItem &#x3D; this.serverData.dataOne.find((elem:any) &#x3D;&gt; { // nadju onaj koj je kliknut u nasoj listi
+      return elem.columnOne &#x3D;&#x3D;&#x3D; item});
+    foundItem.selectedOne &#x3D; true; // na kliknut elemenat stavi da je selektovan
+    this.flagSelectedItems.one &#x3D; item; // upamti koji je selektovan
+  }
+/**
+ * Check if element from the first column is selected. iF not return noothing which will exist the execution of this method.
+ * Set selected element as clicked.
+ * Do numOfTries + 1.
+ * If elements from first and second column match add one to scoreNum attribute.
+ * Set both fields as not selected.
+ * Check if number of tries is equal to 10, if it is end the game.
+ * @param item {string} Column Game data Item
+ */
+  onColumnTwoClick(item:string){
+    // kada se klikne na elemenat druge kolone
+   
+    // proveri da li je selektovan neki iz prve kolone
+    let foundItem &#x3D; this.serverData.dataOne.find((elem:any) &#x3D;&gt; {
+      return elem.selectedOne &#x3D;&#x3D;&#x3D; true
+    });
+    if(!foundItem){return;} // ako nije niko selektovan ne radi nista
+    // korisnik mora da izabere iz prve kolone zatim iz druge
+    this.serverData.dataTwo.forEach((e:any) &#x3D;&gt;{e.selectedTwo &#x3D; false;})// stavi svaki da nije selektovan
+    foundItem &#x3D; this.serverData.dataTwo.find((elem:any) &#x3D;&gt; { 
+      // nadji kliknut elemenat i selektuj ga
+      return elem.columnTwo &#x3D;&#x3D;&#x3D; item});
+    if(foundItem.success){return;} // ako je polje markirano da je tacno izabrano, nezelimo da povecavamo broj pokusaja i da idemo dalje
+    foundItem.selectedTwo &#x3D; true;
+    this.numOfTries++;
+    this.flagSelectedItems.two &#x3D; item; // zapamti koji je selektovan
+    let isSuccess &#x3D; this.serverData.data.find((elem:any) &#x3D;&gt; {
+      // prodji kroz server listu i upredi ako postoji par izmendju selektovanih u prvoj i drugoj koloni
+      return elem.columnOne &#x3D;&#x3D;&#x3D; this.flagSelectedItems.one  
+            &amp;&amp; elem.columnTwo &#x3D;&#x3D;&#x3D; this.flagSelectedItems.two
+    });
+    if(isSuccess){ // ako je tacan par
+      foundItem.success &#x3D; true; // stavi ih da je par pronadjen
+      foundItem.pointer &#x3D; false; // zaustavi da korisnik moze da klikce 
+      this.scoreNum++; // povecaj SCORE
+    }
+    this.serverData.dataTwo.forEach((e:any)&#x3D;&gt;{
+      e.selectedOne &#x3D; false;
+      e.selectedTwo &#x3D; false;
+    }) // postavi svaki da nije selektovan
+    if(this.isNumberOfTriesEqualToTen()){
+      this.gameEndedSendScoreResult();
+    }
+  }
+/**
+ * Checks if numOfTries attribute is equal to ten.
+ * @returns {boolean}
+ */
+  isNumberOfTriesEqualToTen():boolean{
+    // znaci da igra treba da bude gotova ako je &#x3D;&#x3D;10
+    if(this.numOfTries &#x3D;&#x3D;&#x3D; 10){
+      return true;
+    } return false;
+  }
+  /** Disasble pointer cursor - cursor change to pointer on hover on all column elements */
+  disableClickOnItems():void{
+    // zaustavi klik animaciju
+    this.serverData.data.forEach((e:any)&#x3D;&gt;{
+      e.pointer &#x3D; false;
+    });
+  }
+  /**
+   * When game has ended. Collects the input from the game abd sends the data to our microservice API via gameService.
+   */
+  gameEndedSendScoreResult(){
+    this.gameService.gameActive &#x3D; true;
+    this.gameService.setGameEndedFlag(true); // igra je gotova
+    sendMessageUserModal(&quot;Igra je zavrsena!&quot;)
+    this.disableClickOnItems();
+    this.scoreService.pushScore( // dodaj score na server
+      // server radi proveru i cuva samo najbolji score od zadatog user-a
+      this.scoreNum,
+      this.userService.getLoggedinUser().username
+    ).subscribe((data:any)&#x3D;&gt;{
+      console.log(data)
+      this.scoreTabComponent.updateScoreTableView();
+    });
+  }
+
+  /**
+   * Method that will initialize all the parameters when new game starts.
+   * It is going to reset numOfTries and scoreNum to zero.
+   * Set game as active.
+   * Grab new random game data from our microservise API via GameService.
+   * Shuffle array for both columns.
+   * Set the new timer to run.
+   */
+  startTheGame(){
+    this.gameService.setGameEndedFlag(false);
+    this.timerHeight &#x3D; 100; // %
+    try{clearInterval(this.interval);}catch{};
+
+    this.numOfTries&#x3D; 0; 
+    this.scoreNum &#x3D; 0; 
+
+    // vucemo podatke sa servera
+    // random radimo za 2 nove liste kako bi redosled u obe kolone bio drugaciji, svaki prikaz kolone je prikaz iz druge liste
+    this.gameService.getGame().subscribe((data)&#x3D;&gt;{
+      this.currentActiveGameName &#x3D; data.name;
+      this.serverData.data &#x3D; JSON.parse(data.data);
+        this.serverData.data.forEach((e: any) &#x3D;&gt; {
+          e.pointer &#x3D; true;
+        // da moze da se klikne na elemenat
+        // [ngClass] u .html fajlu postavlja CSS imena u zavisnosti od true/false boolean varijabli
+      })
+      this.serverData.dataOne &#x3D; this.shuffleArray(this.serverData.data);
+      this.serverData.dataTwo&#x3D;[]
+      Object.keys(this.serverData.dataOne).forEach(key&#x3D;&gt;this.serverData.dataTwo[key]&#x3D;this.serverData.dataOne[key]);
+      this.serverData.dataTwo &#x3D; this.shuffleArray(this.serverData.dataTwo);
+    
+      //postavljamo nas timer ispod.....
+      //let timerInMinutes &#x3D; 2;
+      //let timerInSeconds &#x3D; timerInMinutes * 60000;
+      let timerInSeconds &#x3D; 60000;
+      let howManySeconds &#x3D; timerInSeconds/1000;
+      let decreasePerMin &#x3D; 100/howManySeconds;
+      this.timerTxt &#x3D; &#x60;${howManySeconds}&#x60;; // timerTxt se prikazuje u .html fajlu
+      this.interval &#x3D; setInterval(() &#x3D;&gt; { // stavljamo interval da ide na svakih 1s da se izvri funkcija unutar
+        if(this.gameService.getGameEndedFlag()){clearInterval(this.interval);} // ako je igra zavrsena prestaje sa intervalom
+        howManySeconds--; // umanji sekunde za 1s
+        this.timerTxt &#x3D; &#x60;${howManySeconds}&#x60;;// timerTxt se prikazuje u .html fajlu
+        this.timerHeight -&#x3D; decreasePerMin; // da smanji % prikaza timera graficki
+        if (this.timerHeight &lt;&#x3D; 0) { // ako je % 0 znaci da je gorova igra
+            clearInterval(this.interval); // prekini interval
+            this.gameEndedSendScoreResult(); // prekini igru
+        }
+    }, 1000);
+  });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;top-margin&quot;&gt;
+
+    &lt;p id&#x3D;&quot;helloUsername&quot;&gt;Zdravo {{this.userService.getLoggedinUser().username}}!&lt;/p&gt;
+
+    &lt;p id&#x3D;&quot;obaveštenje&quot; *ngIf&#x3D;&quot;this.currentActiveGameName&#x3D;&#x3D;&#x27;&#x27;&quot;&gt;Spoite polja sa leve strane sa odgovarajucim poljima sa desne strane!&lt;/p&gt;
+
+    &lt;app-score-tab&gt;&lt;/app-score-tab&gt;
+    &lt;app-user-actions-btns&gt;&lt;/app-user-actions-btns&gt;
+    &lt;div class&#x3D;&quot;color-text-white&quot;&gt;
+        &lt;div class&#x3D;&quot;container&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col&quot;&gt;&lt;/div&gt;
+            &lt;div *ngIf&#x3D;&quot;this.gameService.gameActive&quot; class&#x3D;&quot;col &quot;&gt;&lt;div class&#x3D;&quot;d-flex justify-content-center widthdiv&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;h2
+                class&#x3D;&quot;d-flex justify-content-center&quot;
+                id&#x3D;&quot;gameName&quot;
+                *ngIf&#x3D;&quot;this.currentActiveGameName!&#x3D;&#x27;&#x27;&quot;&gt;
+                Naziv Igre: {{this.currentActiveGameName}}
+            &lt;/h2&gt;
+
+            &lt;div id&#x3D;&quot;pointsDiv&quot; class&#x3D;&quot;margin-top-br container justify-content-center &quot; &gt;
+
+                &lt;span id&#x3D;&quot;numOfTriesDiv&quot; class&#x3D;&quot;numStats&quot; &gt;Broj pokusaja: {{numOfTries}}&lt;/span&gt;
+
+                &lt;span id&#x3D;&quot;scoreNumDiv&quot; class&#x3D;&quot;numStats&quot;&gt;Osvojeni poeni: {{scoreNum}}&lt;/span&gt;
+
+            &lt;/div&gt;
+
+            &lt;span class&#x3D;&quot;d-flex justify-content-center&quot; id&#x3D;&quot;timerSecondsLeft&quot;&gt;{{timerTxt}}&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col&quot;&gt;
+            &lt;div class&#x3D;&quot;col&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div *ngIf&#x3D;&quot;!this.gameService.gameActive&quot; class&#x3D;&quot;container justify-content-center&quot; style&#x3D;&quot;text-align: center&quot;&gt;
+            &lt;h2&gt;Kliknite na dugme Nova Igra kako bi zapoceli igru!&lt;/h2&gt;
+        &lt;/div&gt;
+
+          &lt;div *ngIf&#x3D;&quot;this.gameService.gameActive&quot; class&#x3D;&quot;container justify-content-center&quot;&gt;
+            &lt;div class&#x3D;&quot;row justify-content-center&quot;&gt;
+            &lt;div class&#x3D;&quot;col-6 col-sm-5&quot; id&#x3D;&quot;columnonediv&quot;&gt;
+                &lt;div class&#x3D;&quot;list-group&quot;
+                *ngFor&#x3D;&quot;let item of this.serverData.dataOne&quot;
+                &gt;
+                    &lt;a 
+                        [ngClass]&#x3D;&quot;{
+                            &#x27;list-group-item-secondary&#x27; : item.selectedOne,
+                            &#x27;list-group-item-success&#x27; : item.success,
+                            pointer: item.pointer,
+                            &#x27;list-group-item&#x27; : true,
+                            &#x27;list-group-item-action&#x27; : true
+                        }&quot;
+                        (click)&#x3D;&quot;onColumnOneClick(item.columnOne, item.pointer)&quot;
+                        &gt;
+                        {{item.columnOne}}
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-1 col-sm-1&quot; id&#x3D;&quot;bar&quot;&gt;&lt;div class&#x3D;&quot;progress progress-bar-vertical&quot;&gt;
+                &lt;div id&#x3D;&quot;timebar&quot; class&#x3D;&quot;progress-bar&quot; role&#x3D;&quot;progressbar&quot; aria-valuenow&#x3D;&quot;30&quot; aria-valuemin&#x3D;&quot;0&quot; aria-valuemax&#x3D;&quot;100&quot;  [style.height.%]&#x3D;&quot;timerHeight&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-6 col-sm-5&quot; id&#x3D;&quot;columntwodiv&quot;&gt;
+                &lt;div class&#x3D;&quot;list-group&quot; *ngFor&#x3D;&quot;let itemz of this.serverData.dataTwo&quot;&gt;
+                    &lt;a
+                    [ngClass]&#x3D;&quot;{
+                        &#x27;list-group-item-secondary&#x27; : itemz.selectedTwo,
+                        &#x27;list-group-item-success&#x27; : itemz.success,
+                        pointer: itemz.pointer,
+                        &#x27;list-group-item&#x27; : true,
+                        &#x27;list-group-item-action&#x27; : true
+                    }&quot;
+                    (click)&#x3D;&quot;onColumnTwoClick(itemz.columnTwo)&quot;
+                    &gt;{{itemz.columnTwo}}&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-6 col-sm-5&quot;&gt;
+        &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./game.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.row{
+    margin: 0 auto;
+    width: 80%;
+}
+.progress-bar-vertical {
+    width: 50px;
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 20px;
+    margin-left:5%;
+    height:100%;
+    
+    background-color: red ;
+    }
+
+    .progress-bar-vertical .progress-bar {
+    width: 100%;
+    height: 0;
+    -webkit-transition: height 0.6s ease;
+    -o-transition: height 0.6s ease;
+    transition: height 0.6s ease;
+    height:200px; 
+    }
+.list-group-item-action{
+    text-align: center;
+    margin-top:2px;
+    margin-bottom: 2px;
+    border-bottom: 2px solid #325DDA;
+    background-color: #3061ED;
+    color : white;
+}
+.list-group{
+    border: 2px solid white;
+}
+.list-group-item-success{
+    background-color: purple;
+}
+.list-group-item-secondary{
+    background-color:#B45F04;
+}
+.list-group-item:hover{background-color: white; color:black;}
+#numOfTriesDiv{
+    margin-right: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+    color:#8A0808;
+    /*background-color: brown;*/
+    /*margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5px;*/
+}
+.numStats {
+  font-size: 20px;
+  padding: 1px;
+}
+
+#pointsDiv{
+    width: 100%;
+}
+#scoreNumDiv{
+    /*background-color:forestgreen;*/
+    margin-left: 90px;
+    font-size: 20px;
+    color:#40FF00;
+    /*margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5px;*/
+}
+
+.widthdiv{
+    width: 520px;
+}
+
+.margin-top-br{
+    margin-top: 5px;
+}
+.pointer {cursor: pointer;}
+.color-text-white{color:white}
+.top-margin{
+    margin-top: 20px;
+}
+#helloUsername{
+    color:white;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 38px;
+}
+
+#obaveštenje {
+  color: white;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 38px;
+}
+#timerSecondsLeft{
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top:5px;
+}
+#gameName{
+    Color: white;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.2);
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="top-margin">    <p id="helloUsername">Zdravo {{this.userService.getLoggedinUser().username}}!</p>    <p id="obaveštenje" *ngIf="this.currentActiveGameName==\'\'">Spoite polja sa leve strane sa odgovarajucim poljima sa desne strane!</p>    <app-score-tab></app-score-tab>    <app-user-actions-btns></app-user-actions-btns>    <div class="color-text-white">        <div class="container">        <div class="row">            <div class="col"></div>            <div *ngIf="this.gameService.gameActive" class="col "><div class="d-flex justify-content-center widthdiv">            </div>            <h2                class="d-flex justify-content-center"                id="gameName"                *ngIf="this.currentActiveGameName!=\'\'">                Naziv Igre: {{this.currentActiveGameName}}            </h2>            <div id="pointsDiv" class="margin-top-br container justify-content-center " >                <span id="numOfTriesDiv" class="numStats" >Broj pokusaja: {{numOfTries}}</span>                <span id="scoreNumDiv" class="numStats">Osvojeni poeni: {{scoreNum}}</span>            </div>            <span class="d-flex justify-content-center" id="timerSecondsLeft">{{timerTxt}}</span>            </div>            <div class="col">            <div class="col"></div>        </div>        </div>        <div *ngIf="!this.gameService.gameActive" class="container justify-content-center" style="text-align: center">            <h2>Kliknite na dugme Nova Igra kako bi zapoceli igru!</h2>        </div>          <div *ngIf="this.gameService.gameActive" class="container justify-content-center">            <div class="row justify-content-center">            <div class="col-6 col-sm-5" id="columnonediv">                <div class="list-group"                *ngFor="let item of this.serverData.dataOne"                >                    <a                         [ngClass]="{                            \'list-group-item-secondary\' : item.selectedOne,                            \'list-group-item-success\' : item.success,                            pointer: item.pointer,                            \'list-group-item\' : true,                            \'list-group-item-action\' : true                        }"                        (click)="onColumnOneClick(item.columnOne, item.pointer)"                        >                        {{item.columnOne}}                    </a>                </div>            </div>            <div class="col-1 col-sm-1" id="bar"><div class="progress progress-bar-vertical">                <div id="timebar" class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"  [style.height.%]="timerHeight">                </div>            </div></div>            <div class="col-6 col-sm-5" id="columntwodiv">                <div class="list-group" *ngFor="let itemz of this.serverData.dataTwo">                    <a                    [ngClass]="{                        \'list-group-item-secondary\' : itemz.selectedTwo,                        \'list-group-item-success\' : itemz.success,                        pointer: itemz.pointer,                        \'list-group-item\' : true,                        \'list-group-item-action\' : true                    }"                    (click)="onColumnTwoClick(itemz.columnTwo)"                    >{{itemz.columnTwo}}</a>                </div>            </div>            <div class="col-6 col-sm-5">        </div>            </div>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'GameComponent', 'selector': 'app-game'},{'name': 'GameTabViewComponent', 'selector': 'app-game-tab-view'},{'name': 'IndexComponent', 'selector': 'app-index'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ScoreTabComponent', 'selector': 'app-score-tab'},{'name': 'UserActionsBtnsComponent', 'selector': 'app-user-actions-btns'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'GameComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'GameComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

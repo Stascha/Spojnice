@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['controllers_4',['Controllers',['../namespace_game_1_1_controllers.html',1,'Game']]],
+  ['data_5',['Data',['../namespace_game_1_1_data.html',1,'Game']]],
+  ['dtos_6',['Dtos',['../namespace_game_1_1_dtos.html',1,'Game']]],
+  ['game_7',['Game',['../namespace_game.html',1,'']]],
+  ['gamecontext_8',['GameContext',['../class_game_1_1_data_1_1_game_context.html',1,'Game.Data.GameContext'],['../class_game_1_1_data_1_1_game_context.html#a1548db12db2977c79523c300d5e568db',1,'Game.Data.GameContext.GameContext()']]],
+  ['gamecontextmodelsnapshot_9',['GameContextModelSnapshot',['../class_game_1_1_migrations_1_1_game_context_model_snapshot.html',1,'Game::Migrations']]],
+  ['gamecreatedto_10',['GameCreateDto',['../class_game_1_1_dtos_1_1_game_create_dto.html',1,'Game::Dtos']]],
+  ['gamemodel_11',['GameModel',['../class_game_1_1_models_1_1_game_model.html',1,'Game::Models']]],
+  ['gameprofile_12',['GameProfile',['../class_game_1_1_profiles_1_1_game_profile.html',1,'Game.Profiles.GameProfile'],['../class_game_1_1_profiles_1_1_game_profile.html#ae9d834ed7fe6237f5b87ef4f2aa86f57',1,'Game.Profiles.GameProfile.GameProfile()']]],
+  ['gamereaddto_13',['GameReadDto',['../class_game_1_1_dtos_1_1_game_read_dto.html',1,'Game::Dtos']]],
+  ['games_14',['Games',['../class_game_1_1_data_1_1_game_context.html#ad56e5e735677b445a658c2a1e5786626',1,'Game::Data::GameContext']]],
+  ['gamescontroler_15',['GamesControler',['../class_game_1_1_controllers_1_1_games_controler.html',1,'Game.Controllers.GamesControler'],['../class_game_1_1_controllers_1_1_games_controler.html#a8f9b289ddd956083676ce903c9c71180',1,'Game.Controllers.GamesControler.GamesControler()']]],
+  ['gameupdatedto_16',['GameUpdateDto',['../class_game_1_1_dtos_1_1_game_update_dto.html',1,'Game::Dtos']]],
+  ['getallgames_17',['GetAllGames',['../class_game_1_1_controllers_1_1_games_controler.html#af6d94c8e795be07c8b576720e9f874e5',1,'Game.Controllers.GamesControler.GetAllGames()'],['../class_game_1_1_data_1_1_sql_game_repo.html#adaa56b11932134155263318fdcf7f237',1,'Game.Data.SqlGameRepo.GetAllGames()']]],
+  ['getalluserswherenotificationsistrue_18',['GetAllUsersWhereNotificationsIsTrue',['../class_game_1_1_data_1_1_sql_game_repo.html#ab5b3da74cffab0b5de669964b4dfef09',1,'Game::Data::SqlGameRepo']]],
+  ['getgamebyid_19',['GetGameById',['../class_game_1_1_data_1_1_sql_game_repo.html#ac141b1d193f38eae2d6c931ef83ed52f',1,'Game::Data::SqlGameRepo']]],
+  ['getrandomgame_20',['GetRandomGame',['../class_game_1_1_controllers_1_1_games_controler.html#a5d3fe7dd2e0d7fc4f0a61349eb135ffe',1,'Game.Controllers.GamesControler.GetRandomGame()'],['../class_game_1_1_data_1_1_sql_game_repo.html#abbaafef6111e8aac7db18ab72296ede1',1,'Game.Data.SqlGameRepo.GetRandomGame()']]],
+  ['migrations_21',['Migrations',['../namespace_game_1_1_migrations.html',1,'Game']]],
+  ['models_22',['Models',['../namespace_game_1_1_models.html',1,'Game']]],
+  ['profiles_23',['Profiles',['../namespace_game_1_1_profiles.html',1,'Game']]]
+];

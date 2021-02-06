@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['controllers_14',['Controllers',['../namespace_score_1_1_controllers.html',1,'Score']]],
+  ['data_15',['Data',['../namespace_score_1_1_data.html',1,'Score']]],
+  ['dtos_16',['Dtos',['../namespace_score_1_1_dtos.html',1,'Score']]],
+  ['migrations_17',['Migrations',['../namespace_score_1_1_migrations.html',1,'Score']]],
+  ['models_18',['Models',['../namespace_score_1_1_models.html',1,'Score']]],
+  ['profiles_19',['Profiles',['../namespace_score_1_1_profiles.html',1,'Score']]],
+  ['savechanges_20',['SaveChanges',['../class_score_1_1_data_1_1_sql_score_repo.html#a4eafa903578964546cccd5294cfbba3d',1,'Score::Data::SqlScoreRepo']]],
+  ['score_21',['Score',['../namespace_score.html',1,'Score'],['../class_score_1_1_data_1_1_score_context.html#ab2118f5ba4580e48160f35767562f837',1,'Score.Data.ScoreContext.Score()'],['../class_score_1_1_dtos_1_1_score_create_dto.html#a1def01f0d9370e1e42b3e9a3f0577829',1,'Score.Dtos.ScoreCreateDto.Score()'],['../class_score_1_1_dtos_1_1_score_read_dto.html#ac8c3aa5c25998d96f6e145dbbba7ebf9',1,'Score.Dtos.ScoreReadDto.Score()'],['../class_score_1_1_models_1_1_score_model.html#a66328b9e89214ff30e3f89859b608ca9',1,'Score.Models.ScoreModel.Score()']]],
+  ['scorecontext_22',['ScoreContext',['../class_score_1_1_data_1_1_score_context.html',1,'Score.Data.ScoreContext'],['../class_score_1_1_data_1_1_score_context.html#a6fbb1bde66b7d6b18523a1304cdf6497',1,'Score.Data.ScoreContext.ScoreContext()']]],
+  ['scorecontextmodelsnapshot_23',['ScoreContextModelSnapshot',['../class_score_1_1_migrations_1_1_score_context_model_snapshot.html',1,'Score::Migrations']]],
+  ['scorecontroler_24',['ScoreControler',['../class_score_1_1_controllers_1_1_score_controler.html',1,'Score.Controllers.ScoreControler'],['../class_score_1_1_controllers_1_1_score_controler.html#a12dda08f3ff3a0c72323154cc7364f56',1,'Score.Controllers.ScoreControler.ScoreControler()']]],
+  ['scorecreatedto_25',['ScoreCreateDto',['../class_score_1_1_dtos_1_1_score_create_dto.html',1,'Score::Dtos']]],
+  ['scoremodel_26',['ScoreModel',['../class_score_1_1_models_1_1_score_model.html',1,'Score::Models']]],
+  ['scoreprofile_27',['ScoreProfile',['../class_score_1_1_profiles_1_1_score_profile.html',1,'Score.Profiles.ScoreProfile'],['../class_score_1_1_profiles_1_1_score_profile.html#a024a4bf6a02800083a5f5aa4fcd6a99f',1,'Score.Profiles.ScoreProfile.ScoreProfile()']]],
+  ['scorereaddto_28',['ScoreReadDto',['../class_score_1_1_dtos_1_1_score_read_dto.html',1,'Score::Dtos']]],
+  ['sendnolongerfirstmail_29',['SendNoLongerFirstMail',['../class_user_1_1_data_1_1_user_email_sender.html#adb78dfb7b6178050a1fa009da138bf2d',1,'User::Data::UserEmailSender']]],
+  ['sqlscorerepo_30',['SqlScoreRepo',['../class_score_1_1_data_1_1_sql_score_repo.html',1,'Score.Data.SqlScoreRepo'],['../class_score_1_1_data_1_1_sql_score_repo.html#ac70104a698541fdd9c662e7978e79ac2',1,'Score.Data.SqlScoreRepo.SqlScoreRepo()']]],
+  ['startup_31',['Startup',['../class_score_1_1_startup.html',1,'Score']]]
+];

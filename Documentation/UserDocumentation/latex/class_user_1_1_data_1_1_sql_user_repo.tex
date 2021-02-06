@@ -1,0 +1,121 @@
+\hypertarget{class_user_1_1_data_1_1_sql_user_repo}{}\doxysection{User.\+Data.\+Sql\+User\+Repo Class Reference}
+\label{class_user_1_1_data_1_1_sql_user_repo}\index{User.Data.SqlUserRepo@{User.Data.SqlUserRepo}}
+
+
+SQL Game Repository class.  
+
+
+Inheritance diagram for User.\+Data.\+Sql\+User\+Repo\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_user_1_1_data_1_1_sql_user_repo}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_1_1_data_1_1_sql_user_repo_a84d07e0969709a49b6c2d3464538e450}\label{class_user_1_1_data_1_1_sql_user_repo_a84d07e0969709a49b6c2d3464538e450}} 
+\mbox{\hyperlink{class_user_1_1_data_1_1_sql_user_repo_a84d07e0969709a49b6c2d3464538e450}{Sql\+User\+Repo}} (\mbox{\hyperlink{class_user_1_1_data_1_1_user_context}{User\+Context}} context)
+\begin{DoxyCompactList}\small\item\em Constructor of Sql\+Game\+Repo Class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_1_1_data_1_1_sql_user_repo_a8d3903593a9f371dd3c2cf688720ea0f}{Create\+User}} (\mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}} usr)
+\item 
+\mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}} \mbox{\hyperlink{class_user_1_1_data_1_1_sql_user_repo_aa6533fff725ef659b0718fce4a5fdd11}{Get\+User\+By\+Username\+And\+Password}} (string usr, string pwd)
+\item 
+\mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}} \mbox{\hyperlink{class_user_1_1_data_1_1_sql_user_repo_a096757b6147e9f7d5461b181364b242d}{Get\+User\+By\+Username}} (string usr)
+\item 
+\mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}} \mbox{\hyperlink{class_user_1_1_data_1_1_sql_user_repo_a35d69e13900653537dfccb970521d83c}{Get\+User\+By\+Email}} (string email)
+\item 
+\mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}} \mbox{\hyperlink{class_user_1_1_data_1_1_sql_user_repo_a54d02e8733d44f8acc3ff10b8a734d60}{Get\+User\+By\+Notification\+Token}} (string token)
+\item 
+bool \mbox{\hyperlink{class_user_1_1_data_1_1_sql_user_repo_ab9a424578e9d3b11e5e0a4cf97034005}{Save\+Changes}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+SQL Game Repository class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_1_1_data_1_1_sql_user_repo_a8d3903593a9f371dd3c2cf688720ea0f}\label{class_user_1_1_data_1_1_sql_user_repo_a8d3903593a9f371dd3c2cf688720ea0f}} 
+\index{User.Data.SqlUserRepo@{User.Data.SqlUserRepo}!CreateUser@{CreateUser}}
+\index{CreateUser@{CreateUser}!User.Data.SqlUserRepo@{User.Data.SqlUserRepo}}
+\doxysubsubsection{\texorpdfstring{CreateUser()}{CreateUser()}}
+{\footnotesize\ttfamily void User.\+Data.\+Sql\+User\+Repo.\+Create\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}}}]{usr }\end{DoxyParamCaption})}
+
+\hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md9}{}\doxyparagraph{Description}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md9}
+Create\+User method -\/ creates new user from the User\+Model object received. Throws error if User\+Model object is not provided. \hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md10}{}\doxyparagraph{Arguments}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md10}
+User\+Model usr -\/ user to add ~\newline
+ \hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md11}{}\doxyparagraph{Return value}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md11}
+None. 
+
+Implements \mbox{\hyperlink{interface_user_1_1_data_1_1_i_user_repo}{User.\+Data.\+IUser\+Repo}}.
+
+\mbox{\Hypertarget{class_user_1_1_data_1_1_sql_user_repo_a35d69e13900653537dfccb970521d83c}\label{class_user_1_1_data_1_1_sql_user_repo_a35d69e13900653537dfccb970521d83c}} 
+\index{User.Data.SqlUserRepo@{User.Data.SqlUserRepo}!GetUserByEmail@{GetUserByEmail}}
+\index{GetUserByEmail@{GetUserByEmail}!User.Data.SqlUserRepo@{User.Data.SqlUserRepo}}
+\doxysubsubsection{\texorpdfstring{GetUserByEmail()}{GetUserByEmail()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}} User.\+Data.\+Sql\+User\+Repo.\+Get\+User\+By\+Email (\begin{DoxyParamCaption}\item[{string}]{email }\end{DoxyParamCaption})}
+
+\hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md18}{}\doxyparagraph{Description}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md18}
+Get\+User\+By\+Email method -\/ returns object if provided email exists in the database. \hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md19}{}\doxyparagraph{Arguments}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md19}
+string email -\/ email as input  \hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md20}{}\doxyparagraph{Return value}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md20}
+User\+Model -\/ if user exists in the database user object is returned, otherwise null is returned. 
+
+Implements \mbox{\hyperlink{interface_user_1_1_data_1_1_i_user_repo}{User.\+Data.\+IUser\+Repo}}.
+
+\mbox{\Hypertarget{class_user_1_1_data_1_1_sql_user_repo_a54d02e8733d44f8acc3ff10b8a734d60}\label{class_user_1_1_data_1_1_sql_user_repo_a54d02e8733d44f8acc3ff10b8a734d60}} 
+\index{User.Data.SqlUserRepo@{User.Data.SqlUserRepo}!GetUserByNotificationToken@{GetUserByNotificationToken}}
+\index{GetUserByNotificationToken@{GetUserByNotificationToken}!User.Data.SqlUserRepo@{User.Data.SqlUserRepo}}
+\doxysubsubsection{\texorpdfstring{GetUserByNotificationToken()}{GetUserByNotificationToken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}} User.\+Data.\+Sql\+User\+Repo.\+Get\+User\+By\+Notification\+Token (\begin{DoxyParamCaption}\item[{string}]{token }\end{DoxyParamCaption})}
+
+\hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md21}{}\doxyparagraph{Description}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md21}
+Get\+User\+By\+Notification\+Token method -\/ returns object if notification token exists. \hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md22}{}\doxyparagraph{Arguments}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md22}
+string token -\/ token string as input  \hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md23}{}\doxyparagraph{Return value}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md23}
+User\+Model -\/ if notification token exists in the database user object is returned, otherwise null is returned. 
+
+Implements \mbox{\hyperlink{interface_user_1_1_data_1_1_i_user_repo}{User.\+Data.\+IUser\+Repo}}.
+
+\mbox{\Hypertarget{class_user_1_1_data_1_1_sql_user_repo_a096757b6147e9f7d5461b181364b242d}\label{class_user_1_1_data_1_1_sql_user_repo_a096757b6147e9f7d5461b181364b242d}} 
+\index{User.Data.SqlUserRepo@{User.Data.SqlUserRepo}!GetUserByUsername@{GetUserByUsername}}
+\index{GetUserByUsername@{GetUserByUsername}!User.Data.SqlUserRepo@{User.Data.SqlUserRepo}}
+\doxysubsubsection{\texorpdfstring{GetUserByUsername()}{GetUserByUsername()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}} User.\+Data.\+Sql\+User\+Repo.\+Get\+User\+By\+Username (\begin{DoxyParamCaption}\item[{string}]{usr }\end{DoxyParamCaption})}
+
+\hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md15}{}\doxyparagraph{Description}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md15}
+Get\+User\+By\+Username method -\/ returns object if provided username exists in the database. \hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md16}{}\doxyparagraph{Arguments}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md16}
+string usr -\/ username as input  \hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md17}{}\doxyparagraph{Return value}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md17}
+User\+Model -\/ if user exists in the database user object is returned, otherwise null is returned. 
+
+Implements \mbox{\hyperlink{interface_user_1_1_data_1_1_i_user_repo}{User.\+Data.\+IUser\+Repo}}.
+
+\mbox{\Hypertarget{class_user_1_1_data_1_1_sql_user_repo_aa6533fff725ef659b0718fce4a5fdd11}\label{class_user_1_1_data_1_1_sql_user_repo_aa6533fff725ef659b0718fce4a5fdd11}} 
+\index{User.Data.SqlUserRepo@{User.Data.SqlUserRepo}!GetUserByUsernameAndPassword@{GetUserByUsernameAndPassword}}
+\index{GetUserByUsernameAndPassword@{GetUserByUsernameAndPassword}!User.Data.SqlUserRepo@{User.Data.SqlUserRepo}}
+\doxysubsubsection{\texorpdfstring{GetUserByUsernameAndPassword()}{GetUserByUsernameAndPassword()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}} User.\+Data.\+Sql\+User\+Repo.\+Get\+User\+By\+Username\+And\+Password (\begin{DoxyParamCaption}\item[{string}]{usr,  }\item[{string}]{pwd }\end{DoxyParamCaption})}
+
+\hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md12}{}\doxyparagraph{Description}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md12}
+Get\+User\+By\+Username\+And\+Password method -\/ returns the user if password hash matches the username in the database \hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md13}{}\doxyparagraph{Arguments}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md13}
+string usr -\/ represents the username  string pwd -\/ represents the password in plain text \hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md14}{}\doxyparagraph{Return value}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md14}
+User\+Model -\/ returns user object if password hash in the database matches the plain password sent as input as well as if it matches the username. If username and password don\textquotesingle{}t match or if username does not exist null will be returned. 
+
+Implements \mbox{\hyperlink{interface_user_1_1_data_1_1_i_user_repo}{User.\+Data.\+IUser\+Repo}}.
+
+\mbox{\Hypertarget{class_user_1_1_data_1_1_sql_user_repo_ab9a424578e9d3b11e5e0a4cf97034005}\label{class_user_1_1_data_1_1_sql_user_repo_ab9a424578e9d3b11e5e0a4cf97034005}} 
+\index{User.Data.SqlUserRepo@{User.Data.SqlUserRepo}!SaveChanges@{SaveChanges}}
+\index{SaveChanges@{SaveChanges}!User.Data.SqlUserRepo@{User.Data.SqlUserRepo}}
+\doxysubsubsection{\texorpdfstring{SaveChanges()}{SaveChanges()}}
+{\footnotesize\ttfamily bool User.\+Data.\+Sql\+User\+Repo.\+Save\+Changes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md24}{}\doxyparagraph{Description}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md24}
+Save\+Changes method -\/ saves changes that are made to our \+\_\+context. \hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md25}{}\doxyparagraph{Arguments}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md25}
+None. \hypertarget{class_user_1_1_data_1_1_sql_user_repo_autotoc_md26}{}\doxyparagraph{Return}\label{class_user_1_1_data_1_1_sql_user_repo_autotoc_md26}
+(\+\_\+context.\+Save\+Changes() $>$= 0); 
+
+Implements \mbox{\hyperlink{interface_user_1_1_data_1_1_i_user_repo}{User.\+Data.\+IUser\+Repo}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Korisnik/\+Desktop/\+Razvoj softvera 2/\+Projekat\+\_\+3/user\+Microservice/\+User/\+Data/Sql\+User\+Repo.\+cs\end{DoxyCompactItemize}

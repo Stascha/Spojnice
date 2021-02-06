@@ -1,0 +1,14 @@
+<table  id="datatablee" class="display table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th id="thScore" (click)="onScoreSort()">Score</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let item of this.scoreService.getScoreList()">
+        <tr>
+            <td>{{item.username}}</td>
+            <td>{{item.score}}</td>
+        </tr>
+    </tbody>
+</table>

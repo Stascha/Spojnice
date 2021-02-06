@@ -1,0 +1,48 @@
+h1{
+    color:#D8D8D8;
+}
+#datatablee{
+    width:50%;
+    color:#D8D8D8;
+    background-color:#0A1B2A;
+    opacity: 0.7;
+}
+tr{
+    border: 2px solid #CEE3F6;
+}
+th{
+    color:#F3F781;
+    width: 33.33%;
+    text-align: center;
+}
+
+#additionalLinksBtn{
+    margin-bottom:20px;
+}
+#additionalLinksBtn button{
+    background-color:#0A1B2A;
+    margin-right:10px;
+}
+#thScore{
+    cursor: pointer;
+}
+td button{
+    margin-right:5px;
+    padding-top:1px;
+    padding-bottom: 1px;
+}
+td{
+    text-align: center;
+}
+
+.text-orange-create{
+    color: orange;
+    background-color:#0A1B2A;
+    margin-left: 25%;
+    margin-bottom: 10px;
+}
+
+#formCreateGame button{
+    margin-top:8px;
+    margin-right: 5px;
+}

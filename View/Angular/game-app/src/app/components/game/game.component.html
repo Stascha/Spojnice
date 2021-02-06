@@ -1,0 +1,88 @@
+<div class="top-margin">
+
+    <p id="helloUsername">Zdravo {{this.userService.getLoggedinUser().username}}!</p>
+
+    <p id="obaveštenje" *ngIf="this.currentActiveGameName==''">Spoite polja sa leve strane sa odgovarajucim poljima sa desne strane!</p>
+
+    <app-score-tab></app-score-tab>
+    <app-user-actions-btns></app-user-actions-btns>
+    <div class="color-text-white">
+        <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div *ngIf="this.gameService.gameActive" class="col ">
+              <div class="d-flex justify-content-center widthdiv">
+              </div>
+
+        <!--  Ispisivanje naziva igre      -->
+              <h2 class="d-flex justify-content-center"
+                  id="gameName"
+                  *ngIf="this.currentActiveGameName!=''">
+                {{this.currentActiveGameName}}
+              </h2>
+        <!-- ---------------------------   -->
+
+              <div id="pointsDiv" class="margin-top-br container justify-content-center ">
+
+                <span id="numOfTriesDiv" class="numStats">Broj pokusaja: {{numOfTries}}</span>
+
+                <span id="scoreNumDiv" class="numStats">Osvojeni poeni: {{scoreNum}}</span>
+
+              </div>
+
+              <span class="d-flex justify-content-center" id="timerSecondsLeft">{{timerTxt}}</span>
+            </div>
+            <div class="col">
+            <div class="col"></div>
+        </div>
+        </div>
+
+        <div *ngIf="!this.gameService.gameActive" class="container justify-content-center" style="text-align: center">
+            <h2>Kliknite na dugme Nova Igra kako bi zapoceli igru!</h2>
+        </div>
+
+          <div *ngIf="this.gameService.gameActive" class="container justify-content-center">
+            <div class="row justify-content-center">
+            <div class="col-6 col-sm-5" id="columnonediv">
+                <div class="list-group"
+                *ngFor="let item of this.serverData.dataOne"
+                >
+                    <a 
+                        [ngClass]="{
+                            'list-group-item-secondary' : item.selectedOne,
+                            'list-group-item-success' : item.success,
+                            pointer: item.pointer,
+                            'list-group-item' : true,
+                            'list-group-item-action' : true
+                        }"
+                        (click)="onColumnOneClick(item.columnOne, item.pointer)"
+                        >
+                        {{item.columnOne}}
+                    </a>
+                </div>
+            </div>
+            <div class="col-1 col-sm-1" id="bar"><div class="progress progress-bar-vertical">
+                <div id="timebar" class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"  [style.height.%]="timerHeight">
+                </div>
+            </div></div>
+            <div class="col-6 col-sm-5" id="columntwodiv">
+                <div class="list-group" *ngFor="let itemz of this.serverData.dataTwo">
+                    <a
+                    [ngClass]="{
+                        'list-group-item-secondary' : itemz.selectedTwo,
+                        'list-group-item-success' : itemz.success,
+                        pointer: itemz.pointer,
+                        'list-group-item' : true,
+                        'list-group-item-action' : true
+                    }"
+                    (click)="onColumnTwoClick(itemz.columnTwo)"
+                    >{{itemz.columnTwo}}</a>
+                </div>
+            </div>
+            <div class="col-6 col-sm-5">
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+

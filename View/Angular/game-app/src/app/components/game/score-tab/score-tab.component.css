@@ -1,0 +1,18 @@
+#datatablee{
+    width:15%;
+    margin-right: 35px;
+    margin-top: 5px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    position: absolute;
+    right: 0;
+
+}
+#datatablee th, #datatablee td{
+    color:#F7FE2E;
+    font-weight: bold;
+    background-color: #045FB4;
+}
+#thScore{
+    cursor: pointer;
+    background-color:red;
+}

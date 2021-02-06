@@ -1,0 +1,27 @@
+.logincompclass{
+    background-color:#5882FA;
+    color: white;
+}
+#registerBtn, #loginBtn {
+  
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#additionalLinksBtn{
+  margin-bottom:20px;
+}
+#additionalLinksBtn button{
+  background-color:#0A1B2A;
+ 
+}
+.formSection{
+  width:20%;
+}
+.nav-link{
+  cursor: pointer;
+  color:white;
+}
+.active {
+  color:black;
+}

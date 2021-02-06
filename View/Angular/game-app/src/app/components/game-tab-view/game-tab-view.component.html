@@ -1,0 +1,174 @@
+<div class="d-flex justify-content-center">
+    <h1>Napravi Nove Igre - Izmeni Igre - Izbriši Igre</h1>
+</div>
+
+
+
+
+<div></div>
+<div id="additionalLinksBtn" class="d-flex justify-content-center">
+
+
+<a routerLink="/">
+    <button type="button" class="btn btn-outline-danger">Pocetna</button>
+</a>
+
+
+<a routerLink="/game">
+    <button type="button" class="btn btn-outline-info">Igra</button>
+</a>
+
+</div>
+
+
+
+
+<button type="button" class="btn btn-warning text-orange-create" (click)="onCreateNewGame()">Napravi novu igru</button>
+<div class="d-flex justify-content-center">    
+<table  id="datatablee" class="display table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Naziv Igre</th>
+            <th> akcije </th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let item of this.getGameTableList()">
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>
+                <button type="button" class="btn btn-primary" (click)="onUpdateOpenDialog(item)">Izmeni</button>
+                <button type="button" class="btn btn-danger" (click)="onDelete(item.id)">Ukloni</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+
+<!-- Modal ------------------------------------------------------------------------------------------->
+
+<div class="modal fade" id="updateGameModal" tabindex="-1" role="dialog" aria-labelledby="createGameModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="updateGameModalLabel">Igra</h5>
+    </div>
+    <div class="modal-body">
+    
+      <form id="formCreateGame">
+        <input id="nameInputCreateGame" type="text" placeholder="Naziv Liste" class="form-control" required
+               ngModel name="inputNameGameData" required [(ngModel)]="this.inputNameGameData">
+        <div id="createGameInputElements">
+          <h5>1.</h5>
+          <div class="input-group">
+            <input type="text" placeholder="Element Prve Kolone" class="form-control" required
+                   ngModel name="c1-0" required [(ngModel)]="this.inputGameData[0].columnOne">
+            <input type="text" placeholder="Element Druge Kolone" class="form-control" required
+                   ngModel name="c2-0" required [(ngModel)]="this.inputGameData[0].columnTwo">
+          </div>
+
+          <h5>2.</h5>
+          <div class="input-group">
+            <input type="text" placeholder="Element Prve Kolone" class="form-control" required
+                   ngModel name="c1-1" required [(ngModel)]="this.inputGameData[1].columnOne">
+            <input type="text" placeholder="Element Druge Kolone" class="form-control" required
+                   ngModel name="c2-1" required [(ngModel)]="this.inputGameData[1].columnTwo">
+          </div>
+
+          <h5>3.</h5>
+          <div class="input-group">
+            <input type="text" placeholder="Element Prve Kolone" class="form-control" required
+                   ngModel name="c1-2" required [(ngModel)]="this.inputGameData[2].columnOne">
+            <input type="text" placeholder="Element Druge Kolone" class="form-control" required
+                   ngModel name="c2-2" required [(ngModel)]="this.inputGameData[2].columnTwo">
+          </div>
+
+          <h5>4.</h5>
+          <div class="input-group">
+            <input type="text" placeholder="Element Prve Kolone" class="form-control" required
+                   ngModel name="c1-3" required [(ngModel)]="this.inputGameData[3].columnOne">
+            <input type="text" placeholder="Element Druge Kolone" class="form-control" required
+                   ngModel name="c2-3" required [(ngModel)]="this.inputGameData[3].columnTwo">
+          </div>
+
+          <h5>5.</h5>
+          <div class="input-group">
+            <input type="text" placeholder="Element Prve Kolone" class="form-control" required
+                   ngModel name="c1-4" required [(ngModel)]="this.inputGameData[4].columnOne">
+            <input type="text" placeholder="Element Druge Kolone" class="form-control" required
+                   ngModel name="c2-4" required [(ngModel)]="this.inputGameData[4].columnTwo">
+          </div>
+
+          <h5>6.</h5>
+          <div class="input-group">
+            <input type="text" placeholder="Element Prve Kolone" class="form-control" required
+                   ngModel name="c1-5" required [(ngModel)]="this.inputGameData[5].columnOne">
+            <input type="text" placeholder="Element Druge Kolone" class="form-control" required
+                   ngModel name="c2-5" required [(ngModel)]="this.inputGameData[5].columnTwo">
+          </div>
+
+          <h5>7.</h5>
+          <div class="input-group">
+            <input type="text" placeholder="Element Prve Kolone" class="form-control" required
+                   ngModel name="c1-6" required [(ngModel)]="this.inputGameData[6].columnOne">
+            <input type="text" placeholder="Element Druge Kolone" class="form-control" required
+                   ngModel name="c2-6" required [(ngModel)]="this.inputGameData[6].columnTwo">
+          </div>
+
+          <h5>8.</h5>
+          <div class="input-group">
+            <input type="text" placeholder="Element Prve Kolone" class="form-control" required
+                   ngModel name="c1-7" required [(ngModel)]="this.inputGameData[7].columnOne">
+            <input type="text" placeholder="Element Druge Kolone" class="form-control" required
+                   ngModel name="c2-7" required [(ngModel)]="this.inputGameData[7].columnTwo">
+          </div>
+
+          <!--  <div class="d-flex justify-content-center"> -->
+          <!--    <h1>Izmeni Igre</h1> -->
+          <!--  </div> -->
+
+          <h5>9.</h5>
+          <div class="input-group">
+            <input type="text" placeholder="Element Prve Kolone" class="form-control" required
+                   ngModel name="c1-8" required [(ngModel)]="this.inputGameData[8].columnOne">
+            <input type="text" placeholder="Element Druge Kolone" class="form-control" required
+                   ngModel name="c2-8" required [(ngModel)]="this.inputGameData[8].columnTwo">
+          </div>
+
+          <h5>10.</h5>
+          <div class="input-group">
+            <input type="text" placeholder="Element Prve Kolone" class="form-control" required
+                   ngModel name="c1-9" required [(ngModel)]="this.inputGameData[9].columnOne">
+            <input type="text" placeholder="Element Druge Kolone" class="form-control" required
+                   ngModel name="c2-9" required [(ngModel)]="this.inputGameData[9].columnTwo">
+          </div>
+        </div>
+        <p *ngIf="formInputInvalid" class="text-danger">Morate popuniti sva polja!</p>
+        <button
+            *ngIf="!this.getIsCreateModalActive()"
+            type="button"
+            class="btn btn-primary margin-top-br"
+            (click)="onUpdateGameFormSubmit()">
+            UPDATE
+        </button>
+        <button
+            *ngIf="this.getIsCreateModalActive()"
+            type="button"
+            class="btn btn-primary margin-top-br"
+            (click)="onCreateNewGameSubmit()">
+            CREATE
+        </button>
+        <button 
+            (click)="onUpdatGameModalClose()"
+            type="button"
+            class="btn btn-danger">
+            CLOSE
+        </button>
+    </form>
+    
+    </div>
+    </div>
+    </div>
+    </div>

@@ -1,0 +1,58 @@
+\hypertarget{class_user_1_1_controllers_1_1_users_controler}{}\doxysection{User.\+Controllers.\+Users\+Controler Class Reference}
+\label{class_user_1_1_controllers_1_1_users_controler}\index{User.Controllers.UsersControler@{User.Controllers.UsersControler}}
+Inheritance diagram for User.\+Controllers.\+Users\+Controler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_user_1_1_controllers_1_1_users_controler}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_1_1_controllers_1_1_users_controler_ac84f8d23c1fcc60d6e0ddb733daad566}\label{class_user_1_1_controllers_1_1_users_controler_ac84f8d23c1fcc60d6e0ddb733daad566}} 
+\mbox{\hyperlink{class_user_1_1_controllers_1_1_users_controler_ac84f8d23c1fcc60d6e0ddb733daad566}{Users\+Controler}} (\mbox{\hyperlink{interface_user_1_1_data_1_1_i_user_repo}{IUser\+Repo}} repository, IMapper mapper)
+\begin{DoxyCompactList}\small\item\em Games\+Controler Constructor. \end{DoxyCompactList}\item 
+Action\+Result$<$ \mbox{\hyperlink{class_user_1_1_dtos_1_1_user_read_dto}{User\+Read\+Dto}} $>$ \mbox{\hyperlink{class_user_1_1_controllers_1_1_users_controler_a993111cbb2d355834b588f546043f9ca}{Get\+User\+By\+Username\+And\+Password}} (\mbox{\hyperlink{class_user_1_1_controllers_1_1_user_request_logi_object}{User\+Request\+Logi\+Object}} input\+Data)
+\item 
+Action\+Result$<$ \mbox{\hyperlink{class_user_1_1_dtos_1_1_user_read_dto}{User\+Read\+Dto}} $>$ \mbox{\hyperlink{class_user_1_1_controllers_1_1_users_controler_a6ce5415593252163c466774d65c07e83}{Create\+Command}} (\mbox{\hyperlink{class_user_1_1_dtos_1_1_user_create_dto}{User\+Create\+Dto}} usr\+Create\+Dto)
+\item 
+Action\+Result$<$ string $>$ \mbox{\hyperlink{class_user_1_1_controllers_1_1_users_controler_a2ba31f7a9fe2065853c09abae93cc3cc}{Notification\+Status\+Change}} (string notification\+Token, bool status)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defined route path Games\+Controler class 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_1_1_controllers_1_1_users_controler_a6ce5415593252163c466774d65c07e83}\label{class_user_1_1_controllers_1_1_users_controler_a6ce5415593252163c466774d65c07e83}} 
+\index{User.Controllers.UsersControler@{User.Controllers.UsersControler}!CreateCommand@{CreateCommand}}
+\index{CreateCommand@{CreateCommand}!User.Controllers.UsersControler@{User.Controllers.UsersControler}}
+\doxysubsubsection{\texorpdfstring{CreateCommand()}{CreateCommand()}}
+{\footnotesize\ttfamily Action\+Result$<$\mbox{\hyperlink{class_user_1_1_dtos_1_1_user_read_dto}{User\+Read\+Dto}}$>$ User.\+Controllers.\+Users\+Controler.\+Create\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user_1_1_dtos_1_1_user_create_dto}{User\+Create\+Dto}}}]{usr\+Create\+Dto }\end{DoxyParamCaption})}
+
+\hypertarget{class_user_1_1_controllers_1_1_users_controler_autotoc_md3}{}\doxyparagraph{Desctiption}\label{class_user_1_1_controllers_1_1_users_controler_autotoc_md3}
+Function that will create new user with the provided data. It is going to generate new notifications token and assugn it as false at the beginning. \hypertarget{class_user_1_1_controllers_1_1_users_controler_autotoc_md4}{}\doxyparagraph{Arguments}\label{class_user_1_1_controllers_1_1_users_controler_autotoc_md4}
+User\+Create\+Dto usr\+Create\+Dto -\/ contains fields for the user that are described in the Dto class. \hypertarget{class_user_1_1_controllers_1_1_users_controler_autotoc_md5}{}\doxyparagraph{Return value}\label{class_user_1_1_controllers_1_1_users_controler_autotoc_md5}
+Action\+Result$<$\+User\+Read\+Dto$>$ -\/ returns User\+Read\+Dto object in case the user is created and USER\+\_\+\+EXISTS string as the response in case if the user exists in the database \mbox{\Hypertarget{class_user_1_1_controllers_1_1_users_controler_a993111cbb2d355834b588f546043f9ca}\label{class_user_1_1_controllers_1_1_users_controler_a993111cbb2d355834b588f546043f9ca}} 
+\index{User.Controllers.UsersControler@{User.Controllers.UsersControler}!GetUserByUsernameAndPassword@{GetUserByUsernameAndPassword}}
+\index{GetUserByUsernameAndPassword@{GetUserByUsernameAndPassword}!User.Controllers.UsersControler@{User.Controllers.UsersControler}}
+\doxysubsubsection{\texorpdfstring{GetUserByUsernameAndPassword()}{GetUserByUsernameAndPassword()}}
+{\footnotesize\ttfamily Action\+Result$<$\mbox{\hyperlink{class_user_1_1_dtos_1_1_user_read_dto}{User\+Read\+Dto}}$>$ User.\+Controllers.\+Users\+Controler.\+Get\+User\+By\+Username\+And\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user_1_1_controllers_1_1_user_request_logi_object}{User\+Request\+Logi\+Object}}}]{input\+Data }\end{DoxyParamCaption})}
+
+\hypertarget{class_user_1_1_controllers_1_1_users_controler_autotoc_md0}{}\doxyparagraph{Desctiption}\label{class_user_1_1_controllers_1_1_users_controler_autotoc_md0}
+Function that will check if entered creditionals (username and password) match with what database has. If they match user object is going to be returned. \hypertarget{class_user_1_1_controllers_1_1_users_controler_autotoc_md1}{}\doxyparagraph{Arguments}\label{class_user_1_1_controllers_1_1_users_controler_autotoc_md1}
+\mbox{\hyperlink{class_user_1_1_controllers_1_1_user_request_logi_object}{User\+Request\+Logi\+Object}} input\+Data -\/ contains username and password fields as strings. \hypertarget{class_user_1_1_controllers_1_1_users_controler_autotoc_md2}{}\doxyparagraph{Return value}\label{class_user_1_1_controllers_1_1_users_controler_autotoc_md2}
+Action\+Result$<$\+User\+Read\+Dto$>$ -\/ returns User\+Read\+Dto object in case the user exist in the database and Not\+Found response in case no user is found in the database \mbox{\Hypertarget{class_user_1_1_controllers_1_1_users_controler_a2ba31f7a9fe2065853c09abae93cc3cc}\label{class_user_1_1_controllers_1_1_users_controler_a2ba31f7a9fe2065853c09abae93cc3cc}} 
+\index{User.Controllers.UsersControler@{User.Controllers.UsersControler}!NotificationStatusChange@{NotificationStatusChange}}
+\index{NotificationStatusChange@{NotificationStatusChange}!User.Controllers.UsersControler@{User.Controllers.UsersControler}}
+\doxysubsubsection{\texorpdfstring{NotificationStatusChange()}{NotificationStatusChange()}}
+{\footnotesize\ttfamily Action\+Result$<$string$>$ User.\+Controllers.\+Users\+Controler.\+Notification\+Status\+Change (\begin{DoxyParamCaption}\item[{string}]{notification\+Token,  }\item[{bool}]{status }\end{DoxyParamCaption})}
+
+\hypertarget{class_user_1_1_controllers_1_1_users_controler_autotoc_md6}{}\doxyparagraph{Desctiption}\label{class_user_1_1_controllers_1_1_users_controler_autotoc_md6}
+Function that will change the status of notifications for the user. \hypertarget{class_user_1_1_controllers_1_1_users_controler_autotoc_md7}{}\doxyparagraph{Arguments}\label{class_user_1_1_controllers_1_1_users_controler_autotoc_md7}
+string notification\+Token -\/ notification token that is unique to each user.  bool status -\/ if user wants to enable notifications or not.  \hypertarget{class_user_1_1_controllers_1_1_users_controler_autotoc_md8}{}\doxyparagraph{Return value}\label{class_user_1_1_controllers_1_1_users_controler_autotoc_md8}
+Action\+Result $<$string$>$ -\/ string that says the notifications is set to be true or false 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Korisnik/\+Desktop/\+Razvoj softvera 2/\+Projekat\+\_\+3/user\+Microservice/\+User/\+Controllers/User\+Controller.\+cs\end{DoxyCompactItemize}

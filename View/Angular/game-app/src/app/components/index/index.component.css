@@ -1,0 +1,26 @@
+body{
+          background-color:#5882FA;
+          color: white;
+      }
+      h1 {
+        text-align: center; 
+        display: inline-block;
+      }
+      .list-group a{
+          margin-top:5px;
+          margin-bottom:5px;
+      }
+      #additionalLinksBtn{
+        margin-bottom:20px;
+    }
+    #additionalLinksBtn button{
+        background-color:#0A1B2A;
+        margin-right:20px;
+        margin-bottom: 7px;
+        width: 130px;
+    }
+div p{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}    
