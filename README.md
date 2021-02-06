@@ -18,7 +18,7 @@ Za mikroservise potrebno je imati instalirano sledeće na računaru:
 ●	https://dotnet.microsoft.com/download/dotnet/5.0
 
 
-Pokrenuti SQL Server 
+### Pokrenuti SQL Server 
 
 U svakom od mikroservisa u appsettings.json fajlu zameniti string DatabaseConnection za konekciju aplikacije sa bazom podataka 
 
@@ -46,6 +46,7 @@ Ako nemate instaliran dotnet-ef instalirajte ga koristeći komandu:
 
 <pre>dotnet tool install --global dotnet-ef</pre>
 
+### Pokretanje mikroservisa
 
 Mikroservisi se pokreću svaki od njih nezavisno od drugog. Otvoriti Command Promt i zatim
 preko command promta ići do foldera koji sadrži Program.cs fajl koji je i startni fajl svakog mikroservisa.
@@ -75,7 +76,7 @@ Nakon njihovog pokretanja ne bi bilo lose da se proba da se kontaktira svaki mik
 
 Swagger je aktivan tako da je moguće i da se testiraju API putanje nad mikroservisima bez potrebe za klijentskom aplikacijom.
 
-Pokretanje frontend aplikacije - Angular 
+### Pokretanje frontend aplikacije - Angular 
 
 pre pokretanja Angular aplikacije preko command promta uci u direktorijuma game-app.View/Angular/game-app
 i izvrsiti 
@@ -90,10 +91,10 @@ Otvoriti još jedan command prompt i ući u folder: \View\Angular\game-app zatim
 
 Koja će pokrenuti komandu ng serve koja pokreće aplikaciju.
 
-U pretraživaču otvoriti stranicu
+### U pretraživaču otvoriti stranicu
 <pre>http://localhost:4200</pre>
 
-Dodatno upustvo
+### Dodatno upustvo
 
 Kada ste pokrenuli aplikaciju potrebno je da kreirate naloge tipa admin kako bi nakon logovanja mogli da pravite nove igre, menjate ih i brišete postojeće.
 Admin nalog se pravi na sledeći način
@@ -109,6 +110,6 @@ Emailovi se šalju putem SMTP protokola. Tako da se može povezati da radi i sa 
 
 ●	\userMicroservice\User\Data\UserEmailSender.cs
 
-### Student koji je uradio projekat
+## Student koji je uradio projekat
 
  - [Staša Rašić](https://github.com/Stascha)
