@@ -9,7 +9,7 @@ Igrač ima deset pokušaja da spoji odgovarajuće nazive.
 Za svaki uspešno spojeni par igrač dobija poen.
 
 
-## Pokretanje aplikacije igra Spojnice
+## Pokretanje aplikacije
 
 Aplikacija sadrži foldere: gameMicroservice, scoreMicroservice, userMicroservice, View
 
