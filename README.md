@@ -61,7 +61,7 @@ preko command promta ići do foldera koji sadrži Program.cs fajl koji je i star
 
 ●	\userMicroservice\User\Program.cs
  
-Otvoriti 3 command prompta preko njih ući u svaki folder od gore navedenih. 
+Otvoriti 3 command prompta i preko njih ući u svaki folder od gore navedenih. 
 Zatim u sva 3 command prompta kada se nadjemo u gore pomenutim direktorijuma izvršimo komandu
 
 <pre>dotnet run</pre> 
