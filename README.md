@@ -61,14 +61,14 @@ preko command promta ići do foldera koji sadrži Program.cs fajl koji je i star
 
 ●	\userMicroservice\User\Program.cs
  
-Otvoriti 3 command prompta i preko njih ući u svaki folder od gore navedenih. 
-Zatim u sva 3 command prompta kada se nadjemo u gore pomenutim direktorijuma izvršimo komandu
+Otvoriti 3 command prompta i preko njih se pozicionirati u svaki folder od gore navedenih. 
+Zatim u svakom command promptu izvršiti komandu
 
 <pre>dotnet run</pre> 
 
 koja će pokrenuti svaki mikroservis.
 
-Dodatno postiji i START.bat fajl koji će ujedno pokrenuti svaki mikroservis kao i angular aplikaciju.
+Dodatno postiji i START.bat fajl koji će odjednom pokrenuti svaki mikroservis kao i angular aplikaciju.
 
 Nakon njihovog pokretanja ne bi bilo lose da se proba da se kontaktira svaki mikroservis preko običnog browsera koji ce biti korišćen za testiranje kako bi odobrili “nesigurnu” konekciju. Mikroservisi su postavljeni da budu https a kako sertifikat nije postavljen od strane reputabilne kompanije browser nas pita da to potvrdimo, svakako testiranje je lokalno tako da je prihvatljivo. Otvoriti browser i otići na sledeće URL adrese i potvrditi https konekciju:
 
