@@ -102,7 +102,7 @@ Koja će pokrenuti komandu ng serve koja pokreće aplikaciju.
 Kada ste pokrenuli aplikaciju potrebno je da kreirate naloge tipa admin kako bi nakon logovanja mogli da pravite nove igre, menjate ih i brišete postojeće.
 Admin nalog se pravi na sledeći način
 
-●	Registrovanjem putem REGISTER opcije a zatim Preko Microsoft SQL Server Management Studija promeniti tipa naloga user u tip naloga admin.
+●	Registrovanjem putem REGISTER opcije a zatim preko Microsoft SQL Server Management Studija promeniti tip naloga user u tip naloga admin.
 
 
 Emailovi se šalju putem SMTP protokola. Tako da se može povezati da radi i sa drugim email nalogom. Ukoliko želite da promenite sa kog maila se šalju poruke, potrebno je postaviti varijable u klasama navedenih foldera:
