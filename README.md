@@ -105,7 +105,7 @@ Admin nalog se pravi na sledeći način
 ●	Registrovanjem putem REGISTER opcije a zatim preko Microsoft SQL Server Management Studija promeniti tip naloga user u tip naloga admin.
 
 
-Emailovi se šalju putem SMTP protokola. Tako da se može povezati da radi i sa drugim email nalogom. Ukoliko želite da promenite sa kog maila se šalju poruke, potrebno je postaviti varijable u klasama navedenih foldera:
+Emailovi se šalju putem SMTP protokola. Tako da se može promeniti da radi i sa drugim email adresama. Ukoliko želite da promenite email adresu sa koje se šalju poruke, potrebno je postaviti varijable u klasama navedenih foldera:
 
 ●	\gameMicroservice\Game\Data\UserEmailSender.cs
 
