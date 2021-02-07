@@ -42,7 +42,7 @@ Putem command prompta ući posebno u svaki od foldera Game, Score i User izvrši
 
 Ona će na osnovu sadržaja Migrations foldera napraviti strukturu baze. 
 
-Kako ne bi bilo potrebe da se ručno unose navedene komande, napravljeni su skript fajl:
+Kako ne bi bilo potrebe da se ručno unose navedene komande, napravljen je skript fajl:
 
 -	databaseUpdate.bat koji će u svakom mikroservisu izvršiti komandu dotnet ef database update 
 
