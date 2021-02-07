@@ -82,12 +82,11 @@ Swagger je aktivan tako da je moguće i da se testiraju API putanje nad mikroser
 
 ### Pokretanje frontend aplikacije - Angular 
 
-pre pokretanja Angular aplikacije preko command promta uci u direktorijuma game-app.View/Angular/game-app
-i izvrsiti 
+Pre pokretanja Angular aplikacije preko command prompta uci u direktorijum View/Angular/game-app i izvrsiti 
 
 <pre>npm install</pre>
 
-Ovo ce povuci node module koji su potrebni za pokretanje aplikacije.
+To ce povuci node module koji su potrebni za pokretanje aplikacije.
 
 Otvoriti još jedan command prompt i ući u folder: \View\Angular\game-app zatim izvršiti komandu 
 
