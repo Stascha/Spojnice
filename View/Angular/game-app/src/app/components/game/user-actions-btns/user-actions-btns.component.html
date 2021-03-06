@@ -1,13 +1,6 @@
 <div id="ifadmin">
     <button (click)="onUserLogout()" id="logoutBtn" type="button" class="btn btn-danger">Logout</button>
-    <!--button 
-        (click)="onCreateNewGameModal()"
-        *ngIf="this.userService.getLoggedinUser().role == 'admin'"
-        id="modalCreateStartBtn"
-        type="button"
-        class="btn btn-warning">
-            Napravi Novu Igru
-    </button-->
+  
 
    <a routerLink="/game-table-view">
         <button
