@@ -1,7 +1,7 @@
 <div class="logincompclass">
 
   <div class="d-flex justify-content-center">
-    <h1 >Login</h1>
+    <h1 >Logovanje - Registracija</h1>
   </div>
 
   <div id="additionalLinksBtn" class="d-flex justify-content-center">
@@ -19,7 +19,7 @@
                     }"
           data-toggle="tab"
           (click)="this.showUserLoginForm = true;"
-          > Login</a>
+          > Logovanje</a>
         </li>
         <li class="nav-item">
           <a 
@@ -28,7 +28,7 @@
                     }"
            data-toggle="tab"
            (click)="this.showUserLoginForm = false;"
-           > Register</a>
+           > Registracija</a>
         </li>
       </ul>
       <div id="myTabContent" class="tab-content">
@@ -40,33 +40,43 @@
               <input type="text" class="form-control" id="username" placeholder="Enter username"
                      ngModel name="usrName" required #usernameInput="ngModel" [(ngModel)]="this.usr">
             </div>
-      
+
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
               <input type="password" class="form-control" id="pwd" placeholder="Password"
                      ngModel name="pwdName" required #pwdInput="ngModel" [(ngModel)]="this.pwd">
             </div>
-      
+
             <div *ngIf="!this.showUserLoginForm" class="form-group">
               <label for="exampleInputEmail2">Email</label>
               <input type="email" class="form-control" id="email" placeholder="Email"
                      ngModel name="emlName" required #emlInput="ngModel" [(ngModel)]="this.eml">
             </div>
-           
+
             <div class="d-flex justify-content-center">
+
               <button *ngIf="this.showUserLoginForm" (click)="onLogin()"
                       id="loginBtn" class="btn btn-dark">
-                Login
+                Uloguj se
               </button>
+
               <button *ngIf="!this.showUserLoginForm" (click)="onRegister()"
                       id="registerBtn" class="btn btn-dark">
-                Register
+                Registruj se
               </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-  </div>
 
-</div>
+
+            </div>
+
+            <!-- <br /> -->
+            <!--  <br /> -->
+
+            <!--  <img src="Link slike koja će se prikazati na login stranici" />  -->
+
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>

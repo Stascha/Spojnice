@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3HwgKa8/PxdgyoYpvSVbPU95O1jSSJxyvzH/wYIRiA5X5NJtZKYOaI9FIOP0kHMv/fl60N2NcRirs8ODHYtKgg==",
+  "dgSpecHash": "onHQOvlMlYQvDwCt3RNgKGeKCREM4k7dZkRFWW4A8NZgZ9SYabzhvoUECvd+rLBwxteR/GwE/oMvHgVXo/Q88Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Korisnik\\Desktop\\Razvoj softvera 2\\Spojnice\\scoreMicroservice\\Score\\Score.csproj",
+  "projectFilePath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\scoreMicroservice\\Score\\Score.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Korisnik\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",

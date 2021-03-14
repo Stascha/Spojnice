@@ -63,12 +63,14 @@ namespace Score.Controllers
             }
             _repository.SaveChanges();
 
+// Sledeci deo koda salje email ako igrac nije vise prvi na tabeli
             ScoreModel firstAfter = _repository.GetCurrentFirstScore();
             if(firstBefore.Username != firstAfter.Username && firstBefore != null && firstAfter != null){
                 UserModel beforeFirstUser = _repository.GetUserByUsername(firstBefore.Username);
                 if(beforeFirstUser != null){
                     if(beforeFirstUser.Notifications == true){
                         new UserEmailSender().SendNoLongerFirstMail(beforeFirstUser, firstAfter.Username);
+//////////////////////////////////////
                     }
                 }
             }

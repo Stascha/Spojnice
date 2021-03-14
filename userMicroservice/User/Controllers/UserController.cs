@@ -92,6 +92,17 @@ namespace User.Controllers
                 _repository.SaveChanges();
                 var usrReadDto = _mapper.Map<UserReadDto>(usrModel);
                 new UserEmailSender().SendWelcomeMail(userModel);
+             /*   try
+                {
+                    new UserEmailSender().SendWelcomeMail(userModel);
+                }
+                catch(Exception e)
+                {
+                    System.Diagnostics.Debug.WriteLine(e);
+                }
+                */
+
+               
                 return Ok(usrReadDto); 
             }
             return Ok("USER_EXISTS");

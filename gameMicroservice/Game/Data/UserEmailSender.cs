@@ -26,16 +26,23 @@ namespace User.Data
             this.smtpURL = "mail.cock.li";
             this.smtpPort = 587;
             this.smtpEnableSSL = true; 
-        }
+        } 
+     /* {
+            this.myEmail = "couplings.newyork@gmail.com";
+            this.myEmailPassword = "NewYork40$$";
+            this.smtpURL = "smtp.gmail.com";
+            this.smtpPort = 465;
+            this.smtpEnableSSL = true;   
+        } */
 
-        /** ### Description
-        * SendNotificationNewGameCreatedMail is going to send emails to the provided list of users. Email will contain the new created game name as well as additional options to disable or enable future notifications.
-        * ### Arguments
-        * IEnumerable<UserModel> accounts - list of UserModels, list of users to who to send emails to. </br>
-        * string gameName - game name that represents the name of the game that is created. </br>
-        * ### Return value
-        * None. */
-        public void SendNotificationNewGameCreatedMail(IEnumerable<UserModel> accounts, string gameName){
+    /** ### Description
+    * SendNotificationNewGameCreatedMail is going to send emails to the provided list of users. Email will contain the new created game name as well as additional options to disable or enable future notifications.
+    * ### Arguments
+    * IEnumerable<UserModel> accounts - list of UserModels, list of users to who to send emails to. </br>
+    * string gameName - game name that represents the name of the game that is created. </br>
+    * ### Return value
+    * None. */
+    public void SendNotificationNewGameCreatedMail(IEnumerable<UserModel> accounts, string gameName){
             SmtpClient SmtpServer = new SmtpClient(this.smtpURL);
             SmtpServer.Port = this.smtpPort;
             SmtpServer.Credentials = new System.Net.NetworkCredential( this.myEmail, this.myEmailPassword);

@@ -13,6 +13,10 @@ export interface User {
     email      : string;
     /** User role represents user role in our User table in the database */
     role       : string;
+    /** User notification token represents the token for our GET request*/
+    notificationsToken : string;
+    /** Boolean value that tells us if the user wants to receive email notifications.*/
+    notificationsActive:boolean;
     
 } 
 
@@ -32,8 +36,9 @@ export class UserService {
         id         : -1,       
         username   : "",
         email      : "",
-        role       : ""
-       
+        role       : "",
+        notificationsToken: "",
+        notificationsActive:false,
     };
     /**
      * constructor
@@ -72,6 +77,7 @@ export class UserService {
             email   : eml,
             role    : role
         }
+        console.log(userObj)
         return this.httpClient.post(`${this.apiURL}/create`, userObj)
     }
     /**
@@ -83,7 +89,9 @@ export class UserService {
             id         : -1,       
             username   : "",
             email      : "",
-            role       : ""
+            role       : "",
+            notificationsToken: "",
+            notificationsActive:false,
            
         };
         this.gameService.gameActive = false;
@@ -103,4 +111,12 @@ export class UserService {
         this.activeUser = dataUser; // postavlja aktivnog user-a
     }
 
+    /**
+     * Function to contact our microservice and to change the notification state for the loggedin user
+     */
+
+    public changeEmailNotifications() : Observable <any>  {
+        return this.httpClient
+        .get(`https://localhost:5101/api/users/notification/change/${this.activeUser.notificationsToken}/${this.activeUser.notificationsActive}`);
+    }
 }

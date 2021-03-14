@@ -11,6 +11,9 @@ namespace User.Dtos
         public string Email { get; set; }
         /// Represents the role.
         public string Role { get; set; }
-       
+        // Represents the notification token
+        public string NotificationToken { get; set; }
+        /// Boolean value that tells us if the user wants to receive email notifications.
+        public bool Notifications { get; set; }
     }
 }

@@ -27,16 +27,23 @@ namespace User.Data
             this.smtpPort = 587;
             this.smtpEnableSSL = true;   
         }
-         /** ### Description
-        * SendNoLongerFirstMail - Is going to send an email to an object user provided.
-        * Email will contain notificationn message that some other user has overtaken the lead in the Score table.
-        * Within the email options will be provided to enable/disable future subscription.
-        * ### Arguments
-        * UserModel account- user object model to who to send an email</br>
-        * string currentFirst - contains the username of the user who is at the first position now.
-        * ### Return value
-        * None. */
-        public void SendNoLongerFirstMail(UserModel account, string currentFirst){
+      /*{
+            this.myEmail = "couplings.newyork@gmail.com";
+            this.myEmailPassword = "NewYork40$$";
+            this.smtpURL = "smtp.gmail.com";
+            this.smtpPort = 465;
+            this.smtpEnableSSL = true;   
+        } */
+    /** ### Description
+   * SendNoLongerFirstMail - Is going to send an email to an object user provided.
+   * Email will contain notificationn message that some other user has overtaken the lead in the Score table.
+   * Within the email options will be provided to enable/disable future subscription.
+   * ### Arguments
+   * UserModel account- user object model to who to send an email</br>
+   * string currentFirst - contains the username of the user who is at the first position now.
+   * ### Return value
+   * None. */
+    public void SendNoLongerFirstMail(UserModel account, string currentFirst){
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient(this.smtpURL);
 

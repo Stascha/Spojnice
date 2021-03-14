@@ -5621,11 +5621,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Razvoj softvera 2\\Spojnice\\gameMicroservice\\Game\\Game.csproj",
+      "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\gameMicroservice\\Game\\Game.csproj",
       "projectName": "Game",
-      "projectPath": "C:\\Users\\Korisnik\\Desktop\\Razvoj softvera 2\\Spojnice\\gameMicroservice\\Game\\Game.csproj",
+      "projectPath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\gameMicroservice\\Game\\Game.csproj",
       "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Korisnik\\Desktop\\Razvoj softvera 2\\Spojnice\\gameMicroservice\\Game\\obj\\",
+      "outputPath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\gameMicroservice\\Game\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",

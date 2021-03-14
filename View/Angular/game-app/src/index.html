@@ -62,6 +62,27 @@
       updateGameModal.hide();
     }
   }
+
+/////////////////////////// settings
+let settingsModal = undefined;
+/**
+* function that will initialize modal reference when called
+* @param textToShow is string
+*/
+function initializeSettingsModalVar(){
+  settingsModal = new bootstrap.Modal(document.getElementById("settingsModal"), {});
+}
+/**
+* function that will show the modal to the end user
+* @param bool_value is boolean
+*/
+function settingsModalShow(bool_value){
+  if(bool_value){
+    settingsModal.show();
+  } else {
+    settingsModal.hide();
+  }    
+}
   </script>
 </body>
 </html>

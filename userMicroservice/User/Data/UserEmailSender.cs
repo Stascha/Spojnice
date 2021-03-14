@@ -1,6 +1,7 @@
 
 using User.Models;
 using System.Net.Mail;
+using System;
 
 namespace User.Data
 {
@@ -26,14 +27,22 @@ namespace User.Data
             this.smtpURL = "mail.cock.li";
             this.smtpPort = 587;
             this.smtpEnableSSL = true;   
-        }
-        /** ### Description
-        * SendWelcomeMail - is going to send an welcome email to the email extracted from user object. Email will contain links to enable and disable notifications in future.
-        * ### Arguments
-        * UserModel account - usr object to send an email to </br>
-        * ### Return value
-        * None. */
-        public void SendWelcomeMail(UserModel account){
+        } 
+     /* {
+            this.myEmail = "couplings.newyork@gmail.com";
+            this.myEmailPassword = "NewYork40$$";
+            this.smtpURL = "smtp.gmail.com";
+            this.smtpPort = 465;
+            this.smtpEnableSSL = true;   
+        } */
+
+    /** ### Description
+    * SendWelcomeMail - is going to send an welcome email to the email extracted from user object. Email will contain links to enable and disable notifications in future.
+    * ### Arguments
+    * UserModel account - usr object to send an email to </br>
+    * ### Return value
+    * None. */
+    public void SendWelcomeMail(UserModel account){
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient(this.smtpURL);
 
@@ -54,7 +63,7 @@ namespace User.Data
             SmtpServer.EnableSsl = this.smtpEnableSSL;
 
             SmtpServer.Send(mail);
-
+           
         }
         
     }

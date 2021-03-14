@@ -78,7 +78,10 @@ export class LoginComponent implements OnInit {
         else {
             this.userService.createNewUser(this.usr, this.pwd, this.eml, "user").subscribe(
                 (data) => { this.onApiLoginOrRegisterActionResult(data) },
-                (err) => { this.onApiLoginOrRegisterActionResult("korisnicko ime je zauzeto!") }
+                (err) => {
+                    this.onApiLoginOrRegisterActionResult("korisnicko ime je zauzeto!")
+                    //console.log(err)
+                }
             );
         
         }
@@ -98,6 +101,8 @@ export class LoginComponent implements OnInit {
         username   : res.username,    
         email      : res.email,
         role       : res.role,
+        notificationsToken: res.notificationToken,
+        notificationsActive:res.notifications,
       });
 
     //radimo reddirect na game komponentu this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>

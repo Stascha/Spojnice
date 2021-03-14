@@ -36,3 +36,11 @@ a{
     opacity: 1;
     color:black;
 }
+.btn-secondary{background-color: black;}
+.settings-icon{
+    cursor: pointer;
+    margin-left: 35px;
+    margin-top: 20px;
+    display: block;
+    width: 180px;
+}
