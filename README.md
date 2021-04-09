@@ -4,7 +4,7 @@ Cilj igre Spojnice je spojiti nazive iz leve tabele sa odgovarajućim nazivima i
 Igra traje 60 sekundi. Igrač ima deset pokušaja da spoji odgovarajuće nazive.
 Za svaki uspešno spojeni par igrač dobija poen.
 
-Pokretanje aplikacije igra Spojnice
+Pokretanje aplikacije Spojnice
 Aplikacija ima sledeće foldere: gameMicroservice, scoreMicroservice, userMicroservice i View
 
 Za mikroservise potrebno je imati instalirano sledeće na računaru:
@@ -48,7 +48,7 @@ Sada nakon njihovog pokretanja ne bi bilo lose da se proba da se kontaktira svak
 
 Swagger je aktivan tako da je moguće i da se testiraju API putanje nad mikroservisima bez potrebe za klijentskom aplikacijom.
 
- Pokretanje frontend aplikacije - Angular 
+Pokretanje frontend aplikacije - Angular 
 Otvoriti još jedan command prompt i ući u folder: \View\Angular\game-app zatim uraditi ng run
 Pored ng run komande isto je moguće uraditi i sam build i nakon toga može aplikacija sama preko generisanih html, css i js fajlova da se pokrene bez potrebe za pokretanjem angular “servera”.
 
@@ -56,15 +56,7 @@ Ukoliko je angular pokrenut preko ng serve komande onda će angular klijentska a
  
  Dodatno upustvo
 
-Ako ste ispratili navedena upustva verovatno je da nemate kreiran ni jedan nalog. Potrebno je ručno da se napravi nalog tipa admin kako bi nakon logovanja mogli da pravite nove igre.  Admin nalog se pravi na jedan od sledećih načina:
-●	Ručnim unosom u bazu, npr. Preko microsoft sql server management studija
-●	Registrovanjem putem REGISTER opcije preko angulara, zatim ručnom zamenom user
-u admin kao tip naloga
-●	Putem REST API zahteva. Ovo može da se uradi na jedan od sledećih načina:
-○	pisanjem neke skripte koja to radi
-○	putem aplikacija poput postman-a
-○	ili čak putem swagger-a koji je aktiviran na svakom mikroservisu.
-■	https://localhost:5101/swagger/index.html - adresa ka User mikroservisu sa swagger servisom, ovde samo ići na /create POST metod i uneti parametre za username, password, email i role-u. Role parametar staviti kao admin kako bi aplikacija prepoznala i dala privelegije da imate mogućnost da pravite nove igre, da ih menjate i brišete putem interfejsa.
+Ako ste ispratili navedena upustva verovatno je da nemate kreiran ni jedan nalog. Potrebno je da se napravi nalog tipa admin kako bi nakon logovanja mogli da pravite nove igre. Admin nalog može da se napravi preko microsoft sql server management studija
 
 
 Slanje emailova je uvezano putem SMTP protokola. Tako da možete povezati da radi i sa drugim mail nalogom. Ukoliko želite da promenite sa kog maila se šalju poruke, potrebno je postaviti varijable u klasama navedenih foldera:
@@ -72,3 +64,9 @@ Slanje emailova je uvezano putem SMTP protokola. Tako da možete povezati da rad
 ●	\gameMicroservice\Game\Data\UserEmailSender.cs
 ●	\scoreMicroservice\Score\Data\UserEmailSender.cs
 ●	\userMicroservice\User\Data\UserEmailSender.cs
+
+Postupak slanja emailova preuzet sa linka
+https://docs.microsoft.com/en-us/dotnet/api/system.net.mail?view=net-5.0 
+
+postupak kriptovanja passworda preuzet sa linka
+https://github.com/BcryptNet/bcrypt.net
