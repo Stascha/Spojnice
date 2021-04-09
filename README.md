@@ -8,10 +8,10 @@ Pokretanje aplikacije Spojnice
 
 Aplikacija ima sledeće foldere: gameMicroservice, scoreMicroservice, userMicroservice i View
 
-Za mikroservise potrebno je imati instalirano sledeće na računaru:
-●	https://www.microsoft.com/en-us/sql-server/sql-server-downloads
-●	https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-stu dio-ssms?view=sql-server-ver15
-●	https://dotnet.microsoft.com/download/dotnet/5.0
+Za mikroservise potrebno je imati instalirano sledeće na računaru:\
+●	https://www.microsoft.com/en-us/sql-server/sql-server-downloads \
+●	https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-stu dio-ssms?view=sql-server-ver15 \
+●	https://dotnet.microsoft.com/download/dotnet/5.0 \
 
 
 Pokrenuti SQL Server 
