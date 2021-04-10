@@ -44,7 +44,7 @@ sva 3 command prompta treba se pozicionirati u gore pomenutim direktorijumima i 
 
 Dodatno postiji i START.bat fajl koji će ujedno pokrenuti svaki mikroservis kao i angular aplikaciju.
 
-Sada nakon njihovog pokretanja ne bi bilo lose da se proba da se kontaktira svaki preko običnog browsera koji ce biti korišćen za testiranje kako bi odobrili “nesigurnu” konekciju. Mikroservisi su postavljeni da budu https a kako sertifikat nije postavljen od strane reputabilne kompanije browser nas pita da to potvrdimo, svakako testiranje je lokalno tako da je prihvatljivo. <br /> Otvoriti browser i otići na sledeće URL adrese i potvrditi https konekciju:
+Nakon njihovog pokretanja može da se kontaktira svaki preko običnog browsera koji će biti korišćen za testiranje kako bi odobrili “nesigurnu” konekciju. Mikroservisi su postavljeni da budu https a kako sertifikat nije postavljen od strane reputabilne kompanije browser nas pita da to potvrdimo, svakako testiranje je lokalno tako da je prihvatljivo. <br /> Otvoriti browser i otići na sledeće URL adrese i potvrditi https konekciju:
 
 ●	https://localhost:5101/swagger/index.html - User mikroservis <br />
 ●	https://localhost:5201/swagger/index.html - Score mikroservis <br />
