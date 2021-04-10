@@ -8,7 +8,8 @@ Igrač ima deset pokušaja da spoji odgovarajuće nazive.<br />
 Za svaki uspešno spojeni par igrač dobija poen.<br />
 
 <br /> 
-## Pokretanje aplikacije <br />
+## Pokretanje aplikacije 
+<br />
 
 Aplikacija ima sledeće foldere: gameMicroservice, scoreMicroservice, userMicroservice i View
 
@@ -70,7 +71,8 @@ Slanje emailova je uvezano putem SMTP protokola. Tako da možete povezati da rad
 ●	\userMicroservice\User\Data\UserEmailSender.cs <br />
 
 <br />
-## Korišćeni resursi <br /> <br />
+## Korišćeni resursi 
+<br /> <br />
 Slanja emailova <br />
 https://docs.microsoft.com/en-us/dotnet/api/system.net.mail?view=net-5.0  
 <br /> <br />
