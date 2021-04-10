@@ -40,7 +40,7 @@ Otvoriti Command Promt i zatim preko command promta ići do foldera koji sadrži
  
  
 Treba otvoriti 3 command prompta preko njih ući u svaki od gore navedenih foldera. Zatim u
-sva 3 command prompta treba se pozicionirati u gore pomenutim direktorijuma i uraditi `dotnet run` koja će pokrenuti svaki mikroservis.
+sva 3 command prompta treba se pozicionirati u gore pomenutim direktorijumima i uraditi<br /> `dotnet run` <br /> koja će pokrenuti svaki mikroservis.
 
 Dodatno postiji i START.bat fajl koji će ujedno pokrenuti svaki mikroservis kao i angular aplikaciju.
 
