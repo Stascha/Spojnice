@@ -37,7 +37,9 @@ Otvoriti Command Promt i zatim preko command promta ići do foldera koji sadrži
 ●	\scoreMicroservice\Score <br />
 ●	\userMicroservice\User
  
-Tako da otvoriti 3 command prompta preko njih ući u svaki folder od gore navedenih. Zatim u sva 3 command prompta kada se nadjemo u gore pomenutim direktorijuma radimo dotnet run koja će pokrenuti svaki mikroservis.
+ 
+Treba otvoriti 3 command prompta preko njih ući u svaki od gore navedenih foldera. Zatim u
+sva 3 command prompta treba se pozicionirati u gore pomenutim direktorijuma i uraditi `dotnet run` koja će pokrenuti svaki mikroservis.
 
 Dodatno postiji i START.bat fajl koji će ujedno pokrenuti svaki mikroservis kao i angular aplikaciju.
 
@@ -53,10 +55,10 @@ Pokretanje frontend aplikacije - Angular
 Otvoriti još jedan command prompt i ući u folder: \View\Angular\game-app zatim uraditi `ng run`
 Pored ng run komande isto je moguće uraditi i sam build i nakon toga može aplikacija sama preko generisanih html, css i js fajlova da se pokrene bez potrebe za pokretanjem angular “servera”.
 
-Ukoliko je angular pokrenut preko ng serve komande onda će angular klijentska aplikacija biti dostupna na `localhost:4200 adresi`
+Ukoliko je angular pokrenut preko ng serve komande onda će angular klijentska aplikacija biti dostupna na adresi `localhost:4200`
  <br />
  <br />
-### Dodatno upustvo
+## Dodatno upustvo
 
 Ako ste ispratili navedena upustva verovatno je da nemate kreiran ni jedan nalog. Potrebno je da se napravi nalog tipa admin kako bi nakon logovanja mogli da pravite nove igre. Admin nalog može da se napravi preko microsoft sql server management studija
 
