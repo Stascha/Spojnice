@@ -52,8 +52,8 @@ Otvoriti još jedan command prompt i ući u folder: \View\Angular\game-app zatim
 Pored ng run komande isto je moguće uraditi i sam build i nakon toga može aplikacija sama preko generisanih html, css i js fajlova da se pokrene bez potrebe za pokretanjem angular “servera”.
 
 Ukoliko je angular pokrenut preko ng serve komande onda će angular klijentska aplikacija biti dostupna na localhost:4200 adresi.
- 
- Dodatno upustvo
+ <br />
+Dodatno upustvo
 
 Ako ste ispratili navedena upustva verovatno je da nemate kreiran ni jedan nalog. Potrebno je da se napravi nalog tipa admin kako bi nakon logovanja mogli da pravite nove igre. Admin nalog može da se napravi preko microsoft sql server management studija
 
@@ -67,5 +67,5 @@ Slanje emailova je uvezano putem SMTP protokola. Tako da možete povezati da rad
 Postupak slanja emailova preuzet sa linka
 https://docs.microsoft.com/en-us/dotnet/api/system.net.mail?view=net-5.0 
 
-postupak kriptovanja passworda preuzet sa linka
+Postupak kriptovanja passworda preuzet sa linka
 https://github.com/BcryptNet/bcrypt.net
