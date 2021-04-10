@@ -1,7 +1,7 @@
 # Spojnice
 
 <br />
-## Opis igre
+## Opis igre <br />
 Cilj igre Spojnice je spojiti nazive iz leve tabele sa odgovarajućim nazivima iz desne tabele.<br />
 Igra traje 60 sekundi. <br /> 
 Igrač ima deset pokušaja da spoji odgovarajuće nazive.<br />
