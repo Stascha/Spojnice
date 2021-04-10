@@ -75,6 +75,6 @@ Slanje emailova je uvezano putem SMTP protokola. Tako da možete povezati da rad
 <br /> 
 Slanja emailova <br />
 https://docs.microsoft.com/en-us/dotnet/api/system.net.mail?view=net-5.0  
-<br /> 
+<br /> <br />
 Kriptovanja passworda <br />
 https://github.com/BcryptNet/bcrypt.net
