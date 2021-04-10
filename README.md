@@ -27,7 +27,7 @@ https://social.msdn.microsoft.com/Forums/sqlserver/en-US/ba6b1757-301c-4545-98e4
 Ući u svaki od foldera Game, Score i User i pojedinačno putem command prompta izvršiti komandu dotnet ef database update ona će pokupiti sta se nalazi u Migrations folderu i napraviti strukturu baze. <br /> Ako nemate instaliran dotnet-ef, koristeći komandu : dotnet tool install --global dotnet-ef instalirajte ga.
 
 Kako ne bi bilo potrebe ručno da se unose komande, napravljen je skriptni fajl <br />
-databaseUpdate.bat <br /> koji će izvršiti dotnet ef database update komandu u svakom mikroservisu.
+- databaseUpdate.bat <br /> koji će izvršiti dotnet ef database update komandu u svakom mikroservisu.
 
 Mikroservisi se pokreću svaki od njih nezavisno od drugog. <br /> 
 Otvoriti Command Promt i zatim preko command promta ići do foldera koji sadrži Program.cs fajl koji je i startni fajl svakog mikroservisa. <br />
