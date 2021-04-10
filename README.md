@@ -52,7 +52,7 @@ Sada nakon njihovog pokretanja ne bi bilo lose da se proba da se kontaktira svak
 Swagger je aktivan tako da je moguće i da se testiraju API putanje nad mikroservisima bez potrebe za klijentskom aplikacijom.
 
 Pokretanje frontend aplikacije - Angular 
-Otvoriti još jedan command prompt i ući u folder: \View\Angular\game-app zatim uraditi `ng run`
+Otvoriti još jedan command prompt i ući u folder \View\Angular\game-app zatim uraditi `ng run`
 Pored ng run komande isto je moguće uraditi i sam build i nakon toga može aplikacija sama preko generisanih html, css i js fajlova da se pokrene bez potrebe za pokretanjem angular “servera”.
 
 Ukoliko je angular pokrenut preko ng serve komande onda će angular klijentska aplikacija biti dostupna na adresi `localhost:4200`
@@ -70,7 +70,7 @@ Slanje emailova je uvezano putem SMTP protokola. Tako da možete povezati da rad
 ●	\userMicroservice\User\Data\UserEmailSender.cs <br />
 
 <br />
-Korišćeni resursi <br /> <br />
+## Korišćeni resursi <br /> <br />
 Slanja emailova <br />
 https://docs.microsoft.com/en-us/dotnet/api/system.net.mail?view=net-5.0  
 <br /> <br />
