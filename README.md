@@ -17,10 +17,10 @@ Za mikroservise potrebno je imati instalirano sledeće na računaru:\
 
 
 Pokrenuti SQL Server 
-U svakom od mikroservisa zameniti string za konekciju - DatabaseConnection:
-●	\gameMicroservice\Game\appsettings.json
-●	\scoreMicroservice\Score\appsettings.json
-●	\userMicroservice\User\appsettings.json
+U svakom od mikroservisa zameniti string za konekciju - DatabaseConnection: <br />
+●	\gameMicroservice\Game\appsettings.json <br />
+●	\scoreMicroservice\Score\appsettings.json <br />
+●	\userMicroservice\User\appsettings.json <br />
 Najednostavniji način da se dodje do “connection string-a” jeste putem visual studija, pratite sledeća upustva:
 https://social.msdn.microsoft.com/Forums/sqlserver/en-US/ba6b1757-301c-4545-98e4-69a81b3
 3e876/find-connection-string-used-by-sql-server-management-studio
