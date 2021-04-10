@@ -7,7 +7,7 @@ Igra traje 60 sekundi. <br />
 Igrač ima deset pokušaja da spoji odgovarajuće nazive.<br />
 Za svaki uspešno spojeni par igrač dobija poen.<br />
 
-<br /> 
+<br /> <br /> 
 ## Pokretanje aplikacije 
 <br />
 
@@ -70,7 +70,7 @@ Slanje emailova je uvezano putem SMTP protokola. Tako da možete povezati da rad
 ●	\scoreMicroservice\Score\Data\UserEmailSender.cs <br />
 ●	\userMicroservice\User\Data\UserEmailSender.cs <br />
 
-<br />
+<br /> <br />
 ## Korišćeni resursi 
 <br /> <br />
 Slanja emailova <br />
