@@ -61,7 +61,7 @@ Ukoliko je angular pokrenut preko ng serve komande onda će angular klijentska a
  <br />
 ## Dodatno upustvo
 
-Ako ste ispratili navedena upustva verovatno je da nemate kreiran ni jedan nalog. Potrebno je da se napravi nalog tipa admin kako bi nakon logovanja mogli da pravite nove igre. Admin nalog može da se napravi preko microsoft sql server management studija.
+Kada uradite navedena upustva verovatno je da nemate kreiran ni jedan nalog. <br />Potrebno je da se napravi nalog tipa admin kako bi nakon logovanja mogli da pravite nove igre. <br />Admin nalog može da se napravi preko microsoft sql server management studija.
 
 
 Slanje emailova je uvezano putem SMTP protokola. Tako da možete povezati da radi i sa drugim mail nalogom. Ukoliko želite da promenite sa kog maila se šalju poruke, potrebno je postaviti varijable u klasama navedenih foldera: <br />
