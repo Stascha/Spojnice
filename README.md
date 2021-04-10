@@ -65,7 +65,8 @@ Slanje emailova je uvezano putem SMTP protokola. Tako da možete povezati da rad
 ●	\scoreMicroservice\Score\Data\UserEmailSender.cs <br />
 ●	\userMicroservice\User\Data\UserEmailSender.cs <br />
 
-Korišćeni resursi <br /> 
+<br />
+Korišćeni resursi <br /> <br />
 Postupak slanja emailova preuzet sa linka <br />
 https://docs.microsoft.com/en-us/dotnet/api/system.net.mail?view=net-5.0 
 
