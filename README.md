@@ -53,6 +53,7 @@ Pored ng run komande isto je moguće uraditi i sam build i nakon toga može apli
 
 Ukoliko je angular pokrenut preko ng serve komande onda će angular klijentska aplikacija biti dostupna na localhost:4200 adresi.
  <br />
+ <br />
 Dodatno upustvo
 
 Ako ste ispratili navedena upustva verovatno je da nemate kreiran ni jedan nalog. Potrebno je da se napravi nalog tipa admin kako bi nakon logovanja mogli da pravite nove igre. Admin nalog može da se napravi preko microsoft sql server management studija
