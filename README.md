@@ -1,12 +1,12 @@
 # Spojnice
 
 <br />
-Cilj igre Spojnice je spojiti nazive iz leve tabele sa odgovarajućim nazivima iz desne tabele.\
+Cilj igre Spojnice je spojiti nazive iz leve tabele sa odgovarajućim nazivima iz desne tabele.<br />
 Igra traje 60 sekundi. <br /> 
-Igrač ima deset pokušaja da spoji odgovarajuće nazive.\
-Za svaki uspešno spojeni par igrač dobija poen.
+Igrač ima deset pokušaja da spoji odgovarajuće nazive.<br />
+Za svaki uspešno spojeni par igrač dobija poen.<br />
 
-<br /> <br />
+<br />
 Pokretanje aplikacije Spojnice
 
 Aplikacija ima sledeće foldere: gameMicroservice, scoreMicroservice, userMicroservice i View
