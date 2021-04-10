@@ -1,11 +1,12 @@
 # Spojnice
 
+<br />
 Cilj igre Spojnice je spojiti nazive iz leve tabele sa odgovarajućim nazivima iz desne tabele.\
 Igra traje 60 sekundi. <br /> 
 Igrač ima deset pokušaja da spoji odgovarajuće nazive.\
 Za svaki uspešno spojeni par igrač dobija poen.
 
-
+<br />
 Pokretanje aplikacije Spojnice
 
 Aplikacija ima sledeće foldere: gameMicroservice, scoreMicroservice, userMicroservice i View
@@ -17,7 +18,7 @@ Za mikroservise potrebno je imati instalirano sledeće na računaru: <br />
 
 
 Pokrenuti SQL Server 
-U svakom od mikroservisa zameniti string za konekciju - DatabaseConnection: <br />
+U svakom od mikroservisa zameniti string za konekciju - DatabaseConnection <br />
 ●	\gameMicroservice\Game\appsettings.json <br />
 ●	\scoreMicroservice\Score\appsettings.json <br />
 ●	\userMicroservice\User\appsettings.json <br /> <br />
