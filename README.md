@@ -17,7 +17,7 @@ Za mikroservise potrebno je imati instalirano sledeće na računaru: <br />
 
 
 Pokrenuti SQL Server 
-U svakom od mikroservisa zameniti string za konekciju - DatabaseConnection:
+U svakom od mikroservisa zameniti string za konekciju - DatabaseConnection: <br />
 ●	\gameMicroservice\Game\appsettings.json <br />
 ●	\scoreMicroservice\Score\appsettings.json <br />
 ●	\userMicroservice\User\appsettings.json <br />
