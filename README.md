@@ -64,7 +64,7 @@ Ukoliko je angular pokrenut preko ng serve komande onda će angular klijentska a
 Kada uradite navedena uputstva verovatno je da nemate kreiran ni jedan nalog. <br />Potrebno je da se napravi nalog tipa admin kako bi nakon logovanja mogli da pravite nove igre. <br />Admin nalog može da se napravi preko Microsoft SQL Server Management Studija.
 
 
-Slanje emailova je uvezano putem SMTP protokola. Tako da možete povezati da radi i sa drugim mail nalogom. Ukoliko želite da promenite sa kog maila se šalju poruke, potrebno je postaviti varijable u klasama navedenih foldera: <br />
+Slanje emailova je uvezano putem SMTP protokola. Tako da možete povezati da radi i sa drugim mail nalozima. Ukoliko želite da promenite sa kog maila se šalju poruke, potrebno je postaviti varijable u klasama navedenih foldera: <br />
 
 ●	\gameMicroservice\Game\Data\UserEmailSender.cs <br />
 ●	\scoreMicroservice\Score\Data\UserEmailSender.cs <br />
