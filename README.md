@@ -17,7 +17,7 @@ Za mikroservise potrebno je imati instalirano sledeće na računaru: <br />
 
 
 Pokrenuti SQL Server 
-U svakom od mikroservisa zameniti string za konekciju - DatabaseConnection: <br />
+U svakom od mikroservisa zameniti string za konekciju - DatabaseConnection:
 ●	\gameMicroservice\Game\appsettings.json <br />
 ●	\scoreMicroservice\Score\appsettings.json <br />
 ●	\userMicroservice\User\appsettings.json <br />
@@ -41,10 +41,10 @@ Tako da otvoriti 3 command prompta preko njih ući u svaki folder od gore navede
 
 Dodatno postiji i START.bat fajl koji će ujedno pokrenuti svaki mikroservis kao i angular aplikaciju.
 
-Sada nakon njihovog pokretanja ne bi bilo lose da se proba da se kontaktira svaki preko običnog browsera koji ce biti korišćen za testiranje kako bi odobrili “nesigurnu” konekciju. Mikroservisi su postavljeni da budu https a kako sertifikat nije postavljen od strane reputabilne kompanije browser nas pita da to potvrdimo, svakako testiranje je lokalno tako da je prihvatljivo. Otvoriti browser i otići na sledeće URL adrese i potvrditi https konekciju:
+Sada nakon njihovog pokretanja ne bi bilo lose da se proba da se kontaktira svaki preko običnog browsera koji ce biti korišćen za testiranje kako bi odobrili “nesigurnu” konekciju. Mikroservisi su postavljeni da budu https a kako sertifikat nije postavljen od strane reputabilne kompanije browser nas pita da to potvrdimo, svakako testiranje je lokalno tako da je prihvatljivo. <br /> Otvoriti browser i otići na sledeće URL adrese i potvrditi https konekciju:
 
-●	https://localhost:5101/swagger/index.html - User mikroservis
-●	https://localhost:5201/swagger/index.html - Score mikroservis
+●	https://localhost:5101/swagger/index.html - User mikroservis <br />
+●	https://localhost:5201/swagger/index.html - Score mikroservis <br />
 ●	https://localhost:5301/swagger/index.html - Game mikroservis
 
 Swagger je aktivan tako da je moguće i da se testiraju API putanje nad mikroservisima bez potrebe za klijentskom aplikacijom.
