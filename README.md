@@ -22,8 +22,7 @@ U svakom od mikroservisa zameniti string za konekciju - DatabaseConnection: <br 
 ●	\scoreMicroservice\Score\appsettings.json <br />
 ●	\userMicroservice\User\appsettings.json <br />
 Najednostavniji način da se dodje do “connection string-a” jeste putem visual studija, pratite sledeća upustva:
-https://social.msdn.microsoft.com/Forums/sqlserver/en-US/ba6b1757-301c-4545-98e4-69a81b3
-3e876/find-connection-string-used-by-sql-server-management-studio
+https://social.msdn.microsoft.com/Forums/sqlserver/en-US/ba6b1757-301c-4545-98e4-69a81b33e876/find-connection-string-used-by-sql-server-management-studio
 
 Ući u svaki od foldera Game, Score i User i pojedinačno putem command prompta izvršiti komandu dotnet ef database update ona će pokupiti sta se nalazi u Migrations folderu i napraviti strukturu baze. Ukoliko Migration folder ne postoji ili je prazan ili pri promenom modela baze izvrišiti komandu pre update : dotnet ef migrations add {nazivMigracije}. Ako nemate instaliran dotnet-ef, koristeći komandu : dotnet tool install --global dotnet-ef instalirajte ga.
 
