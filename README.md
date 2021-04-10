@@ -52,7 +52,7 @@ Nakon njihovog pokretanja može da se kontaktira svaki preko običnog browsera k
 
 Swagger je aktivan tako da je moguće i da se testiraju API putanje nad mikroservisima bez potrebe za klijentskom aplikacijom.
 
-Pokretanje frontend aplikacije - Angular 
+Pokretanje frontend aplikacije - Angular <br />
 Otvoriti još jedan command prompt i ući u folder \View\Angular\game-app zatim uraditi <br />`ng run`<br />
 Pored ng run komande isto je moguće uraditi i sam build i nakon toga može aplikacija sama preko generisanih html, css i js fajlova da se pokrene bez potrebe za pokretanjem angular “servera”.
 
