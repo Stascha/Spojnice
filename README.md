@@ -29,11 +29,12 @@ Ući u svaki od foldera Game, Score i User i pojedinačno putem command prompta 
 Kako ne bi bilo potrebe ručno da se unose komande, napravljen je skriptni fajl
 -	databaseUpdate.bat koji će izvršiti dotnet ef database update komandu u svakom mikroservisu.
 
-Mikroservisi se pokreću svaki od njih nezavisno od drugog. Otvoriti Command Promt i zatim
-preko command promta ići do foldera koji sadrži Program.cs fajl koji je i startni fajl svakog mikroservisa.
+Mikroservisi se pokreću svaki od njih nezavisno od drugog. <br /> 
+Otvoriti Command Promt i zatim
+preko command promta ići do foldera koji sadrži Program.cs fajl koji je i startni fajl svakog mikroservisa. <br />
 
-●	\gameMicroservice\Game
-●	\scoreMicroservice\Score
+●	\gameMicroservice\Game <br />
+●	\scoreMicroservice\Score <br />
 ●	\userMicroservice\User
  
 Tako da otvoriti 3 command prompta preko njih ući u svaki folder od gore navedenih. Zatim u sva 3 command prompta kada se nadjemo u gore pomenutim direktorijuma radimo dotnet run koja će pokrenuti svaki mikroservis.
