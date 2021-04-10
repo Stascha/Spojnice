@@ -30,9 +30,7 @@ Kako ne bi bilo potrebe ručno da se unose komande, napravljen je skriptni fajl
 -	databaseUpdate.bat koji će izvršiti dotnet ef database update komandu u svakom mikroservisu.
 
 Mikroservisi se pokreću svaki od njih nezavisno od drugog. <br /> 
-Otvoriti Command Promt i zatim
-preko command promta ići do foldera koji sadrži Program.cs fajl koji je i startni fajl svakog mikroservisa. <br />
-
+Otvoriti Command Promt i zatim preko command promta ići do foldera koji sadrži Program.cs fajl koji je i startni fajl svakog mikroservisa. <br />
 ●	\gameMicroservice\Game <br />
 ●	\scoreMicroservice\Score <br />
 ●	\userMicroservice\User
