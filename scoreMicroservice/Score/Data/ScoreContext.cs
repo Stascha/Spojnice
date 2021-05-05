@@ -4,18 +4,18 @@ using User.Models;
 
 namespace Score.Data
 {
-    /// DataBase Context Class : SlagalicaDB
+    /// DataBase Context Klasa : SlagalicaDB
     public class ScoreContext : DbContext
     {
-        /// Constructor of DataBase Context Class
+        /// Konstruktor ScoreContext Klase
         public ScoreContext(DbContextOptions<ScoreContext> opt) : base(opt)
         {
             
         }
-        /// DbSet of Score
+        /// DbSet Skoreva
         public DbSet<ScoreModel> Score { get; set; }
 
-        /// DbSet of Users
+        /// DbSet Igraca
         public DbSet<UserModel> Users { get; set; }
     }
 }

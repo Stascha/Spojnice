@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace User.Controllers
 {
-    /// Adjunctive class containing log in informations of the user
+    /// Dodatna klasa koja sadrzi informacije o igracu sa kojima se igrac loguje
     public class UserRequestLogiObject{
 
         public string username { get; set; }
@@ -16,19 +16,19 @@ namespace User.Controllers
        
     }
 
-    /// Defined route path
-    /// GamesControler class
+    /// Definisana putanja rute
+    /// GamesControler klasa
     [Route("api/users")]
     [ApiController]
     public class UsersControler : ControllerBase
     {
-         /// Our game repository
+         /// Nas game repositori
         private readonly IUserRepo _repository;
 
-        /// mapper that is used to map source to the target/destination
+        /// Maper koji se koristi za mapiranje izvora na cilj/odrediste
         private  readonly IMapper _mapper;
 
-        /// GamesControler Constructor
+        /// GamesControler Konstruktor
         public UsersControler(IUserRepo repository, IMapper mapper)
         {
             _repository = repository;            
@@ -36,13 +36,13 @@ namespace User.Controllers
         }
 
         /** ### Desctiption
-        *  Function that will check if entered creditionals (username and password) match with what database has.
-        * If they match user object is going to be returned.
+        * Funkcija proverava da li uneto korisnicko ime i lozinka postoje u bazi podataka
+        * Ako postoje objekat sa tim korisnickim imenom i lozinkom ce biti vracen.
         * ### Arguments
-        * UserRequestLogiObject inputData - contains username and password fields as strings.
+        * UserRequestLogiObject inputData - Korisnicko ime i lozinka.
         * ### Return value
-        * ActionResult<UserReadDto> -  returns UserReadDto object in case the user exist in the database
-        * and NotFound response in case no user is found in the database */
+        * ActionResult<UserReadDto> -  returns UserReadDto objekat ako taj igrac postoji u bazi podataka
+        * ili NotFound ako taj igrac nije pronadjen u bazi podataka */
         [HttpPost("/login")] 
         public ActionResult<UserReadDto> GetUserByUsernameAndPassword(UserRequestLogiObject inputData) //  ActionResult<Command>
         {
@@ -57,13 +57,13 @@ namespace User.Controllers
         }
 
         /** ### Desctiption
-        * Function that will create new user with the provided data.
-        * It is going to generate new notifications token and assugn it as false at the beginning.
+        * Funkcija koja kreira novog igraca sa prosledjenim podacima.
+        * Kreira novi notifications token i postavlja mu vrednost false u pocetku
         * ### Arguments
-        *UserCreateDto usrCreateDto - contains fields for the user that are described in the Dto class.
+        *UserCreateDto - sadrzi polja za igraca koja su opisana u Dto klasi.
         * ### Return value
-        * ActionResult<UserReadDto> -  returns UserReadDto object in case the user is created
-        * and USER_EXISTS string as the response in case if the user exists in the database */
+        * ActionResult<UserReadDto> -  vraca UserReadDto objekat ako kreira novog igraca
+        * ili USER_EXISTS string ako taj igrac vec postoji u bazi podataka */
         [HttpPost("/create")]
         public ActionResult <UserReadDto> CreateCommand(UserCreateDto usrCreateDto)
         {
@@ -101,7 +101,6 @@ namespace User.Controllers
                     System.Diagnostics.Debug.WriteLine(e);
                 }
                 */
-
                
                 return Ok(usrReadDto); 
             }
@@ -109,12 +108,12 @@ namespace User.Controllers
         }
 
         /** ### Desctiption
-        * Function that will change the status of notifications for the user.
+        * Funkcija koje menja igracev status za dobijanje email poruka od aplikacije
         * ### Arguments
-        * string notificationToken - notification token that is unique to each user. </br>
-        * bool status - if user wants to enable notifications or not. </br>
+        * string notificationToken - notification token koji je jedinstven za svakog korisnika \n
+        * bool status - da li korisnik zeli da omoguci dobijanje poruka od aplikacije ili ne zeli \n 
         * ### Return value
-        * ActionResult <string> - string that says the notifications is set to be true or false */
+        * ActionResult <string> - string koji kaze da li su notifikacije odobrene ili ne */
         [HttpGet("notification/change/{notificationToken}/{status}")]
         public ActionResult <string> NotificationStatusChange(string notificationToken, bool status)
         {

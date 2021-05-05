@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pcYZ7wcXZ2U6RBtf2jULBQjHpS8xPbt/s7tIy0JrZVXjMWkKb+R7HuE1ldh0YuEGlMpqO+fUDvnxC147Z13d9w==",
+  "dgSpecHash": "CVk22FROpNZg+9olAO5qQ0apA6NkoI6uMBCAd3og4Ele0oSqFkN2wSxxDBkOGgKEu/ON1hgSUakDEycWAQPevw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\gameMicroservice\\Game\\Game.csproj",
+  "projectFilePath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_documentation Srpski\\Spojnice\\gameMicroservice\\Game\\Game.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Korisnik\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",

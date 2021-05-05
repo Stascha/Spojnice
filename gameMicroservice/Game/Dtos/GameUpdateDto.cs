@@ -3,11 +3,11 @@ namespace Game.Dtos
      ///GameReadDto class that represents the Data transfer object
         public class GameUpdateDto
     {
-        /// Represents the id.
+        /// Predstavlja id.
         public int Id { get; set; }
-        /// Represents the game name.
+        /// Predstavlja naziv igre.
         public string Name { get; set; }
-        /// Represents the game data, Json in a string.
+        /// Predstavlja podatke igre, Json kao string.
         public string Data { get; set; }
     }
 }

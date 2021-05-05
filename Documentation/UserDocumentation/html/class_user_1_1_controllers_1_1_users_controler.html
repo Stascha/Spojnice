@@ -83,7 +83,7 @@ Inheritance diagram for User.Controllers.UsersControler:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac84f8d23c1fcc60d6e0ddb733daad566"><td class="memItemLeft" align="right" valign="top"><a id="ac84f8d23c1fcc60d6e0ddb733daad566"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_user_1_1_controllers_1_1_users_controler.html#ac84f8d23c1fcc60d6e0ddb733daad566">UsersControler</a> (<a class="el" href="interface_user_1_1_data_1_1_i_user_repo.html">IUserRepo</a> repository, IMapper mapper)</td></tr>
-<tr class="memdesc:ac84f8d23c1fcc60d6e0ddb733daad566"><td class="mdescLeft">&#160;</td><td class="mdescRight">GamesControler Constructor. <br /></td></tr>
+<tr class="memdesc:ac84f8d23c1fcc60d6e0ddb733daad566"><td class="mdescLeft">&#160;</td><td class="mdescRight">GamesControler Konstruktor. <br /></td></tr>
 <tr class="separator:ac84f8d23c1fcc60d6e0ddb733daad566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a993111cbb2d355834b588f546043f9ca"><td class="memItemLeft" align="right" valign="top">ActionResult&lt; <a class="el" href="class_user_1_1_dtos_1_1_user_read_dto.html">UserReadDto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_user_1_1_controllers_1_1_users_controler.html#a993111cbb2d355834b588f546043f9ca">GetUserByUsernameAndPassword</a> (<a class="el" href="class_user_1_1_controllers_1_1_user_request_logi_object.html">UserRequestLogiObject</a> inputData)</td></tr>
 <tr class="separator:a993111cbb2d355834b588f546043f9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,13 +93,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2ba31f7a9fe2065853c09abae93cc3cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defined route path GamesControler class </p>
+<div class="textblock"><p>Definisana putanja rute GamesControler klasa </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6ce5415593252163c466774d65c07e83"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ce5415593252163c466774d65c07e83">&#9670;&nbsp;</a></span>CreateCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ActionResult&lt;<a class="el" href="class_user_1_1_dtos_1_1_user_read_dto.html">UserReadDto</a>&gt; User.Controllers.UsersControler.CreateCommand </td>
@@ -109,16 +112,21 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md3"></a>
 Desctiption</h3>
-<p>Function that will create new user with the provided data. It is going to generate new notifications token and assugn it as false at the beginning. </p>
+<p>Funkcija koja kreira novog igraca sa prosledjenim podacima. Kreira novi notifications token i postavlja mu vrednost false u pocetku </p>
 <h3><a class="anchor" id="autotoc_md4"></a>
 Arguments</h3>
-<p>UserCreateDto usrCreateDto - contains fields for the user that are described in the Dto class. </p>
+<p>UserCreateDto - sadrzi polja za igraca koja su opisana u Dto klasi. </p>
 <h3><a class="anchor" id="autotoc_md5"></a>
 Return value</h3>
-<p>ActionResult&lt;UserReadDto&gt; - returns UserReadDto object in case the user is created and USER_EXISTS string as the response in case if the user exists in the database </p>
+<p>ActionResult&lt;UserReadDto&gt; - vraca UserReadDto objekat ako kreira novog igraca ili USER_EXISTS string ako taj igrac vec postoji u bazi podataka </p>
 
 </div>
 </div>
@@ -127,6 +135,9 @@ Return value</h3>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ActionResult&lt;<a class="el" href="class_user_1_1_dtos_1_1_user_read_dto.html">UserReadDto</a>&gt; User.Controllers.UsersControler.GetUserByUsernameAndPassword </td>
@@ -136,16 +147,21 @@ Return value</h3>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md0"></a>
 Desctiption</h3>
-<p>Function that will check if entered creditionals (username and password) match with what database has. If they match user object is going to be returned. </p>
+<p>Funkcija proverava da li uneto korisnicko ime i lozinka postoje u bazi podataka Ako postoje objekat sa tim korisnickim imenom i lozinkom ce biti vracen. </p>
 <h3><a class="anchor" id="autotoc_md1"></a>
 Arguments</h3>
-<p><a class="el" href="class_user_1_1_controllers_1_1_user_request_logi_object.html" title="Adjunctive class containing log in informations of the user.">UserRequestLogiObject</a> inputData - contains username and password fields as strings. </p>
+<p><a class="el" href="class_user_1_1_controllers_1_1_user_request_logi_object.html" title="Dodatna klasa koja sadrzi informacije o igracu sa kojima se igrac loguje.">UserRequestLogiObject</a> inputData - Korisnicko ime i lozinka. </p>
 <h3><a class="anchor" id="autotoc_md2"></a>
 Return value</h3>
-<p>ActionResult&lt;UserReadDto&gt; - returns UserReadDto object in case the user exist in the database and NotFound response in case no user is found in the database </p>
+<p>ActionResult&lt;UserReadDto&gt; - returns UserReadDto objekat ako taj igrac postoji u bazi podataka ili NotFound ako taj igrac nije pronadjen u bazi podataka </p>
 
 </div>
 </div>
@@ -154,6 +170,9 @@ Return value</h3>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ActionResult&lt;string&gt; User.Controllers.UsersControler.NotificationStatusChange </td>
@@ -173,21 +192,28 @@ Return value</h3>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md6"></a>
 Desctiption</h3>
-<p>Function that will change the status of notifications for the user. </p>
+<p>Funkcija koje menja igracev status za dobijanje email poruka od aplikacije </p>
 <h3><a class="anchor" id="autotoc_md7"></a>
 Arguments</h3>
-<p>string notificationToken - notification token that is unique to each user.  bool status - if user wants to enable notifications or not.  </p>
+<p>string notificationToken - notification token koji je jedinstven za svakog korisnika <br  />
+bool status - da li korisnik zeli da omoguci dobijanje poruka od aplikacije ili ne zeli <br  />
+ </p>
 <h3><a class="anchor" id="autotoc_md8"></a>
 Return value</h3>
-<p>ActionResult &lt;string&gt; - string that says the notifications is set to be true or false </p>
+<p>ActionResult &lt;string&gt; - string koji kaze da li su notifikacije odobrene ili ne </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Korisnik/Desktop/Razvoj softvera 2/Projekat_3/userMicroservice/User/Controllers/UserController.cs</li>
+<li>C:/Users/Korisnik/Desktop/Spojnice_documentation Srpski/Spojnice/userMicroservice/User/Controllers/UserController.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

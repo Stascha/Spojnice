@@ -2,7 +2,7 @@
 \label{class_game_1_1_data_1_1_sql_game_repo}\index{Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}}
 
 
-SQL \mbox{\hyperlink{namespace_game}{Game}} Repository class.  
+SQL \mbox{\hyperlink{namespace_game}{Game}} Repository klasa.  
 
 
 Inheritance diagram for Game.\+Data.\+Sql\+Game\+Repo\+:\begin{figure}[H]
@@ -16,14 +16,15 @@ Inheritance diagram for Game.\+Data.\+Sql\+Game\+Repo\+:\begin{figure}[H]
 \item 
 \mbox{\Hypertarget{class_game_1_1_data_1_1_sql_game_repo_a2ab80352d97e810610d01eb3169b7202}\label{class_game_1_1_data_1_1_sql_game_repo_a2ab80352d97e810610d01eb3169b7202}} 
 \mbox{\hyperlink{class_game_1_1_data_1_1_sql_game_repo_a2ab80352d97e810610d01eb3169b7202}{Sql\+Game\+Repo}} (\mbox{\hyperlink{class_game_1_1_data_1_1_game_context}{Game\+Context}} context)
-\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_game_1_1_data_1_1_sql_game_repo}{Sql\+Game\+Repo}} Class. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Konstruktor \mbox{\hyperlink{class_game_1_1_data_1_1_sql_game_repo}{Sql\+Game\+Repo}} klase. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_1_1_data_1_1_sql_game_repo_a50129e7032ef0b331a79a8a0b4c4885e}{Create\+Game}} (\mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}} gm)
 \item 
 \mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}} \mbox{\hyperlink{class_game_1_1_data_1_1_sql_game_repo_abbaafef6111e8aac7db18ab72296ede1}{Get\+Random\+Game}} ()
 \item 
 bool \mbox{\hyperlink{class_game_1_1_data_1_1_sql_game_repo_ab17699942218e23da2a36df91d02531a}{Save\+Changes}} ()
 \item 
-void \mbox{\hyperlink{class_game_1_1_data_1_1_sql_game_repo_a6e8e338fde707cc47c9ea43737f046f9}{Update\+Game}} (\mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}} gm)
+\mbox{\Hypertarget{class_game_1_1_data_1_1_sql_game_repo_a6e8e338fde707cc47c9ea43737f046f9}\label{class_game_1_1_data_1_1_sql_game_repo_a6e8e338fde707cc47c9ea43737f046f9}} 
+void {\bfseries Update\+Game} (\mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}} gm)
 \item 
 void \mbox{\hyperlink{class_game_1_1_data_1_1_sql_game_repo_afd33c1b3acce9c165335cf1ce20eb5a4}{Delete\+Game}} (\mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}} gm)
 \item 
@@ -36,20 +37,21 @@ IEnumerable$<$ \mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Mode
 
 
 \doxysubsection{Detailed Description}
-SQL \mbox{\hyperlink{namespace_game}{Game}} Repository class. 
+SQL \mbox{\hyperlink{namespace_game}{Game}} Repository klasa. 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_game_1_1_data_1_1_sql_game_repo_a50129e7032ef0b331a79a8a0b4c4885e}\label{class_game_1_1_data_1_1_sql_game_repo_a50129e7032ef0b331a79a8a0b4c4885e}} 
 \index{Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}!CreateGame@{CreateGame}}
 \index{CreateGame@{CreateGame}!Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}}
 \doxysubsubsection{\texorpdfstring{CreateGame()}{CreateGame()}}
-{\footnotesize\ttfamily void Game.\+Data.\+Sql\+Game\+Repo.\+Create\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}}}]{gm }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Game.\+Data.\+Sql\+Game\+Repo.\+Create\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}}}]{gm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md15}{}\doxyparagraph{Description}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md15}
-Create\+Game method -\/ creates new game from the Game\+Model object received. Throws error if Game\+Model object is not provided. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md16}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md16}
-Game\+Model gm -\/ game to add ~\newline
+Create\+Game metod -\/ kreira novu igru iz prosledjenog Game\+Model objekta. ~\newline
+ Izbacuje error ako Game\+Model objekat nije prosledjen. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md16}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md16}
+Game\+Model gm -\/ igra koja se dodaje ~\newline
  \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md17}{}\doxyparagraph{Return value}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md17}
-None. 
+Nema. 
 
 Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data.\+IGame\+Repo}}.
 
@@ -57,12 +59,13 @@ Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data
 \index{Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}!DeleteGame@{DeleteGame}}
 \index{DeleteGame@{DeleteGame}!Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}}
 \doxysubsubsection{\texorpdfstring{DeleteGame()}{DeleteGame()}}
-{\footnotesize\ttfamily void Game.\+Data.\+Sql\+Game\+Repo.\+Delete\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}}}]{gm }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Game.\+Data.\+Sql\+Game\+Repo.\+Delete\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}}}]{gm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md27}{}\doxyparagraph{Description}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md27}
-Delete\+Game method -\/ Deletes the chosen game from the database \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md28}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md28}
-Game\+Model gm -\/ which object to delete  \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md29}{}\doxyparagraph{Return value}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md29}
-None. 
+\hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md24}{}\doxyparagraph{Description}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md24}
+Delete\+Game method -\/ Brise izabranu igru iz baze podataka \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md25}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md25}
+Game\+Model gm -\/ objekat koji treba da se izbrise ~\newline
+ \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md26}{}\doxyparagraph{Return value}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md26}
+Nema. 
 
 Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data.\+IGame\+Repo}}.
 
@@ -70,12 +73,12 @@ Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data
 \index{Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}!GetAllGames@{GetAllGames}}
 \index{GetAllGames@{GetAllGames}!Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}}
 \doxysubsubsection{\texorpdfstring{GetAllGames()}{GetAllGames()}}
-{\footnotesize\ttfamily IEnumerable$<$\mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}}$>$ Game.\+Data.\+Sql\+Game\+Repo.\+Get\+All\+Games (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily IEnumerable$<$\mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}}$>$ Game.\+Data.\+Sql\+Game\+Repo.\+Get\+All\+Games (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md30}{}\doxyparagraph{Description}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md30}
-Get\+All\+Games method -\/ Returns the list of all Games that are in the database \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md31}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md31}
-None. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md32}{}\doxyparagraph{Return value}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md32}
-IEnumerable$<$\+Game\+Model$>$ -\/ Games List 
+\hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md27}{}\doxyparagraph{Description}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md27}
+Get\+All\+Games method -\/ Vraca listu svih igara iz baze podataka \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md28}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md28}
+Nema. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md29}{}\doxyparagraph{Return value}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md29}
+IEnumerable$<$\+Game\+Model$>$ -\/ Lista igara 
 
 Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data.\+IGame\+Repo}}.
 
@@ -83,12 +86,12 @@ Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data
 \index{Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}!GetAllUsersWhereNotificationsIsTrue@{GetAllUsersWhereNotificationsIsTrue}}
 \index{GetAllUsersWhereNotificationsIsTrue@{GetAllUsersWhereNotificationsIsTrue}!Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}}
 \doxysubsubsection{\texorpdfstring{GetAllUsersWhereNotificationsIsTrue()}{GetAllUsersWhereNotificationsIsTrue()}}
-{\footnotesize\ttfamily IEnumerable$<$\mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}}$>$ Game.\+Data.\+Sql\+Game\+Repo.\+Get\+All\+Users\+Where\+Notifications\+Is\+True (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily IEnumerable$<$\mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}}$>$ Game.\+Data.\+Sql\+Game\+Repo.\+Get\+All\+Users\+Where\+Notifications\+Is\+True (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md36}{}\doxyparagraph{Description}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md36}
-Get\+All\+Users\+Where\+Notifications\+Is\+True method -\/ Returns the list of objects that have notifications enabled. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md37}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md37}
-None. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md38}{}\doxyparagraph{Return value}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md38}
-IEnumerable$<$\+User\+Model$>$ -\/ List of users that have enabled notifactions. 
+\hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md33}{}\doxyparagraph{Description}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md33}
+Get\+All\+Users\+Where\+Notifications\+Is\+True method -\/ Vraca listu objekata igraca kod kojih je dobijanje notifikacija omoguceno. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md34}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md34}
+Nema. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md35}{}\doxyparagraph{Return value}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md35}
+IEnumerable$<$\+User\+Model$>$ -\/ Lista igraca kod kojih je dobijanje notifikacija omuguceno. 
 
 Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data.\+IGame\+Repo}}.
 
@@ -96,12 +99,13 @@ Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data
 \index{Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}!GetGameById@{GetGameById}}
 \index{GetGameById@{GetGameById}!Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}}
 \doxysubsubsection{\texorpdfstring{GetGameById()}{GetGameById()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}} Game.\+Data.\+Sql\+Game\+Repo.\+Get\+Game\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}} Game.\+Data.\+Sql\+Game\+Repo.\+Get\+Game\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md33}{}\doxyparagraph{Description}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md33}
-Get\+Game\+By\+Id method -\/ Returns the object by provided ID \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md34}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md34}
-int id -\/ id of the \mbox{\hyperlink{namespace_game}{Game}} that we want to be returned. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md35}{}\doxyparagraph{Return value}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md35}
-Game\+Model -\/ null if object does not exist. 
+\hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md30}{}\doxyparagraph{Description}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md30}
+Get\+Game\+By\+Id method -\/ Vraca igru koja ima prosledjeni id \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md31}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md31}
+int id -\/ id igre koju ce da vrati. ~\newline
+ \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md32}{}\doxyparagraph{Return value}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md32}
+Game\+Model igru ili null ako igra sa prosledjenim id ne postoji. 
 
 Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data.\+IGame\+Repo}}.
 
@@ -109,12 +113,12 @@ Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data
 \index{Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}!GetRandomGame@{GetRandomGame}}
 \index{GetRandomGame@{GetRandomGame}!Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}}
 \doxysubsubsection{\texorpdfstring{GetRandomGame()}{GetRandomGame()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}} Game.\+Data.\+Sql\+Game\+Repo.\+Get\+Random\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}} Game.\+Data.\+Sql\+Game\+Repo.\+Get\+Random\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md18}{}\doxyparagraph{Description}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md18}
-Get\+Random\+Game method -\/ chooses random \mbox{\hyperlink{namespace_game}{Game}} from the database and returns it. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md19}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md19}
-None. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md20}{}\doxyparagraph{Return value}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md20}
-Game\+Model -\/ random chosen. 
+Get\+Random\+Game method -\/ Slucajnim izborom odabere igru iz baze podataka i vrati je. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md19}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md19}
+Nema. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md20}{}\doxyparagraph{Return value}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md20}
+Game\+Model -\/ Slucajno izabrana igra. 
 
 Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data.\+IGame\+Repo}}.
 
@@ -122,25 +126,12 @@ Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data
 \index{Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}!SaveChanges@{SaveChanges}}
 \index{SaveChanges@{SaveChanges}!Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}}
 \doxysubsubsection{\texorpdfstring{SaveChanges()}{SaveChanges()}}
-{\footnotesize\ttfamily bool Game.\+Data.\+Sql\+Game\+Repo.\+Save\+Changes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Game.\+Data.\+Sql\+Game\+Repo.\+Save\+Changes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md21}{}\doxyparagraph{Description}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md21}
-Save\+Changes method -\/ saves changes that are made to our \+\_\+context. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md22}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md22}
-None. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md23}{}\doxyparagraph{Return}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md23}
+Save\+Changes method -\/ cuva promene koje su napravljene u \+\_\+context. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md22}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md22}
+Nema. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md23}{}\doxyparagraph{Return}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md23}
 (\+\_\+context.\+Save\+Changes() $>$= 0); 
-
-Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data.\+IGame\+Repo}}.
-
-\mbox{\Hypertarget{class_game_1_1_data_1_1_sql_game_repo_a6e8e338fde707cc47c9ea43737f046f9}\label{class_game_1_1_data_1_1_sql_game_repo_a6e8e338fde707cc47c9ea43737f046f9}} 
-\index{Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}!UpdateGame@{UpdateGame}}
-\index{UpdateGame@{UpdateGame}!Game.Data.SqlGameRepo@{Game.Data.SqlGameRepo}}
-\doxysubsubsection{\texorpdfstring{UpdateGame()}{UpdateGame()}}
-{\footnotesize\ttfamily void Game.\+Data.\+Sql\+Game\+Repo.\+Update\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_models_1_1_game_model}{Game\+Model}}}]{gm }\end{DoxyParamCaption})}
-
-\hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md24}{}\doxyparagraph{Description}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md24}
-Update\+Game method -\/ function placeholder, is not implemented at the moment since we can update the \mbox{\hyperlink{namespace_game}{Game}} Easily by maooing. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md25}{}\doxyparagraph{Arguments}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md25}
-None. \hypertarget{class_game_1_1_data_1_1_sql_game_repo_autotoc_md26}{}\doxyparagraph{Return value}\label{class_game_1_1_data_1_1_sql_game_repo_autotoc_md26}
-Throws Not\+Implemented\+Exception Exception . 
 
 Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data.\+IGame\+Repo}}.
 
@@ -148,4 +139,4 @@ Implements \mbox{\hyperlink{interface_game_1_1_data_1_1_i_game_repo}{Game.\+Data
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Korisnik/\+Desktop/\+Razvoj softvera 2/\+Projekat\+\_\+3/game\+Microservice/\+Game/\+Data/Sql\+Game\+Repo.\+cs\end{DoxyCompactItemize}
+C\+:/\+Users/\+Korisnik/\+Desktop/\+Spojnice\+\_\+documentation Srpski/\+Spojnice/game\+Microservice/\+Game/\+Data/Sql\+Game\+Repo.\+cs\end{DoxyCompactItemize}

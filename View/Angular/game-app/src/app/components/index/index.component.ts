@@ -6,19 +6,24 @@ import { GameService } from 'src/app/services/game.service';
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.css']
 })
-/** component that loads on the root URI param of the website URL */
-export class IndexComponent implements OnInit {
+
+/**
+ *  prva komponenta koja se ucitava kada je korisnik na glavnoj strani tj. kada se otvori glavni URL web sajta
+ */
+export class IndexComponent implements OnInit
+{
   /**
-   * Constructor
+   * Konstruktor
    * @param gameService {GameService}
    */
   constructor( private gameService: GameService) { }
 
   /** 
-   * sets the GameService - gameActive attribute to false
+   * Postavlja gameService - gameActive atribut na false
    */
-  ngOnInit(): void {
-    this.gameService.gameActive = false;
-  }
+    ngOnInit(): void
+    {
+      this.gameService.gameActive = false;
+    }
 
 }

@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>SQL Game Repository class.  
+<p>SQL Repository klasa.  
  <a href="class_score_1_1_data_1_1_sql_score_repo.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Score.Data.SqlScoreRepo:</div>
@@ -81,7 +81,7 @@ Inheritance diagram for Score.Data.SqlScoreRepo:</div>
  <div class="center">
   <img src="class_score_1_1_data_1_1_sql_score_repo.png" usemap="#Score.Data.SqlScoreRepo_map" alt=""/>
   <map id="Score.Data.SqlScoreRepo_map" name="Score.Data.SqlScoreRepo_map">
-<area href="interface_score_1_1_data_1_1_i_score_repo.html" title="Interface that SqlUserRepo is going to implmenet and thus will need to have all the methods described..." alt="Score.Data.IScoreRepo" shape="rect" coords="0,0,160,24"/>
+<area href="interface_score_1_1_data_1_1_i_score_repo.html" title="Interfejs koji SqlScoreRepo klasa implementira i definise sve metode." alt="Score.Data.IScoreRepo" shape="rect" coords="0,0,160,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -89,7 +89,7 @@ Inheritance diagram for Score.Data.SqlScoreRepo:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac70104a698541fdd9c662e7978e79ac2"><td class="memItemLeft" align="right" valign="top"><a id="ac70104a698541fdd9c662e7978e79ac2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_score_1_1_data_1_1_sql_score_repo.html#ac70104a698541fdd9c662e7978e79ac2">SqlScoreRepo</a> (<a class="el" href="class_score_1_1_data_1_1_score_context.html">ScoreContext</a> context)</td></tr>
-<tr class="memdesc:ac70104a698541fdd9c662e7978e79ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of SqlGameRepo Class. <br /></td></tr>
+<tr class="memdesc:ac70104a698541fdd9c662e7978e79ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor <a class="el" href="class_score_1_1_data_1_1_sql_score_repo.html" title="SQL Repository klasa.">SqlScoreRepo</a> Klase. <br /></td></tr>
 <tr class="separator:ac70104a698541fdd9c662e7978e79ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40b8d63b9dadd953c807f2211af2712b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_score_1_1_data_1_1_sql_score_repo.html#a40b8d63b9dadd953c807f2211af2712b">CreateScore</a> (<a class="el" href="class_score_1_1_models_1_1_score_model.html">ScoreModel</a> score)</td></tr>
 <tr class="separator:a40b8d63b9dadd953c807f2211af2712b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,13 +107,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4eafa903578964546cccd5294cfbba3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>SQL Game Repository class. </p>
+<div class="textblock"><p>SQL Repository klasa. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a40b8d63b9dadd953c807f2211af2712b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40b8d63b9dadd953c807f2211af2712b">&#9670;&nbsp;</a></span>CreateScore()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Score.Data.SqlScoreRepo.CreateScore </td>
@@ -123,16 +126,23 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md6"></a>
 Description</h3>
-<p>CreateScore method - creates new score from the ScoreModel object received. Throws error if ScoreModel object is not provided. </p>
+<p>CreateScore metod - kreira novi skor iz dobijenog ScoreModel objekta. <br  />
+ Izbacuje error ako ScoreModel objekat nije prosledjen. </p>
 <h3><a class="anchor" id="autotoc_md7"></a>
 Arguments</h3>
-<p>ScoreModel score - score to add  </p>
+<p>ScoreModel score - skor koji se dodaje <br  />
+ </p>
 <h3><a class="anchor" id="autotoc_md8"></a>
 Return value</h3>
-<p>None. </p>
+<p>Nema. </p>
 
 <p>Implements <a class="el" href="interface_score_1_1_data_1_1_i_score_repo.html">Score.Data.IScoreRepo</a>.</p>
 
@@ -143,6 +153,9 @@ Return value</h3>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">IEnumerable&lt;<a class="el" href="class_score_1_1_models_1_1_score_model.html">ScoreModel</a>&gt; Score.Data.SqlScoreRepo.GetAllScores </td>
@@ -151,16 +164,22 @@ Return value</h3>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md9"></a>
 Description</h3>
-<p>GetAllScores method - returs all <a class="el" href="namespace_score.html">Score</a> records. </p>
+<p>GetAllScores metod - vraca sve skoreve. </p>
 <h3><a class="anchor" id="autotoc_md10"></a>
 Arguments</h3>
-<p>None. </p>
+<p>Nema. </p>
 <h3><a class="anchor" id="autotoc_md11"></a>
 Return value</h3>
-<p>IEnumerable&lt;ScoreModel&gt; - list of scores. If objects are not found in the database null is returned. </p>
+<p>IEnumerable&lt;ScoreModel&gt; - lista skoreva. <br  />
+ Ako objekat nije pronadjen u bazi podataka bice vracen null. </p>
 
 <p>Implements <a class="el" href="interface_score_1_1_data_1_1_i_score_repo.html">Score.Data.IScoreRepo</a>.</p>
 
@@ -171,6 +190,9 @@ Return value</h3>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_score_1_1_models_1_1_score_model.html">ScoreModel</a> Score.Data.SqlScoreRepo.GetCurrentFirstScore </td>
@@ -179,16 +201,22 @@ Return value</h3>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md21"></a>
 Description</h3>
-<p>GetCurrentFirstScore method - returns highest score object. </p>
+<p>GetCurrentFirstScore method - vraca najveci skor objekat. </p>
 <h3><a class="anchor" id="autotoc_md22"></a>
 Arguments</h3>
 <p>None. </p>
 <h3><a class="anchor" id="autotoc_md23"></a>
 Return value</h3>
-<p>ScoreModel - score object. If database has no objects, null is returned. </p>
+<p>ScoreModel - score objekat. <br  />
+ Ako baza podataka nema objekte bice vrace null. </p>
 
 <p>Implements <a class="el" href="interface_score_1_1_data_1_1_i_score_repo.html">Score.Data.IScoreRepo</a>.</p>
 
@@ -199,6 +227,9 @@ Return value</h3>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_score_1_1_models_1_1_score_model.html">ScoreModel</a> Score.Data.SqlScoreRepo.GetScoreByUsername </td>
@@ -208,16 +239,23 @@ Return value</h3>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md12"></a>
 Description</h3>
-<p>GetScoreByUsername method - returns score by username as input. </p>
+<p>GetScoreByUsername metod - vraca skor za prosledjeno korisnicko ime. </p>
 <h3><a class="anchor" id="autotoc_md13"></a>
 Arguments</h3>
-<p>string usrname - user username  </p>
+<p>string usrname - user korisnicko ime <br  />
+ </p>
 <h3><a class="anchor" id="autotoc_md14"></a>
 Return value</h3>
-<p>ScoreModel - score object. If object is not found in the database null is returned. </p>
+<p>ScoreModel - score objekat. <br  />
+ Ako objekat nije pronadjen u bazi podataka bice vracen null. </p>
 
 <p>Implements <a class="el" href="interface_score_1_1_data_1_1_i_score_repo.html">Score.Data.IScoreRepo</a>.</p>
 
@@ -228,6 +266,9 @@ Return value</h3>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_user_1_1_models_1_1_user_model.html">UserModel</a> Score.Data.SqlScoreRepo.GetUserByUsername </td>
@@ -237,16 +278,22 @@ Return value</h3>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md18"></a>
 Description</h3>
-<p>GetUserByUsername method - returns user object by username as input. </p>
+<p>GetUserByUsername method - vraca user objekat na osnovu prosledjenog korisnickog imena. </p>
 <h3><a class="anchor" id="autotoc_md19"></a>
 Arguments</h3>
-<p>string usrname - user username  </p>
+<p>string usrname - user korisnicko ime  </p>
 <h3><a class="anchor" id="autotoc_md20"></a>
 Return value</h3>
-<p>UserModel - score object. If object is not found in the database null is returned. </p>
+<p>UserModel - score objekat. <br  />
+ Ako objekat nije pronadjen u bazi podataka bice vracen null. </p>
 
 <p>Implements <a class="el" href="interface_score_1_1_data_1_1_i_score_repo.html">Score.Data.IScoreRepo</a>.</p>
 
@@ -257,6 +304,9 @@ Return value</h3>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Score.Data.SqlScoreRepo.RemoveScore </td>
@@ -266,16 +316,22 @@ Return value</h3>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md15"></a>
 Description</h3>
-<p>RemoveScore method - removes score </p>
+<p>RemoveScore method - brise skor </p>
 <h3><a class="anchor" id="autotoc_md16"></a>
 Arguments</h3>
-<p>ScoreModel score - score object to remove/delete </p>
+<p>ScoreModel score - score objekat koji treba da bude izbrisan <br  />
+ </p>
 <h3><a class="anchor" id="autotoc_md17"></a>
 Return value</h3>
-<p>None. </p>
+<p>Nema. </p>
 
 <p>Implements <a class="el" href="interface_score_1_1_data_1_1_i_score_repo.html">Score.Data.IScoreRepo</a>.</p>
 
@@ -286,6 +342,9 @@ Return value</h3>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Score.Data.SqlScoreRepo.SaveChanges </td>
@@ -294,13 +353,18 @@ Return value</h3>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md24"></a>
 Description</h3>
-<p>SaveChanges method - saves changes that are made to our _context. </p>
+<p>SaveChanges method - cuva promene koje su napravljene u _context. </p>
 <h3><a class="anchor" id="autotoc_md25"></a>
 Arguments</h3>
-<p>None. </p>
+<p>Nema. </p>
 <h3><a class="anchor" id="autotoc_md26"></a>
 Return</h3>
 <p>(_context.SaveChanges() &gt;= 0); </p>
@@ -310,7 +374,7 @@ Return</h3>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Korisnik/Desktop/Razvoj softvera 2/Projekat_3/scoreMicroservice/Score/Data/SqlScoreRepo.cs</li>
+<li>C:/Users/Korisnik/Desktop/Spojnice_documentation Srpski/Spojnice/scoreMicroservice/Score/Data/SqlScoreRepo.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

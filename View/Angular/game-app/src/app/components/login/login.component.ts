@@ -2,8 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { GameService } from 'src/app/services/game.service';
 import { UserService } from 'src/app/services/user.service';
-/** JS function defined in the index.html file. Function that will show the modal to the end user with the text as input. */
-declare const sendMessageUserModal: any; // funkcija koja se nalazu u INDEX.HTML fajlu dole u script tagu
+
+/** JS funkcija definisana u index.html fajlu.
+ * Funkcija koja prikazuje modal sa tekstom igracu. */
+declare const sendMessageUserModal: any; // funkcija koja je definisana u INDEX.HTML fajlu dole u script tagu
 // ovako je pozivamo i kazemo joj sta i gde da izvrsi
 
 /**
@@ -14,18 +16,22 @@ declare const sendMessageUserModal: any; // funkcija koja se nalazu u INDEX.HTML
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-/** Class that is used for our login page. */
+/** Klasa koja se koristi za stranu za logovanje. */
 export class LoginComponent implements OnInit {
-  /** We are binding usr to the username input field */
+
+   /** Povezuje se usr sa username poljem za unos */
     usr: string = ''; // radimo binding sa value on input text field-a
-    /** We are binding pwd to the password input field */
+
+   /** Povezuje se pwd sa password poljem za unos */
     pwd: string = '';// radimo binding sa value on input text field-a
-    /** We are binding eml to the email input field that is shown if users chooses the register option */
+
+   /** Povezuje se eml sa email poljem za unos. To pokazuje da li je igrac izabrao opciju za registraciju */
     eml: string = '';
     showUserLoginForm : boolean = true;
-  // binding nam omogucava da pristupom na varijablu dobijamo sta je u tekstualnim poljima u "real time"
+  // Povezivanje nam omogucava da pristupom na promenjljivu dobijamo sta je u tekstualnim poljima u realnom vremenu
   /**
-   * Checks if the UserService has data about the user, this means that user is logged. If the user is loggedin, the user will be redirected to the /game route.
+   * Proverava da li UserService ima podatke o igracu, to znači da je igrac ulogovan.
+   * Ako je igrac ulogovan on ce biti redirektovan na stranicu za igru.
    * @param {UserService} userService
    * @param {Router} router 
    * @param {GameService} gameService 
@@ -34,8 +40,8 @@ export class LoginComponent implements OnInit {
     //private userService : UserService - mozemo pristupiti userService varijabli kao i njenim metodama
     //, private router:Router - pristupamo ruteru
     if(userService.getLoggedinUser().id != -1){
-      // ako nije logovan radi reddirect na /login stranu
-      // -1 smo stavili kao defaultni i za logout kada nema user-a logovanog
+      // ako nije ulogovan radi redirect na /login stranu
+      // -1 je defaultni i za logout kada nema user-a ulogovanog
       this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
       this.router.navigate(["/game"]));
     }
@@ -43,14 +49,14 @@ export class LoginComponent implements OnInit {
       this.gameService.gameActive = false;
     }
    }
-  /** Empty method, does not do anything. */
+  /** Prazan metod, ne radi nista. */
   ngOnInit(): void {
   }
 /**
- * This method is called when User clicks on the Login Button
+ * Metod se poziva kad igrac klikne na dugme Logovanje
  */
   onLogin(): void {
-    //subscribe - zato sto je sve asinhrono
+    // subscribe - zato sto je sve asinhrono
     // cekamo odgovor od servera kada server vrati dobar kod, npr 200 mi dobijene podatke dobijamo u data
     // ako vrati neki error ili resurs nije mogo biti nadjen/nema odgovora od servera to ide u error
 
@@ -62,7 +68,7 @@ export class LoginComponent implements OnInit {
  }
 
 /**
- * This method is called when User clicks on the Register
+ * Metod se poziva kad igrac klikne na dugme Registracija
  */
     onRegister(): void {
 
@@ -88,14 +94,14 @@ export class LoginComponent implements OnInit {
     
     }
 /**
- * If the input param is an Object this function will set the active user in the UserService.
- * If the input param is text it will call the function that will trigger and open a dialog with a message to the end user.
- * @param res {any} represents the result that we should get from the server. It can be either Object type or text type
+ * Ako je input parametar Objekat ova funkcija ce postaviti aktivnog korisnika - igraca u UserService.
+ * Ako je input parametar tekst tada ce se pozvati funkcija koja ce prikazati panel sa porukom igracu.
+ * @param res {any} Predstavlja rezultat koji treba da dobijemo od servera. To moze biti Objekat ili tekst   
  */
   onApiLoginOrRegisterActionResult(res:any){
     if(res instanceof Object)
     {
-      // proveravamo da li je res javascript objekat ako jeste postavljamo logovanog usera
+      // Proveravamo da li je res javascript objekat ako jeste postavljamo ulogovanog igraca
       this.userService.setActiveUser({           
         id         : res.id,       
         username   : res.username,    
@@ -105,11 +111,12 @@ export class LoginComponent implements OnInit {
         notificationsActive:res.notifications,
       });
 
-    //radimo reddirect na game komponentu this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
+
+        //radimo redirect na game komponentu this.router.navigateByUrl('/', { skipLocationChange: true }).then(() =>
       this.router.navigate(["/game"]);//);
     }
     else {
-      sendMessageUserModal(res); // ako nije objekat salji da ispise sve preko modala
+      sendMessageUserModal(res); // ako nije objekat salje da ispise sve preko modala
     }
   }
 

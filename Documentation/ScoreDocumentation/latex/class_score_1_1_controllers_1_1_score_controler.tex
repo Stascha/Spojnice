@@ -11,7 +11,7 @@ Inheritance diagram for Score.\+Controllers.\+Score\+Controler\+:\begin{figure}[
 \item 
 \mbox{\Hypertarget{class_score_1_1_controllers_1_1_score_controler_a12dda08f3ff3a0c72323154cc7364f56}\label{class_score_1_1_controllers_1_1_score_controler_a12dda08f3ff3a0c72323154cc7364f56}} 
 \mbox{\hyperlink{class_score_1_1_controllers_1_1_score_controler_a12dda08f3ff3a0c72323154cc7364f56}{Score\+Controler}} (\mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{IScore\+Repo}} repository, IMapper mapper)
-\begin{DoxyCompactList}\small\item\em Games\+Controler Constructor. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_score_1_1_controllers_1_1_score_controler}{Score\+Controler}} Konstruktor. \end{DoxyCompactList}\item 
 Action\+Result$<$ IEnumerable$<$ \mbox{\hyperlink{class_score_1_1_dtos_1_1_score_read_dto}{Score\+Read\+Dto}} $>$ $>$ \mbox{\hyperlink{class_score_1_1_controllers_1_1_score_controler_a1dadbcf4324d64bff0b09a0b9b3f1e8e}{Get\+All\+Scores}} ()
 \item 
 Action\+Result$<$ \mbox{\hyperlink{class_score_1_1_dtos_1_1_score_read_dto}{Score\+Read\+Dto}} $>$ \mbox{\hyperlink{class_score_1_1_controllers_1_1_score_controler_a25b8614e7fc7e0161d42e51180adf1d9}{Create\+Score}} (\mbox{\hyperlink{class_score_1_1_dtos_1_1_score_create_dto}{Score\+Create\+Dto}} score\+Create\+Dto)
@@ -19,29 +19,29 @@ Action\+Result$<$ \mbox{\hyperlink{class_score_1_1_dtos_1_1_score_read_dto}{Scor
 
 
 \doxysubsection{Detailed Description}
-Defined route path \mbox{\hyperlink{class_score_1_1_controllers_1_1_score_controler}{Score\+Controler}} class 
+Definisana putanja rute \mbox{\hyperlink{class_score_1_1_controllers_1_1_score_controler}{Score\+Controler}} klasa 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_score_1_1_controllers_1_1_score_controler_a25b8614e7fc7e0161d42e51180adf1d9}\label{class_score_1_1_controllers_1_1_score_controler_a25b8614e7fc7e0161d42e51180adf1d9}} 
 \index{Score.Controllers.ScoreControler@{Score.Controllers.ScoreControler}!CreateScore@{CreateScore}}
 \index{CreateScore@{CreateScore}!Score.Controllers.ScoreControler@{Score.Controllers.ScoreControler}}
 \doxysubsubsection{\texorpdfstring{CreateScore()}{CreateScore()}}
-{\footnotesize\ttfamily Action\+Result$<$\mbox{\hyperlink{class_score_1_1_dtos_1_1_score_read_dto}{Score\+Read\+Dto}}$>$ Score.\+Controllers.\+Score\+Controler.\+Create\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_score_1_1_dtos_1_1_score_create_dto}{Score\+Create\+Dto}}}]{score\+Create\+Dto }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Action\+Result$<$\mbox{\hyperlink{class_score_1_1_dtos_1_1_score_read_dto}{Score\+Read\+Dto}}$>$ Score.\+Controllers.\+Score\+Controler.\+Create\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_score_1_1_dtos_1_1_score_create_dto}{Score\+Create\+Dto}}}]{score\+Create\+Dto }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \hypertarget{class_score_1_1_controllers_1_1_score_controler_autotoc_md3}{}\doxyparagraph{Desctiption}\label{class_score_1_1_controllers_1_1_score_controler_autotoc_md3}
-Create\+Score -\/ creates new score in the database, or updates an old one. If inserted score provided has highest score, user that was at the first place will receive notification email in case the user has enabled notifications -\/ if not no email will be sent out. \hypertarget{class_score_1_1_controllers_1_1_score_controler_autotoc_md4}{}\doxyparagraph{Arguments}\label{class_score_1_1_controllers_1_1_score_controler_autotoc_md4}
-Score\+Create\+Dto score\+Create\+Dto -\/ score object. \hypertarget{class_score_1_1_controllers_1_1_score_controler_autotoc_md5}{}\doxyparagraph{Return value}\label{class_score_1_1_controllers_1_1_score_controler_autotoc_md5}
+Create\+Score -\/ kreira novi skor u bazi podataka ili menja stari skor. Ako je kreirani skor najvisi, igracu koji je do tada bio na prvom mestu na skor tabeli ce biti poslat notifikacioni email da se vise ne nalazi na prvom mestu u slucaju da je taj igrac omogucio dobijanje notifikacija od aplikacije a ako nije omogucio dobijanje notifikacija od aplikacije nece mu biti poslat email. \hypertarget{class_score_1_1_controllers_1_1_score_controler_autotoc_md4}{}\doxyparagraph{Arguments}\label{class_score_1_1_controllers_1_1_score_controler_autotoc_md4}
+Score\+Create\+Dto score\+Create\+Dto -\/ score objekat. \hypertarget{class_score_1_1_controllers_1_1_score_controler_autotoc_md5}{}\doxyparagraph{Return value}\label{class_score_1_1_controllers_1_1_score_controler_autotoc_md5}
 Action\+Result$<$IEnumerable$<$\+Score\+Read\+Dto$>$$>$ -\/ Score\+Read\+Dto List \mbox{\Hypertarget{class_score_1_1_controllers_1_1_score_controler_a1dadbcf4324d64bff0b09a0b9b3f1e8e}\label{class_score_1_1_controllers_1_1_score_controler_a1dadbcf4324d64bff0b09a0b9b3f1e8e}} 
 \index{Score.Controllers.ScoreControler@{Score.Controllers.ScoreControler}!GetAllScores@{GetAllScores}}
 \index{GetAllScores@{GetAllScores}!Score.Controllers.ScoreControler@{Score.Controllers.ScoreControler}}
 \doxysubsubsection{\texorpdfstring{GetAllScores()}{GetAllScores()}}
-{\footnotesize\ttfamily Action\+Result$<$IEnumerable$<$\mbox{\hyperlink{class_score_1_1_dtos_1_1_score_read_dto}{Score\+Read\+Dto}}$>$ $>$ Score.\+Controllers.\+Score\+Controler.\+Get\+All\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Action\+Result$<$IEnumerable$<$\mbox{\hyperlink{class_score_1_1_dtos_1_1_score_read_dto}{Score\+Read\+Dto}}$>$ $>$ Score.\+Controllers.\+Score\+Controler.\+Get\+All\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \hypertarget{class_score_1_1_controllers_1_1_score_controler_autotoc_md0}{}\doxyparagraph{Desctiption}\label{class_score_1_1_controllers_1_1_score_controler_autotoc_md0}
-Function that is going to return \mbox{\hyperlink{namespace_score}{Score}} List. \hypertarget{class_score_1_1_controllers_1_1_score_controler_autotoc_md1}{}\doxyparagraph{Arguments}\label{class_score_1_1_controllers_1_1_score_controler_autotoc_md1}
-None. \hypertarget{class_score_1_1_controllers_1_1_score_controler_autotoc_md2}{}\doxyparagraph{Return value}\label{class_score_1_1_controllers_1_1_score_controler_autotoc_md2}
-Action\+Result$<$IEnumerable$<$\+Score\+Read\+Dto$>$$>$ -\/ Score\+Read\+Dto List 
+Function koja vraca Skor Listu. \hypertarget{class_score_1_1_controllers_1_1_score_controler_autotoc_md1}{}\doxyparagraph{Arguments}\label{class_score_1_1_controllers_1_1_score_controler_autotoc_md1}
+Nema. \hypertarget{class_score_1_1_controllers_1_1_score_controler_autotoc_md2}{}\doxyparagraph{Return value}\label{class_score_1_1_controllers_1_1_score_controler_autotoc_md2}
+Action\+Result$<$IEnumerable$<$\+Score\+Read\+Dto$>$$>$ -\/ Score\+Read\+Dto Lista 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Korisnik/\+Desktop/\+Razvoj softvera 2/\+Projekat\+\_\+3/score\+Microservice/\+Score/\+Controllers/Score\+Controller.\+cs\end{DoxyCompactItemize}
+C\+:/\+Users/\+Korisnik/\+Desktop/\+Spojnice\+\_\+documentation Srpski/\+Spojnice/score\+Microservice/\+Score/\+Controllers/Score\+Controller.\+cs\end{DoxyCompactItemize}

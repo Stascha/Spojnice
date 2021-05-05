@@ -4,17 +4,17 @@ using User.Models;
 
 namespace Game.Data
 {
-    /// DataBase Context Class : SlagalicaDB
+    /// DataBase Context klasa : SlagalicaDB
     public class GameContext : DbContext
     {
-        /// Constructor of DataBase Context Class
+        /// Konstruktor GameContext klase
         public GameContext(DbContextOptions<GameContext> opt) : base(opt)
         {
             
         }
-        /// DbSet of Games
+        /// DbSet igara
         public DbSet<GameModel> Games { get; set; }
-        /// DbSet of Users
+        /// DbSet igraca
         public DbSet<UserModel> Users { get; set; }
     }
 }

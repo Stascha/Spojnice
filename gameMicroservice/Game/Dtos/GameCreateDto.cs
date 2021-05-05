@@ -1,11 +1,11 @@
 namespace Game.Dtos
 {
-    ///GameCreateDto class that represents the Data transfer object
+    /// UserCreateDto klasa predstavlja objekat za transfer podataka
     public class GameCreateDto
     {
-        /// Represents the game name.
+        /// Predestavlja naziv igre.
         public string Name { get; set; }
-        /// Represents the game data, Json in a string.
+        /// Predstavlja podatke igre, Json kao string.
         public string Data { get; set; }
     }
 }

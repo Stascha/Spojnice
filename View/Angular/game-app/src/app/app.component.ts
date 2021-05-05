@@ -12,7 +12,7 @@ export class AppComponent {
   /** title of our application */
   title = 'game-app';
 
-  /** empty constructor */
+  /** Prazan konstruktor */
   constructor() {
    }
 

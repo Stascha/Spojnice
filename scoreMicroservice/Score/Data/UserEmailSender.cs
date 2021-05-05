@@ -1,49 +1,45 @@
-
+Ôªø
 using User.Models;
 using System.Net.Mail;
 
 namespace User.Data
 {
-    /// Class that contains methods to send an email via SMTP protocol
+    /// Klasa koja sadrzi metod za slanje email poruka preko SMTP protokola
     public class UserEmailSender
     {
-        /// Our email from which we want to send emails.
+       
+        /// Email adresa sa koje aplikacija slje meilove
         private string myEmail;
-        /// Our email password.
+        /// Lozinka za email adresu sa koje aplikacija salje meilove
         private string myEmailPassword;
-        /// Url address to the smtp server that the set email is using.
+        /// URL adresa do smtp servera
         private string smtpURL;
-        /// Smtp port for the smtp server that we use to send out emails.
+        /// Smtp port za smtp server koji aplikacija koristi za slanje emailova.
         private int smtpPort;
-        /// Use secure connection or not.
+        /// Koriscenje secure konekcije ili ne.
         private bool smtpEnableSSL;
 
-        /// Constructor for the UserEmailSender class
+
+        /// Konstruktor UserEmailSender klase
         public UserEmailSender()
-        {
+      {
             this.myEmail = "slagalica@airmail.cc";
             this.myEmailPassword = "richgrain16lushkite94";
             this.smtpURL = "mail.cock.li";
             this.smtpPort = 587;
             this.smtpEnableSSL = true;   
         }
-      /*{
-            this.myEmail = "couplings.newyork@gmail.com";
-            this.myEmailPassword = "NewYork40$$";
-            this.smtpURL = "smtp.gmail.com";
-            this.smtpPort = 465;
-            this.smtpEnableSSL = true;   
-        } */
-    /** ### Description
-   * SendNoLongerFirstMail - Is going to send an email to an object user provided.
-   * Email will contain notificationn message that some other user has overtaken the lead in the Score table.
-   * Within the email options will be provided to enable/disable future subscription.
-   * ### Arguments
-   * UserModel account- user object model to who to send an email</br>
-   * string currentFirst - contains the username of the user who is at the first position now.
-   * ### Return value
-   * None. */
-    public void SendNoLongerFirstMail(UserModel account, string currentFirst){
+
+        /** ### Description
+       * SendNoLongerFirstMail - Poslace e-mail Igracu koji ce sadrzati poruku 
+       * da on sada nije vise prvi na skor tabeli. \n 
+       * E-mail ce takodje sadrzati link za odjavljivanje od dobijanja notifikacija od aplikacije.
+       * ### Arguments
+       * UserModel account- korisnik kome se salje email \n 
+       * string currentFirst - sadrzi korisnicko ime igraca koji je sada na prvom mestu.
+       * ### Return value
+       * Nema. */
+        public void SendNoLongerFirstMail(UserModel account, string currentFirst){
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient(this.smtpURL);
 
@@ -53,7 +49,7 @@ namespace User.Data
             mail.Body = "Zdravo,"
                         + "\n\nNiste Vise Prvi Na Score Tabeli Igre Spojnice !"
                         + "\nIgrac sa korisnickim imenom " + currentFirst + " je sada prvi na tabeli!!!"
-                        + "\nAko ne zelite viöe da dobijate obaveötenja u vezi igre spojnice kliknite na link https://localhost:5101/api/users/notification/change/" + account.NotificationToken + "/false"
+                        + "\nAko ne zelite vi≈°e da dobijate obave≈°tenja u vezi igre spojnice kliknite na link https://localhost:5101/api/users/notification/change/" + account.NotificationToken + "/false"
                         + "\n\n\nBest Regards,"
                         + "\nIgra Spojnice";
 

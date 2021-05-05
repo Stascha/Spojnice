@@ -5621,11 +5621,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\scoreMicroservice\\Score\\Score.csproj",
+      "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Spojnice_documentation Srpski\\Spojnice\\scoreMicroservice\\Score\\Score.csproj",
       "projectName": "Score",
-      "projectPath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\scoreMicroservice\\Score\\Score.csproj",
+      "projectPath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_documentation Srpski\\Spojnice\\scoreMicroservice\\Score\\Score.csproj",
       "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\scoreMicroservice\\Score\\obj\\",
+      "outputPath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_documentation Srpski\\Spojnice\\scoreMicroservice\\Score\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",

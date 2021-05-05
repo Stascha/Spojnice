@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\userMicroservice\\User\\User.csproj": {}
+    "C:\\Users\\Korisnik\\Desktop\\Spojnice_documentation Srpski\\Spojnice\\userMicroservice\\User\\User.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\userMicroservice\\User\\User.csproj": {
+    "C:\\Users\\Korisnik\\Desktop\\Spojnice_documentation Srpski\\Spojnice\\userMicroservice\\User\\User.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\userMicroservice\\User\\User.csproj",
+        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Spojnice_documentation Srpski\\Spojnice\\userMicroservice\\User\\User.csproj",
         "projectName": "User",
-        "projectPath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\userMicroservice\\User\\User.csproj",
+        "projectPath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_documentation Srpski\\Spojnice\\userMicroservice\\User\\User.csproj",
         "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\userMicroservice\\User\\obj\\",
+        "outputPath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_documentation Srpski\\Spojnice\\userMicroservice\\User\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",

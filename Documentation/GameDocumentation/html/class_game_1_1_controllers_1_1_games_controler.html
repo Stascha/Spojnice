@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SpojniceKviz: Game.Controllers.GamesControler Class Reference</title>
+<title>My Project: Game.Controllers.GamesControler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">SpojniceKviz
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Defined route path.  
+<p><a class="el" href="class_game_1_1_controllers_1_1_games_controler.html" title="GamesControler klasa.">GamesControler</a> klasa.  
  <a href="class_game_1_1_controllers_1_1_games_controler.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Game.Controllers.GamesControler:</div>
@@ -86,7 +86,7 @@ Inheritance diagram for Game.Controllers.GamesControler:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f9b289ddd956083676ce903c9c71180"><td class="memItemLeft" align="right" valign="top"><a id="a8f9b289ddd956083676ce903c9c71180"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_1_1_controllers_1_1_games_controler.html#a8f9b289ddd956083676ce903c9c71180">GamesControler</a> (<a class="el" href="interface_game_1_1_data_1_1_i_game_repo.html">IGameRepo</a> repository, IMapper mapper)</td></tr>
-<tr class="memdesc:a8f9b289ddd956083676ce903c9c71180"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_game_1_1_controllers_1_1_games_controler.html" title="Defined route path.">GamesControler</a> Constructor. <br /></td></tr>
+<tr class="memdesc:a8f9b289ddd956083676ce903c9c71180"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_game_1_1_controllers_1_1_games_controler.html" title="GamesControler klasa.">GamesControler</a> Konstruktor. <br /></td></tr>
 <tr class="separator:a8f9b289ddd956083676ce903c9c71180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d3fe7dd2e0d7fc4f0a61349eb135ffe"><td class="memItemLeft" align="right" valign="top">ActionResult&lt; <a class="el" href="class_game_1_1_dtos_1_1_game_read_dto.html">GameReadDto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_1_1_controllers_1_1_games_controler.html#a5d3fe7dd2e0d7fc4f0a61349eb135ffe">GetRandomGame</a> ()</td></tr>
 <tr class="separator:a5d3fe7dd2e0d7fc4f0a61349eb135ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,14 +100,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af6d94c8e795be07c8b576720e9f874e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defined route path. </p>
-<p><a class="el" href="class_game_1_1_controllers_1_1_games_controler.html" title="Defined route path.">GamesControler</a> class </p>
+<div class="textblock"><p><a class="el" href="class_game_1_1_controllers_1_1_games_controler.html" title="GamesControler klasa.">GamesControler</a> klasa. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af7fd9ebdf2cd67daaf9e005c6022b802"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7fd9ebdf2cd67daaf9e005c6022b802">&#9670;&nbsp;</a></span>CreateGame()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ActionResult&lt;<a class="el" href="class_game_1_1_dtos_1_1_game_read_dto.html">GameReadDto</a>&gt; Game.Controllers.GamesControler.CreateGame </td>
@@ -117,16 +119,22 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md3"></a>
 Desctiption</h3>
-<p>CreateGame method that is used to add new game to the <a class="el" href="namespace_game.html">Game</a> table in our database. </p>
+<p>CreateGame metod dodaje novu igru u tabelu <a class="el" href="namespace_game.html">Game</a> u bazi podataka. </p>
 <h3><a class="anchor" id="autotoc_md4"></a>
 Arguments</h3>
-<p>GameCreateDto gameCreateDto - object containing game data to insert into our database  </p>
+<p>GameCreateDto gameCreateDto - objekat sadrzi podatke za igru koja treba da se ubaci u bazu podataka <br  />
+ </p>
 <h3><a class="anchor" id="autotoc_md5"></a>
 Return value</h3>
-<p>ActionResult &lt;GameReadDto&gt; - returns the object that is inserted in the database. </p>
+<p>ActionResult &lt;GameReadDto&gt; - vraca objekat koji je ubacen u bazu podataka </p>
 
 </div>
 </div>
@@ -135,6 +143,9 @@ Return value</h3>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ActionResult Game.Controllers.GamesControler.DeleteGame </td>
@@ -144,16 +155,24 @@ Return value</h3>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md9"></a>
 Desctiption</h3>
-<p>Deletes the chosen game bt id from the database. Route from the root route is /{id} </p>
+<p>Brise igru na osnovu prosledjenog id-a igre iz baze podataka. </p>
 <h3><a class="anchor" id="autotoc_md10"></a>
 Arguments</h3>
-<p>int id - id of the game in the database that will be removed  </p>
+<p>int id - id igre koja treba da se izbrise iz baze podataka <br  />
+ </p>
 <h3><a class="anchor" id="autotoc_md11"></a>
 Return value</h3>
-<p>ActionResult - returns NoContent on success and NotFound in case the set id is not found in the database </p>
+<p>ActionResult - returns NoContent ako je igra izbrisana ili <br  />
+ <br  />
+ NotFound ako prosledjeni id igre ne postoji u bazi podataka </p>
 
 </div>
 </div>
@@ -162,6 +181,9 @@ Return value</h3>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ActionResult&lt;IEnumerable&lt;<a class="el" href="class_game_1_1_dtos_1_1_game_read_dto.html">GameReadDto</a>&gt; &gt; Game.Controllers.GamesControler.GetAllGames </td>
@@ -170,16 +192,21 @@ Return value</h3>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md12"></a>
 Desctiption</h3>
-<p>Method that returns full list of <a class="el" href="namespace_game.html">Game</a> data that is in our database <a class="el" href="namespace_game.html">Game</a> table. Route from the root route is /all </p>
+<p>Metod koji vraca listu svih igara koje se nalaze u bazi podataka u <a class="el" href="namespace_game.html">Game</a> tabeli. </p>
 <h3><a class="anchor" id="autotoc_md13"></a>
 Arguments</h3>
-<p>None. </p>
+<p>Nema. </p>
 <h3><a class="anchor" id="autotoc_md14"></a>
 Return value</h3>
-<p>ActionResult - returns <a class="el" href="namespace_game.html">Game</a> list </p>
+<p>ActionResult - vraca listu svih igara </p>
 
 </div>
 </div>
@@ -188,6 +215,9 @@ Return value</h3>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ActionResult&lt;<a class="el" href="class_game_1_1_dtos_1_1_game_read_dto.html">GameReadDto</a>&gt; Game.Controllers.GamesControler.GetRandomGame </td>
@@ -196,16 +226,21 @@ Return value</h3>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md0"></a>
 Desctiption</h3>
-<p>Function that will return random <a class="el" href="namespace_game.html">Game</a> if any game is in our database </p>
+<p>Funkcija koja vraca slucajno izabranu igru ako postoji neka igra u bazi podataka </p>
 <h3><a class="anchor" id="autotoc_md1"></a>
 Arguments</h3>
-<p>None. </p>
+<p>Nema. </p>
 <h3><a class="anchor" id="autotoc_md2"></a>
 Return value</h3>
-<p>ActionResult&lt;GameReadDto&gt; - returns positive GameReadDto object in case the game exist in the database and NotFound header in case no game is found in the database </p>
+<p>ActionResult&lt;GameReadDto&gt; - vraca GameReadDto objekat u slucaju da neka igra postoji u bazi podataka ili NotFound u slucaju da ni jedna igra nije pronadjena u bazi podataka </p>
 
 </div>
 </div>
@@ -214,6 +249,9 @@ Return value</h3>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ActionResult Game.Controllers.GamesControler.UpdateGame </td>
@@ -223,21 +261,27 @@ Return value</h3>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md6"></a>
 Desctiption</h3>
-<p>UpdateGame - function that is going to update the game in our database </p>
+<p>UpdateGame - Funkcija koja menja postojecu igru u bazi podataka </p>
 <h3><a class="anchor" id="autotoc_md7"></a>
 Arguments</h3>
-<p>GameUpdateDto gameUpdateDto - object that contains the new data that will be placed on an existing object that is in the database.  </p>
+<p>GameUpdateDto gameUpdateDto - objekat koji sadrzi nove podatke koji ce biti promenjeni u postojecoj igri. <br  />
+ </p>
 <h3><a class="anchor" id="autotoc_md8"></a>
 Return value</h3>
-<p>ActionResult - returns NoContent </p>
+<p>ActionResult - vraca NoContent </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Korisnik/Desktop/Razvoj softvera 2/Projekat_3/gameMicroservice/Game/Controllers/GameController.cs</li>
+<li>C:/Users/Korisnik/Desktop/Spojnice_documentation Srpski/Spojnice/gameMicroservice/Game/Controllers/GameController.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -4,7 +4,7 @@ using User.Models;
 
 namespace Game.Data
 {
-    /// Interface that SqlGameRepo is going to implmenet and thus will need to have all the methods described.
+    /// Interfejs koji SqlGameRepo klasa implementira i definise sve metode.
     public interface IGameRepo
     {
         bool SaveChanges();

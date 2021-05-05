@@ -2,13 +2,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Score.Dtos
 {
-    ///ScoreCreateDto class that represents the Data transfer object
+    /// UserCreateDto klasa predstavlja objekat za transfer podataka
     public class ScoreCreateDto
     {
-        /// Represents the Score.
+        /// Predstavlja skor.
         public int Score { get; set; }
 
-        /// Represents the Username.
+        /// Predstavlja korisnicko ime.
         public string Username { get; set; }
     }
 }

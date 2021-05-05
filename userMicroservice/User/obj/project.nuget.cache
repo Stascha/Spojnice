@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "80l8BeooswuGmUhMHLAicc46RXGksOf5kyDvbT3l9RCNgKGaTvDTZ41g1E3ACQp5Y9Rxlcr91bJF+oUCAcpqrA==",
+  "dgSpecHash": "plWLU7GYqmJhObzryC0IcYz6NcH2V+JxqBhS1OPMx6F3Gwsaa8c+2bZAnVjYPk9KxDxYiaeo2qAKz04A51scFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_notifikacije_iz_aplikacije\\Spojnice\\userMicroservice\\User\\User.csproj",
+  "projectFilePath": "C:\\Users\\Korisnik\\Desktop\\Spojnice_documentation Srpski\\Spojnice\\userMicroservice\\User\\User.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Korisnik\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",

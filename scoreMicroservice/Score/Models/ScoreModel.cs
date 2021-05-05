@@ -3,18 +3,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Score.Models
 {
-    /// Class contains informations about the score
+    /// Klasa sadrzi informacije o skoru   
     public class ScoreModel
     {
-        /// ID primary key of the Score - unique player identifier
+        /// ID primary key igraca - jedinstveni identifikator igraca
         [Key]
         public int Id { get; set; }
 
-        /// score - number of scored points
+        /// skor - broj poena
         [Required]
         public int Score { get; set; }
 
-        /// Contains username
+        /// Korisnicko ime igraca
         [Required]
         public string Username { get; set; }
     }

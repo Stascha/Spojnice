@@ -4,9 +4,9 @@ import { GameService } from 'src/app/services/game.service';
 import { UserService } from 'src/app/services/user.service';
 import { GameComponent } from '../game.component';
 
-/** JS function defined in the index.html file. Function that will initialize modal reference when called. */
+/** JS funkcija definisana u index.html fajlu. Funkcija koja inicijalizuje modal reference when called. */
 declare const initializeSettingsModalVar: any;
-/** JS function defined in the index.html file. Function that will show the modal to the end user. */
+/** JS funkcija definisana u index.html fajlu. Funkcija koja prikazuje modal igracu. */
 declare const settingsModalShow: any;
 
 /** Component - UserActionsBtnsComponent*/
@@ -20,7 +20,7 @@ declare const settingsModalShow: any;
  */
 export class UserActionsBtnsComponent implements OnInit {
   /**
-   * Constructor
+   * Konstruktor
    * @param userService {UserService}
    * @param router {Router}
    * @param gameService {GameService}
@@ -40,8 +40,8 @@ export class UserActionsBtnsComponent implements OnInit {
   }
 
   /**
-   * When user choose the logout option we will use method logoutUser from the UserService service class to log the user out.
-   * After that user will be reddirected to our login page.
+   * Kada igrac odabere da hoce da se izloguje, tada ce metod logoutUser iz UserService klase da izloguje igraca.
+   * Posle toga ce igrac biti redirektovan na login stranicu.
    */
   onUserLogout():void{
     this.userService.logoutUser();
@@ -50,7 +50,7 @@ export class UserActionsBtnsComponent implements OnInit {
   }
 
   /**
-   * New game will be started (via gameComponent) and game will be set to being active (gameService - attribute: gameActive ).
+   * Nova igra ce biti zapoceta (via gameComponent) i igra ce biti postavljena da je aktivna (gameService - attribute: gameActive ).
    */
   onNewGame(){
     this.gameComponent.startTheGame();
@@ -58,24 +58,23 @@ export class UserActionsBtnsComponent implements OnInit {
   }
 
   /**
-   * Funtion that is used to open the settings modal
+   * Funkcija koja otvara modal za podesavanje dobijanja notifikacija od aplikacije
    */
   onSettingsModalOpen(){
     settingsModalShow(true);
   }
 
   /**
-   * Function that is used to close our modal
-   * On modal close it will update the provided notification value with our database value
+   * Funkcija koja zatvara modal za podesavanje dobijanja notifikacija od aplikacije
+   * Kada se modal zatvori, vrednost koja je postavljena na modalu ce biti promenjana u bazi podataka u koloni Notifications.
    */
   onSettingsModalClose(){
     settingsModalShow(false);
   }
 
   /**
-   * Function that will change the current notification value within our user object on the frontend
-   * and will contact the function from userService that is going to contact our microservice API
-   * in order to change the notifications value within our database
+   * Funkcija koja menja trenutnu vrednost notifikacije u korisnickom objektu na frontendu i kontaktira funkciju iz
+   * userService koja kontaktira microservice API da bi se promenila vrednost u koloni Notifications u bazi podataka.
    */
   onSettingsNotificationCheckBoxChange(){
     this.userService.getLoggedinUser().notificationsActive = !this.userService.getLoggedinUser().notificationsActive;

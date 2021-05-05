@@ -5,21 +5,21 @@ using System;
 
 namespace User.Data
 {
-    /// Class that contains methods to send an email via SMTP protocol
+    /// Klasa koja sadrzi metod za slanje email poruka preko SMTP protokola
     public class UserEmailSender
     {
-        /// Our email from which we want to send emails.
+        /// Email adresa sa koje aplikacija slje meilove
         private string myEmail;
-        /// Our email password.
+        /// Lozinka za email adresu sa koje aplikacija salje meilove
         private string myEmailPassword;
-        /// Url address to the smtp server that the set email is using.
+        /// URL adresa do smtp servera
         private string smtpURL;
-        /// Smtp port for the smtp server that we use to send out emails.
+        /// Smtp port za smtp server koji aplikacija koristi za slanje emailova.
         private int smtpPort;
-        /// Use secure connection or not.
+        /// Koriscenje secure konekcije ili ne.
         private bool smtpEnableSSL;
 
-        /// Constructor for the UserEmailSender class
+        /// Konstruktor za UserEmailSender klasu
         public UserEmailSender()
         {
             this.myEmail = "slagalica@airmail.cc";
@@ -27,22 +27,17 @@ namespace User.Data
             this.smtpURL = "mail.cock.li";
             this.smtpPort = 587;
             this.smtpEnableSSL = true;   
-        } 
-     /* {
-            this.myEmail = "couplings.newyork@gmail.com";
-            this.myEmailPassword = "NewYork40$$";
-            this.smtpURL = "smtp.gmail.com";
-            this.smtpPort = 465;
-            this.smtpEnableSSL = true;   
-        } */
+        }
+    
 
-    /** ### Description
-    * SendWelcomeMail - is going to send an welcome email to the email extracted from user object. Email will contain links to enable and disable notifications in future.
-    * ### Arguments
-    * UserModel account - usr object to send an email to </br>
-    * ### Return value
-    * None. */
-    public void SendWelcomeMail(UserModel account){
+        /** ### Description
+        * SendWelcomeMail - Poslace email poruku igracu koji se upravo registrovao. \n  
+        * Email poruka ce sadrzati link koji ce igracu omoguciti da dobija notifikacije od aplikacije.
+        * ### Arguments
+        * UserModel account - Igrac objekat kome ce poslati email</br>
+        * ### Return value
+        * Nista. */
+        public void SendWelcomeMail(UserModel account){
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient(this.smtpURL);
 

@@ -83,7 +83,7 @@ Inheritance diagram for Score.Controllers.ScoreControler:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a12dda08f3ff3a0c72323154cc7364f56"><td class="memItemLeft" align="right" valign="top"><a id="a12dda08f3ff3a0c72323154cc7364f56"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_score_1_1_controllers_1_1_score_controler.html#a12dda08f3ff3a0c72323154cc7364f56">ScoreControler</a> (<a class="el" href="interface_score_1_1_data_1_1_i_score_repo.html">IScoreRepo</a> repository, IMapper mapper)</td></tr>
-<tr class="memdesc:a12dda08f3ff3a0c72323154cc7364f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">GamesControler Constructor. <br /></td></tr>
+<tr class="memdesc:a12dda08f3ff3a0c72323154cc7364f56"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_score_1_1_controllers_1_1_score_controler.html">ScoreControler</a> Konstruktor. <br /></td></tr>
 <tr class="separator:a12dda08f3ff3a0c72323154cc7364f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dadbcf4324d64bff0b09a0b9b3f1e8e"><td class="memItemLeft" align="right" valign="top">ActionResult&lt; IEnumerable&lt; <a class="el" href="class_score_1_1_dtos_1_1_score_read_dto.html">ScoreReadDto</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_score_1_1_controllers_1_1_score_controler.html#a1dadbcf4324d64bff0b09a0b9b3f1e8e">GetAllScores</a> ()</td></tr>
 <tr class="separator:a1dadbcf4324d64bff0b09a0b9b3f1e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,13 +91,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a25b8614e7fc7e0161d42e51180adf1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defined route path <a class="el" href="class_score_1_1_controllers_1_1_score_controler.html">ScoreControler</a> class </p>
+<div class="textblock"><p>Definisana putanja rute <a class="el" href="class_score_1_1_controllers_1_1_score_controler.html">ScoreControler</a> klasa </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a25b8614e7fc7e0161d42e51180adf1d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25b8614e7fc7e0161d42e51180adf1d9">&#9670;&nbsp;</a></span>CreateScore()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ActionResult&lt;<a class="el" href="class_score_1_1_dtos_1_1_score_read_dto.html">ScoreReadDto</a>&gt; Score.Controllers.ScoreControler.CreateScore </td>
@@ -107,13 +110,18 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md3"></a>
 Desctiption</h3>
-<p>CreateScore - creates new score in the database, or updates an old one. If inserted score provided has highest score, user that was at the first place will receive notification email in case the user has enabled notifications - if not no email will be sent out. </p>
+<p>CreateScore - kreira novi skor u bazi podataka ili menja stari skor. Ako je kreirani skor najvisi, igracu koji je do tada bio na prvom mestu na skor tabeli ce biti poslat notifikacioni email da se vise ne nalazi na prvom mestu u slucaju da je taj igrac omogucio dobijanje notifikacija od aplikacije a ako nije omogucio dobijanje notifikacija od aplikacije nece mu biti poslat email. </p>
 <h3><a class="anchor" id="autotoc_md4"></a>
 Arguments</h3>
-<p>ScoreCreateDto scoreCreateDto - score object. </p>
+<p>ScoreCreateDto scoreCreateDto - score objekat. </p>
 <h3><a class="anchor" id="autotoc_md5"></a>
 Return value</h3>
 <p>ActionResult&lt;IEnumerable&lt;ScoreReadDto&gt;&gt; - ScoreReadDto List </p>
@@ -125,6 +133,9 @@ Return value</h3>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ActionResult&lt;IEnumerable&lt;<a class="el" href="class_score_1_1_dtos_1_1_score_read_dto.html">ScoreReadDto</a>&gt; &gt; Score.Controllers.ScoreControler.GetAllScores </td>
@@ -133,21 +144,26 @@ Return value</h3>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <h3><a class="anchor" id="autotoc_md0"></a>
 Desctiption</h3>
-<p>Function that is going to return <a class="el" href="namespace_score.html">Score</a> List. </p>
+<p>Function koja vraca Skor Listu. </p>
 <h3><a class="anchor" id="autotoc_md1"></a>
 Arguments</h3>
-<p>None. </p>
+<p>Nema. </p>
 <h3><a class="anchor" id="autotoc_md2"></a>
 Return value</h3>
-<p>ActionResult&lt;IEnumerable&lt;ScoreReadDto&gt;&gt; - ScoreReadDto List </p>
+<p>ActionResult&lt;IEnumerable&lt;ScoreReadDto&gt;&gt; - ScoreReadDto Lista </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Korisnik/Desktop/Razvoj softvera 2/Projekat_3/scoreMicroservice/Score/Controllers/ScoreController.cs</li>
+<li>C:/Users/Korisnik/Desktop/Spojnice_documentation Srpski/Spojnice/scoreMicroservice/Score/Controllers/ScoreController.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

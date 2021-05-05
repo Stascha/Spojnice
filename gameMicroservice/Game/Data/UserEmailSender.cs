@@ -5,20 +5,21 @@ using System.Collections.Generic;
 
 namespace User.Data
 {
-    /// Class that contains methods to send an email via SMTP protocol
+    /// Klasa koja sadrzi metod za slanje email poruka preko SMTP protokola
     public class UserEmailSender
     {
-        /// Our email from which we want to send emails.
+        /// Email adresa sa koje aplikacija slje meilove
         private string myEmail;
-        /// Our email password.
+        /// Lozinka za email adresu sa koje aplikacija salje meilove
         private string myEmailPassword;
-        /// Url address to the smtp server that the set email is using.
+        /// URL adresa do smtp servera
         private string smtpURL;
-        /// Smtp port for the smtp server that we use to send out emails.
+        /// Smtp port za smtp server koji aplikacija koristi za slanje emailova.
         private int smtpPort;
-        /// Use secure connection or not.
+        /// Koriscenje secure konekcije ili ne.
         private bool smtpEnableSSL;
-        /// Constructor for the UserEmailSender class
+
+        /// Konstruktor za UserEmailSender klasu
         public UserEmailSender()
         {
             this.myEmail = "slagalica@airmail.cc";
@@ -26,23 +27,19 @@ namespace User.Data
             this.smtpURL = "mail.cock.li";
             this.smtpPort = 587;
             this.smtpEnableSSL = true; 
-        } 
-     /* {
-            this.myEmail = "couplings.newyork@gmail.com";
-            this.myEmailPassword = "NewYork40$$";
-            this.smtpURL = "smtp.gmail.com";
-            this.smtpPort = 465;
-            this.smtpEnableSSL = true;   
-        } */
+        }
 
-    /** ### Description
-    * SendNotificationNewGameCreatedMail is going to send emails to the provided list of users. Email will contain the new created game name as well as additional options to disable or enable future notifications.
-    * ### Arguments
-    * IEnumerable<UserModel> accounts - list of UserModels, list of users to who to send emails to. </br>
-    * string gameName - game name that represents the name of the game that is created. </br>
-    * ### Return value
-    * None. */
-    public void SendNotificationNewGameCreatedMail(IEnumerable<UserModel> accounts, string gameName){
+
+        /** ### Description
+        * SendNotificationNewGameCreatedMail ce poslati email poruke prosledjenoj listi igraca.  \n
+        * Email poruke ce sadrzati informaciju da je kreirana nova igra i ime nove igre. \n 
+        * E-mail poruke ce takodje sadrzati link za odjavljivanje od dobijanja notifikacija od aplikacije.
+        * ### Arguments
+        * IEnumerable<UserModel> accounts - lista UserModels, lista igraca kojima ce biti poslati meilovi. \n 
+        * string gameName - Ime nove igre koja je kreirana. \n 
+        * ### Return value
+        * Nema. */
+        public void SendNotificationNewGameCreatedMail(IEnumerable<UserModel> accounts, string gameName){
             SmtpClient SmtpServer = new SmtpClient(this.smtpURL);
             SmtpServer.Port = this.smtpPort;
             SmtpServer.Credentials = new System.Net.NetworkCredential( this.myEmail, this.myEmailPassword);

@@ -4,10 +4,10 @@ using Game.Models;
 
 namespace Game.Profiles
 {
-    /// GameProfile class
+    /// GameProfile klasa
     public class GameProfile : Profile
     {
-        /// GameProfile constructor where we are mapping source to the target / destination
+        /// GameProfile konstruktor gde se mapira izvor na cilj/odrediste
         public GameProfile()
         {
             CreateMap<GameModel, GameReadDto>();

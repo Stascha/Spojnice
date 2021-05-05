@@ -1,7 +1,7 @@
 using User.Models;
 namespace User.Data
 {
-    /// Interface that SqlUserRepo is going to implmenet and thus will need to have all the methods described.
+    /// Interfejs koji SqlUserRepo implmenetira i definise sve metode.
     public interface IUserRepo
     {
         bool SaveChanges();

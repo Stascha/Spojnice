@@ -1,15 +1,16 @@
 namespace User.Dtos
 {
-    ///UserCreateDto class that represents the Data transfer object
+    /// UserCreateDto klasa predstavlja objekat za transfer podataka
     public class UserCreateDto
     {
-        /// Represents the username.
+        /// Predstavlja korisnicko ime.
         public string Username { get; set; }
-        /// Represents the password.
+        /// Predstavlja lozinku.
         public string Password { get; set; }
-        /// Represents the email.
+        /// Predstavlja email.
         public string Email { get; set; }
-        /// Represents the role.
+        /// Predstavlja informaciju da li je igrac admin ili ne.
         public string Role { get; set; }
+
     }
 }

@@ -4,7 +4,7 @@ import { GameService } from 'src/app/services/game.service';
 import { ScoreService } from 'src/app/services/score.service';
 import { UserService } from 'src/app/services/user.service';
 import { ScoreTabComponent } from './score-tab/score-tab.component';
-/** JS function defined in the index.html file. Function that will show the modal to the end user with the text as input. */
+/** JS funkcija definisana u index.html file. Funkcija koja prikazuje modal korisniku - igracu sa tekstom. */
 declare const sendMessageUserModal: any;
 
 /** Component - GameComponent */
@@ -14,41 +14,42 @@ declare const sendMessageUserModal: any;
   styleUrls: ['./game.component.css']
 })
 /**
- * This component allows the user to play our game.
- * It also uses to other components to function properly: app-score-tab and app-user-actions-btns
+ * Komponenta koja omogucava igracu da igra igru.
+ * Takodje koristi i druge komponente : app-score-tab i app-user-actions-btns
  */
 export class GameComponent implements OnInit {
-  /** Represents the number of seconds that is shown above our timer while the game is active. */
-  timerTxt : string = "Sekunde..."; // prikaz koliko sekundi je ostalo
-  /** Represents the precent of how much time has left on the timer. We use it to draw and manipulate with the timer animation. */
-  timerHeight : number = 100; // procenat koliko vremena je ostalo, sluzi za istravanje timer-a vizualnog
-  /** Number of how many tries has user used while mathing the game pairs. Logic is built in for the 10 tries to be max, when number 10 is reached the game will end. */
-  numOfTries : number = 0; // broj pokusaja, kada je 10 igra = zavrsena
-  /** Number of correctly mathced game pairs. Number of correct answers by the user. */
-  scoreNum : number = 0; // broj tacnih
-  /** List that will contains the game data obtained from the server. */
-  serverData : any = []; // podaci dobijeni od servera
-  /** Contains the currect active game name. */
+  /** Predstavlja broj preostalih sekundi koje su prikazane iznad tajmera dok je igra aktivna */
+  timerTxt : string = "Sekunde..."; 
+  /** Predstavllja procenat koliko vremena je ostalo, sluzi za iscrtavanje vizualnog timer-a*/
+    timerHeight: number = 100; 
+  /** Broj pokušaja pogadjanja odgovarajucuih parova koje je igrac iskoristio.
+   * Posle 10 pokušaja igra se zavrsava. */
+  numOfTries : number = 0; 
+  /** Broj tacno pogodjenih parova. */
+  scoreNum : number = 0;
+  /**Lista koja sadrzi podatke o igri dobijene od servera. */
+  serverData : any = []; 
+  /** Sadrzi naziv trenutno aktivne igre. */
   currentActiveGameName = "";
-  /** We yse ut ti set the selected fields from both columns, makes it easier to check the matching pairs. */
-  flagSelectedItems = { // sluzi za cuvanje selectovanih polja iz kolona radi lakse provere
+  /** Sluzi za cuvanje selectovanih polja iz obe kolone radi lakse provere */
+  flagSelectedItems = {
     one: "",
     two: ""
   }
-  /** Time interval that will run for our timer, undefined at the beginning */
+  /** Vremenski interval za tajmer, nedefinisan na pocetku */
   interval : any = undefined;
 
   /**
-   * Constructor - reddirects user to the /login if user is not loggedin to our app.
-   * @param userService {UserService} to use the loggedin user data
-   * @param gameService {GameService} to send and receive data from our microservice API
-   * @param router {Router} to change component page
-   * @param scoreService {ScoreService} to send and receive data from our microservice API
+   * Konstruktor - redirektuje korisnika - igraca na stranicu za logovanje ako korisnik - igrac nije ulogovan.
+   * @param userService {UserService} za koriscenje podataka ulogovanog igraca
+   * @param gameService {GameService} za slanje i dobijanje podataka od microservice API
+   * @param router {Router} za promenu stranice 
+   * @param scoreService {ScoreService} za slanje i dobijanje podataka od microservice API
    * @param scoreTabComponent {ScoreTabComponent}
    */
   constructor(public userService : UserService,
      public gameService : GameService, // kontaktiranje APIja
-     private router:Router, // za promenu komponente kao strane
+     private router:Router, // za promenu strane
      private scoreService: ScoreService, // kontaktira API
      private scoreTabComponent : ScoreTabComponent) {
     if(userService.getLoggedinUser().id === -1){
@@ -65,9 +66,8 @@ export class GameComponent implements OnInit {
   
   } //ngOnInit end;
   /**
-   * Used to shuffle the array by random chance.
-   * We use this function to shuffle the both columns array that us being displayed to the end user.
-   */
+   * Funkcija na slucajan nacin premesta elemente nizaova za obadve kolone koje se prikazuju igracima tokom igre.
+  */
   shuffleArray(array:Array<any>) { // da rasporedi random elemente liste
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));         
@@ -79,10 +79,10 @@ export class GameComponent implements OnInit {
 }
 
 /**
- * Checks if game has ended, if it did end disable the click event.
- * When we select one item from the column other items that were selected are set as unselected.
- * Set clicked element as selected.
- * Save that it is selected in our flagSelectedItems attribute.
+ * Proverava da li je igra zavrsena, ako je igra zavrsena onemogucava da se dalje selektuju elementi kolona.
+ * Kada se selektuje element kolone, element koji je vec bio selektovan se postavi da ne bude selektovan.
+ * Prikazuje da je element kolone na koji je kliknuto selektovan.
+ * Sacuva da je selektovan u flagSelectedItems atributu.
  * @param item {string} Column Game data Item
  * @param pointerFlag {boolean} if flag is true this column answer has not been marked as a correct match answer
  */
@@ -90,12 +90,12 @@ export class GameComponent implements OnInit {
     if(!pointerFlag){return;}
     //(click)="onColumnOneClick(item.columnOne)" u html fajlu
     // za elemente prve kolone
-    if(this.gameService.getGameEndedFlag()){ // ako je igra zavrsena nema korisnik prava da igra na dalje
+    if(this.gameService.getGameEndedFlag()){ // ako je igra zavrsena nema korisnik prava da igra dalje
       return;
     }
     this.serverData.dataOne.forEach((e:any) =>{ 
-      // kada se 1 selektuje samo on moze da bude selektovan,
-      // stavi svaki da nije selektovan
+      // kada se jedan element  selektuje samo on moze da bude selektovan,
+      // stavi svaki drugi da nije selektovan
       e.selectedOne = false;
     })
     let foundItem = this.serverData.dataOne.find((elem:any) => { // nadju onaj koj je kliknut u nasoj listi
@@ -104,22 +104,21 @@ export class GameComponent implements OnInit {
     this.flagSelectedItems.one = item; // upamti koji je selektovan
   }
 /**
- * Check if element from the first column is selected. iF not return noothing which will exist the execution of this method.
- * Set selected element as clicked.
- * Do numOfTries + 1.
- * If elements from first and second column match add one to scoreNum attribute.
+ * Proverava da li je element iz prve kolone selektovan. 
+ * Postavlja selektovan element da je selektovan.
+ * Povecava broj pokusaja za jedan numOfTries + 1.
+ * Ako su selektovani elementi iz prve i druge kolone odgovarajuci povecava za jedan scoreNum atribut.
  * Set both fields as not selected.
- * Check if number of tries is equal to 10, if it is end the game.
+ * Proverava da li je broj pokušaja 10, ako je broj pokusaja 10 igra se zavrsava.
  * @param item {string} Column Game data Item
  */
   onColumnTwoClick(item:string){
     // kada se klikne na elemenat druge kolone
-   
     // proveri da li je selektovan neki iz prve kolone
     let foundItem = this.serverData.dataOne.find((elem:any) => {
       return elem.selectedOne === true
     });
-    if(!foundItem){return;} // ako nije niko selektovan ne radi nista
+    if(!foundItem){return;} // ako nije selektovan ni jedan element iz prve kolone ne radi nista
     // korisnik mora da izabere iz prve kolone zatim iz druge
     this.serverData.dataTwo.forEach((e:any) =>{e.selectedTwo = false;})// stavi svaki da nije selektovan
     foundItem = this.serverData.dataTwo.find((elem:any) => { 
@@ -147,11 +146,11 @@ export class GameComponent implements OnInit {
     }
   }
 /**
- * Checks if numOfTries attribute is equal to ten.
+ * Proverava da li numOfTries atribut jednak 10.
  * @returns {boolean}
  */
   isNumberOfTriesEqualToTen():boolean{
-    // znaci da igra treba da bude gotova ako je ==10
+    // Igra treba da bude gotova ako je numOfTries === 10
     if(this.numOfTries === 10){
       return true;
     } return false;
@@ -164,15 +163,15 @@ export class GameComponent implements OnInit {
     });
   }
   /**
-   * When game has ended. Collects the input from the game abd sends the data to our microservice API via gameService.
+   * Kada se igra zavrsi. Salje skor dobijen iz igre u microservice API putem gameService.
    */
   gameEndedSendScoreResult(){
     this.gameService.gameActive = true;
     this.gameService.setGameEndedFlag(true); // igra je gotova
     sendMessageUserModal("Igra je zavrsena!")
     this.disableClickOnItems();
-    this.scoreService.pushScore( // dodaj score na server
-      // server radi proveru i cuva samo najbolji score od zadatog user-a
+      this.scoreService.pushScore( // dodaj score na server
+        // server radi proveru i cuva samo najbolji score od zadatog user-a
       this.scoreNum,
       this.userService.getLoggedinUser().username
     ).subscribe((data:any)=>{
@@ -182,12 +181,12 @@ export class GameComponent implements OnInit {
   }
 
   /**
-   * Method that will initialize all the parameters when new game starts.
-   * It is going to reset numOfTries and scoreNum to zero.
-   * Set game as active.
-   * Grab new random game data from our microservise API via GameService.
-   * Shuffle array for both columns.
-   * Set the new timer to run.
+   * Metod koji inicijalizuje sve parametre kada nova igra pocne.
+   * Postavlja vrednosti numOfTries i scoreNum na 0.
+   * Postavlja igru da je aktivna.
+   * Uzima novu slucjno izabranu igru tj njene podatke iz microservise API via GameService.
+   * Ispremesta elemente oba niza, koji se prikazuju kao elementi kolona, na slucajan nacin.
+   * Startuje novi tajmer.
    */
   startTheGame(){
     this.gameService.setGameEndedFlag(false);
@@ -213,18 +212,18 @@ export class GameComponent implements OnInit {
       this.serverData.dataTwo = this.shuffleArray(this.serverData.dataTwo);
     
       //postavljamo nas timer ispod.....
-      //let timerInMinutes = 2;
+      //let timerInMinutes = 1;
       //let timerInSeconds = timerInMinutes * 60000;
       let timerInSeconds = 60000;
       let howManySeconds = timerInSeconds/1000;
       let decreasePerMin = 100/howManySeconds;
       this.timerTxt = `${howManySeconds}`; // timerTxt se prikazuje u .html fajlu
-      this.interval = setInterval(() => { // stavljamo interval da ide na svakih 1s da se izvri funkcija unutar
+      this.interval = setInterval(() => { // stavljamo interval da ide na svakih 1s da se izvrsi funkcija unutar
         if(this.gameService.getGameEndedFlag()){clearInterval(this.interval);} // ako je igra zavrsena prestaje sa intervalom
         howManySeconds--; // umanji sekunde za 1s
         this.timerTxt = `${howManySeconds}`;// timerTxt se prikazuje u .html fajlu
         this.timerHeight -= decreasePerMin; // da smanji % prikaza timera graficki
-        if (this.timerHeight <= 0) { // ako je % 0 znaci da je gorova igra
+        if (this.timerHeight <= 0) { // ako je % 0 znaci da je gotova igra
             clearInterval(this.interval); // prekini interval
             this.gameEndedSendScoreResult(); // prekini igru
         }

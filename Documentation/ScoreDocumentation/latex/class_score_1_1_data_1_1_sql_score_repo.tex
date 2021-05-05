@@ -2,7 +2,7 @@
 \label{class_score_1_1_data_1_1_sql_score_repo}\index{Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}}
 
 
-SQL Game Repository class.  
+SQL Repository klasa.  
 
 
 Inheritance diagram for Score.\+Data.\+Sql\+Score\+Repo\+:\begin{figure}[H]
@@ -16,7 +16,7 @@ Inheritance diagram for Score.\+Data.\+Sql\+Score\+Repo\+:\begin{figure}[H]
 \item 
 \mbox{\Hypertarget{class_score_1_1_data_1_1_sql_score_repo_ac70104a698541fdd9c662e7978e79ac2}\label{class_score_1_1_data_1_1_sql_score_repo_ac70104a698541fdd9c662e7978e79ac2}} 
 \mbox{\hyperlink{class_score_1_1_data_1_1_sql_score_repo_ac70104a698541fdd9c662e7978e79ac2}{Sql\+Score\+Repo}} (\mbox{\hyperlink{class_score_1_1_data_1_1_score_context}{Score\+Context}} context)
-\begin{DoxyCompactList}\small\item\em Constructor of Sql\+Game\+Repo Class. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Konstruktor \mbox{\hyperlink{class_score_1_1_data_1_1_sql_score_repo}{Sql\+Score\+Repo}} Klase. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_score_1_1_data_1_1_sql_score_repo_a40b8d63b9dadd953c807f2211af2712b}{Create\+Score}} (\mbox{\hyperlink{class_score_1_1_models_1_1_score_model}{Score\+Model}} score)
 \item 
 IEnumerable$<$ \mbox{\hyperlink{class_score_1_1_models_1_1_score_model}{Score\+Model}} $>$ \mbox{\hyperlink{class_score_1_1_data_1_1_sql_score_repo_a8a7ed61fd3dd2c16edceb8b6a9a9171e}{Get\+All\+Scores}} ()
@@ -34,19 +34,21 @@ bool \mbox{\hyperlink{class_score_1_1_data_1_1_sql_score_repo_a4eafa903578964546
 
 
 \doxysubsection{Detailed Description}
-SQL Game Repository class. 
+SQL Repository klasa. 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_score_1_1_data_1_1_sql_score_repo_a40b8d63b9dadd953c807f2211af2712b}\label{class_score_1_1_data_1_1_sql_score_repo_a40b8d63b9dadd953c807f2211af2712b}} 
 \index{Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}!CreateScore@{CreateScore}}
 \index{CreateScore@{CreateScore}!Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}}
 \doxysubsubsection{\texorpdfstring{CreateScore()}{CreateScore()}}
-{\footnotesize\ttfamily void Score.\+Data.\+Sql\+Score\+Repo.\+Create\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_score_1_1_models_1_1_score_model}{Score\+Model}}}]{score }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Score.\+Data.\+Sql\+Score\+Repo.\+Create\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_score_1_1_models_1_1_score_model}{Score\+Model}}}]{score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md6}{}\doxyparagraph{Description}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md6}
-Create\+Score method -\/ creates new score from the Score\+Model object received. Throws error if Score\+Model object is not provided. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md7}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md7}
-Score\+Model score -\/ score to add  \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md8}{}\doxyparagraph{Return value}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md8}
-None. 
+Create\+Score metod -\/ kreira novi skor iz dobijenog Score\+Model objekta. ~\newline
+ Izbacuje error ako Score\+Model objekat nije prosledjen. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md7}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md7}
+Score\+Model score -\/ skor koji se dodaje ~\newline
+ \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md8}{}\doxyparagraph{Return value}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md8}
+Nema. 
 
 Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+Data.\+IScore\+Repo}}.
 
@@ -54,12 +56,13 @@ Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+D
 \index{Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}!GetAllScores@{GetAllScores}}
 \index{GetAllScores@{GetAllScores}!Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}}
 \doxysubsubsection{\texorpdfstring{GetAllScores()}{GetAllScores()}}
-{\footnotesize\ttfamily IEnumerable$<$\mbox{\hyperlink{class_score_1_1_models_1_1_score_model}{Score\+Model}}$>$ Score.\+Data.\+Sql\+Score\+Repo.\+Get\+All\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily IEnumerable$<$\mbox{\hyperlink{class_score_1_1_models_1_1_score_model}{Score\+Model}}$>$ Score.\+Data.\+Sql\+Score\+Repo.\+Get\+All\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md9}{}\doxyparagraph{Description}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md9}
-Get\+All\+Scores method -\/ returs all \mbox{\hyperlink{namespace_score}{Score}} records. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md10}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md10}
-None. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md11}{}\doxyparagraph{Return value}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md11}
-IEnumerable$<$\+Score\+Model$>$ -\/ list of scores. If objects are not found in the database null is returned. 
+Get\+All\+Scores metod -\/ vraca sve skoreve. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md10}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md10}
+Nema. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md11}{}\doxyparagraph{Return value}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md11}
+IEnumerable$<$\+Score\+Model$>$ -\/ lista skoreva. ~\newline
+ Ako objekat nije pronadjen u bazi podataka bice vracen null. 
 
 Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+Data.\+IScore\+Repo}}.
 
@@ -67,12 +70,13 @@ Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+D
 \index{Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}!GetCurrentFirstScore@{GetCurrentFirstScore}}
 \index{GetCurrentFirstScore@{GetCurrentFirstScore}!Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}}
 \doxysubsubsection{\texorpdfstring{GetCurrentFirstScore()}{GetCurrentFirstScore()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_score_1_1_models_1_1_score_model}{Score\+Model}} Score.\+Data.\+Sql\+Score\+Repo.\+Get\+Current\+First\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_score_1_1_models_1_1_score_model}{Score\+Model}} Score.\+Data.\+Sql\+Score\+Repo.\+Get\+Current\+First\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md21}{}\doxyparagraph{Description}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md21}
-Get\+Current\+First\+Score method -\/ returns highest score object. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md22}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md22}
+Get\+Current\+First\+Score method -\/ vraca najveci skor objekat. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md22}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md22}
 None. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md23}{}\doxyparagraph{Return value}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md23}
-Score\+Model -\/ score object. If database has no objects, null is returned. 
+Score\+Model -\/ score objekat. ~\newline
+ Ako baza podataka nema objekte bice vrace null. 
 
 Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+Data.\+IScore\+Repo}}.
 
@@ -80,12 +84,14 @@ Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+D
 \index{Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}!GetScoreByUsername@{GetScoreByUsername}}
 \index{GetScoreByUsername@{GetScoreByUsername}!Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}}
 \doxysubsubsection{\texorpdfstring{GetScoreByUsername()}{GetScoreByUsername()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_score_1_1_models_1_1_score_model}{Score\+Model}} Score.\+Data.\+Sql\+Score\+Repo.\+Get\+Score\+By\+Username (\begin{DoxyParamCaption}\item[{string}]{usrname }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_score_1_1_models_1_1_score_model}{Score\+Model}} Score.\+Data.\+Sql\+Score\+Repo.\+Get\+Score\+By\+Username (\begin{DoxyParamCaption}\item[{string}]{usrname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md12}{}\doxyparagraph{Description}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md12}
-Get\+Score\+By\+Username method -\/ returns score by username as input. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md13}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md13}
-string usrname -\/ user username  \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md14}{}\doxyparagraph{Return value}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md14}
-Score\+Model -\/ score object. If object is not found in the database null is returned. 
+Get\+Score\+By\+Username metod -\/ vraca skor za prosledjeno korisnicko ime. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md13}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md13}
+string usrname -\/ user korisnicko ime ~\newline
+ \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md14}{}\doxyparagraph{Return value}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md14}
+Score\+Model -\/ score objekat. ~\newline
+ Ako objekat nije pronadjen u bazi podataka bice vracen null. 
 
 Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+Data.\+IScore\+Repo}}.
 
@@ -93,12 +99,13 @@ Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+D
 \index{Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}!GetUserByUsername@{GetUserByUsername}}
 \index{GetUserByUsername@{GetUserByUsername}!Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}}
 \doxysubsubsection{\texorpdfstring{GetUserByUsername()}{GetUserByUsername()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}} Score.\+Data.\+Sql\+Score\+Repo.\+Get\+User\+By\+Username (\begin{DoxyParamCaption}\item[{string}]{usrname }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user_1_1_models_1_1_user_model}{User\+Model}} Score.\+Data.\+Sql\+Score\+Repo.\+Get\+User\+By\+Username (\begin{DoxyParamCaption}\item[{string}]{usrname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md18}{}\doxyparagraph{Description}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md18}
-Get\+User\+By\+Username method -\/ returns user object by username as input. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md19}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md19}
-string usrname -\/ user username  \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md20}{}\doxyparagraph{Return value}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md20}
-User\+Model -\/ score object. If object is not found in the database null is returned. 
+Get\+User\+By\+Username method -\/ vraca user objekat na osnovu prosledjenog korisnickog imena. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md19}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md19}
+string usrname -\/ user korisnicko ime  \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md20}{}\doxyparagraph{Return value}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md20}
+User\+Model -\/ score objekat. ~\newline
+ Ako objekat nije pronadjen u bazi podataka bice vracen null. 
 
 Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+Data.\+IScore\+Repo}}.
 
@@ -106,12 +113,13 @@ Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+D
 \index{Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}!RemoveScore@{RemoveScore}}
 \index{RemoveScore@{RemoveScore}!Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}}
 \doxysubsubsection{\texorpdfstring{RemoveScore()}{RemoveScore()}}
-{\footnotesize\ttfamily void Score.\+Data.\+Sql\+Score\+Repo.\+Remove\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_score_1_1_models_1_1_score_model}{Score\+Model}}}]{score }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Score.\+Data.\+Sql\+Score\+Repo.\+Remove\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_score_1_1_models_1_1_score_model}{Score\+Model}}}]{score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md15}{}\doxyparagraph{Description}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md15}
-Remove\+Score method -\/ removes score \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md16}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md16}
-Score\+Model score -\/ score object to remove/delete \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md17}{}\doxyparagraph{Return value}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md17}
-None. 
+Remove\+Score method -\/ brise skor \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md16}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md16}
+Score\+Model score -\/ score objekat koji treba da bude izbrisan ~\newline
+ \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md17}{}\doxyparagraph{Return value}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md17}
+Nema. 
 
 Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+Data.\+IScore\+Repo}}.
 
@@ -119,11 +127,11 @@ Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+D
 \index{Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}!SaveChanges@{SaveChanges}}
 \index{SaveChanges@{SaveChanges}!Score.Data.SqlScoreRepo@{Score.Data.SqlScoreRepo}}
 \doxysubsubsection{\texorpdfstring{SaveChanges()}{SaveChanges()}}
-{\footnotesize\ttfamily bool Score.\+Data.\+Sql\+Score\+Repo.\+Save\+Changes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Score.\+Data.\+Sql\+Score\+Repo.\+Save\+Changes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md24}{}\doxyparagraph{Description}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md24}
-Save\+Changes method -\/ saves changes that are made to our \+\_\+context. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md25}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md25}
-None. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md26}{}\doxyparagraph{Return}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md26}
+Save\+Changes method -\/ cuva promene koje su napravljene u \+\_\+context. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md25}{}\doxyparagraph{Arguments}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md25}
+Nema. \hypertarget{class_score_1_1_data_1_1_sql_score_repo_autotoc_md26}{}\doxyparagraph{Return}\label{class_score_1_1_data_1_1_sql_score_repo_autotoc_md26}
 (\+\_\+context.\+Save\+Changes() $>$= 0); 
 
 Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+Data.\+IScore\+Repo}}.
@@ -132,4 +140,4 @@ Implements \mbox{\hyperlink{interface_score_1_1_data_1_1_i_score_repo}{Score.\+D
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Korisnik/\+Desktop/\+Razvoj softvera 2/\+Projekat\+\_\+3/score\+Microservice/\+Score/\+Data/Sql\+Score\+Repo.\+cs\end{DoxyCompactItemize}
+C\+:/\+Users/\+Korisnik/\+Desktop/\+Spojnice\+\_\+documentation Srpski/\+Spojnice/score\+Microservice/\+Score/\+Data/Sql\+Score\+Repo.\+cs\end{DoxyCompactItemize}

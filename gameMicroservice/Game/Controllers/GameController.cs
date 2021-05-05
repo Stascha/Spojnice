@@ -9,29 +9,29 @@ using User.Models;
 
 namespace Game.Controllers
 {
-    /// Defined route path
     [Route("api/game")] // putanja dome:port/api/game
     [ApiController]
-    /// GamesControler class
+
+    /// GamesControler klasa
     public class GamesControler : ControllerBase
     {
-        /// Our game repository
+        /// Game repository
         private readonly IGameRepo _repository;
-        /// mapper that is used to map source to the target/destination
-        private  readonly IMapper _mapper;
+        /// Maper koji se koristi za mapiranje izvora na cilj/odrediste
+        private readonly IMapper _mapper;
 
-        /// GamesControler Constructor
+        /// GamesControler Konstruktor
         public GamesControler(IGameRepo repository, IMapper mapper)
         {
             _repository = repository;            
             _mapper = mapper;
         }
         /** ### Desctiption
-        *  Function that will return random Game if any game is in our database
+        * Funkcija koja vraca slucajno izabranu igru ako postoji neka igra u bazi podataka 
         * ### Arguments
-        * None.
+        * Nema.
         * ### Return value
-        * ActionResult<GameReadDto> - returns positive GameReadDto object in case the game exist in the database and NotFound header in case no game is found in the database */
+        * ActionResult<GameReadDto> - vraca GameReadDto objekat u slucaju da neka igra postoji u bazi podataka ili NotFound u slucaju da ni jedna igra nije pronadjena u bazi podataka */
         [HttpGet] // // putanja dome:port/api/game GET
         public ActionResult<GameReadDto> GetRandomGame() //
         {
@@ -40,16 +40,16 @@ namespace Game.Controllers
                // ukoliko je uzeta igra mapira za izlazne podatke i salje OK, ili status code 200 sa podacima
                 return Ok(_mapper.Map<GameReadDto>(commandItem));
             }
-            // ako je commandItem ==null znaci da nemamo ni jednu igru unetu u bazi
+            // ako je commandItem == null znaci da nemamo ni jednu igru unetu u bazi
             return NotFound();
         }
 
         /** ### Desctiption
-        *  CreateGame method that is used to add new game to the Game table in our database.
+        * CreateGame metod dodaje novu igru u tabelu Game u bazi podataka.
         * ### Arguments
-        * GameCreateDto gameCreateDto - object containing game data to insert into our database </br>
+        * GameCreateDto gameCreateDto - objekat sadrzi podatke za igru koja treba da se ubaci u bazu podataka \n 
         * ### Return value
-        * ActionResult <GameReadDto> - returns the object that is inserted in the database. */
+        * ActionResult <GameReadDto> - vraca objekat koji je ubacen u bazu podataka*/
         [HttpPost] // putanja dome:port/api/game POST
         public ActionResult <GameReadDto> CreateGame(GameCreateDto gameCreateDto)
         {
@@ -58,18 +58,19 @@ namespace Game.Controllers
             _repository.SaveChanges();
             var commandReadDto = _mapper.Map<GameReadDto>(gameModel);
 
-            //grab all users : notifications = true
+            // Uzimaju se svi igraci kod kojih je : notifications = true
             IEnumerable<UserModel> userListToSendNotifications =  _repository.GetAllUsersWhereNotificationsIsTrue();
+            // Salje se poruka svim igracima, koji su omogucili notifikacije od aplikacije, da je kreirana nova igra.
                 new UserEmailSender().SendNotificationNewGameCreatedMail(userListToSendNotifications, gameCreateDto.Name);
-            return Ok(commandReadDto); // vraca uneti podatak
+            return Ok(commandReadDto); 
         }
 
         /** ### Desctiption
-        *  UpdateGame - function that is going to update the game in our database
+        * UpdateGame - Funkcija koja menja postojecu igru u bazi podataka 
         * ### Arguments
-        * GameUpdateDto gameUpdateDto - object that contains the new data that will be placed on an existing object that is in the database. </br>
+        * GameUpdateDto gameUpdateDto - objekat koji sadrzi nove podatke koji ce biti promenjeni u postojecoj igri. \n 
         * ### Return value
-        * ActionResult - returns NoContent*/
+        * ActionResult - vraca NoContent*/
         [HttpPut]
         public ActionResult UpdateGame(GameUpdateDto gameUpdateDto)
         {
@@ -77,18 +78,18 @@ namespace Game.Controllers
             if(gameModelFromRepo == null){ return NotFound();}
 
             _mapper.Map(gameUpdateDto, gameModelFromRepo);
-            //_repository.UpdateGame(gameModelFromRepo);
             _repository.SaveChanges();
-            //return NoContent();
+           
             return NoContent();
         }
 
         /** ### Desctiption
-        * Deletes the chosen game bt id from the database. Route from the root route is /{id}
+        * Brise igru na osnovu prosledjenog id-a igre iz baze podataka.
         * ### Arguments
-        * int id - id of the game in the database that will be removed </br>
+        * int id - id igre koja treba da se izbrise iz baze podataka \n 
         * ### Return value
-        * ActionResult - returns NoContent on success and NotFound in case the set id is not found in the database*/
+        * ActionResult - returns NoContent ako je igra izbrisana ili \n  
+        * NotFound ako prosledjeni id igre ne postoji u bazi podataka */
         [HttpDelete("{id}")]
         public ActionResult DeleteGame(int id){
             var gameModelFromRepo = _repository.GetGameById(id);
@@ -100,12 +101,11 @@ namespace Game.Controllers
         }
 
         /** ### Desctiption
-        * Method that returns full list of Game data that is in our database Game table. 
-        * Route from the root route is /all
+        * Metod koji vraca listu svih igara koje se nalaze u bazi podataka u Game tabeli. 
         * ### Arguments
-        * None.
+        * Nema.
         * ### Return value
-        * ActionResult - returns Game list*/
+        * ActionResult - vraca listu svih igara*/
         [HttpGet("all")] // // putanja dome:port/api/game GET
         public ActionResult<IEnumerable<GameReadDto>> GetAllGames()
         {

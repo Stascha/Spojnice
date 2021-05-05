@@ -4,10 +4,10 @@ using Score.Models;
 
 namespace Score.Profiles
 {
-    /// ScoreProfile class
+    /// ScoreProfile klasa
     public class ScoreProfile : Profile
     {
-        /// ScoreProfile constructor where we are mapping source to the target / destination
+        /// ScoreProfile konstrktor gde se mapira izvor na cilj/odrediste
         public ScoreProfile()
         {
             // mapping source -> target / destination

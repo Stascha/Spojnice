@@ -1,19 +1,19 @@
 namespace User.Dtos
 {
-    ///UserCreateDto class that represents the Data transfer object
+    ///UserCreateDto klasa predstavlja objekat za transfer podataka
     public class UserReadDto
     {
-        /// Represents the id.
+        /// Predstavlja id.
         public int Id { get; set; }
-        /// Represents the username.
+        /// Predstavlja username.
         public string Username {get; set;}
-        /// Represents the email.
+        /// Predstavlja email.
         public string Email { get; set; }
-        /// Represents the role.
+        /// Predstavlja role.
         public string Role { get; set; }
-        // Represents the notification token
+        // Predstavlja notification token
         public string NotificationToken { get; set; }
-        /// Boolean value that tells us if the user wants to receive email notifications.
+        /// Boolean vrednost koja predstavlja da li igrac zeli da dobija email notificatikacija.
         public bool Notifications { get; set; }
     }
 }

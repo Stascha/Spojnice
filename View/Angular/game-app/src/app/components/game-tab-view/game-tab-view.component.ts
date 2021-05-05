@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Game, GameService } from 'src/app/services/game.service';
 import { UserService } from 'src/app/services/user.service';
-/** JS function defined in the index.html file. Function that will initialize modal reference when called. */
+/** JS funkcija definisana u index.html fajlu. Funkcija koja inicijalizuje modal kada se pozove. */
 declare const initializeUpdateGameModalVar: any;
-/** JS function defined in the index.html file. Function that will show the modal to the end user. */
+/** JS funkcija definisana u index.html fajlu. Funkcija koja prikazuje modal. */
 declare const updateGameModalShow: any;
-/** JS function defined in the index.html file. Function that will show the modal to the end user with the text as input. */
+/** JS funkcija definisana u index.html fajlu. Funkcija koja prikazuje modal sa tekstom. */
 declare const sendMessageUserModal: any;
 /**
  * Component - GameTabViewComponent
@@ -17,23 +17,23 @@ declare const sendMessageUserModal: any;
   styleUrls: ['./game-tab-view.component.css']
 })
 /**
- * GameTabViewComponent - page that enables the admin to edit, delete and create new components
+ * GameTabViewComponent - stranica koja omogucava adminu da menja, brise i kreira nove igre
  */
 export class GameTabViewComponent implements OnInit {
-  /**Contains game table data to list as well as data about the data fields which are hidden at the beginning.*/
+  /** Sadrzi podatke o igri koji nisu prikazani na pocetku.*/
   private gameTableList : Array<any> = [];
-  /** Contains an array of Input fields eiither for updating the Game fields, or for creating new Game data fields. */
+  /** Sadrzi niz polja za unos podataka za menjanje igre ili za kreiranje nove igre. */
   public inputGameData : Array<any> = [];
-  /** Contains game input name for updating or when creating new Game */
+  /** Sadrzi naziv igre kada se menja igra ili kada se kreira nova igra */
   public inputNameGameData : string = "";
-  /**Contains if all fields are valid in our Input Dialog: when creating or updating our game. */
+  /**Sadrzi informaciju da li su sva polja popunjena na panelu za unos podataka, kada se menja ili kreira nova igra. */
   public formInputInvalid : boolean = false;
-  /** when we want to update the Game Data, this field will contain ID of the GAME in our database. */
+  /** Kada se menja igra, to polje sadrzi ID igre u bazi podataka. */
   private inputIDClicked: number = -1;
-  /** if Input Dialog is active : either for create or update Game operation. */
+  /** Informacija da li je panel za unos podataka aktivan bez obzira da li se menja igra ili se kreira nova igra. */
   private isCreateModalActive : boolean = false;
   /**
-   * Constructor : if user is not admin, user will be reddirected to the /login component.
+   * Konstruktor : ako igrac nije admin, igrac ce biti redirektovan na login stranicu.
    * @param userService {UserService}
    * @param router {Router}
    * @param gameService {GameService}
@@ -53,7 +53,7 @@ export class GameTabViewComponent implements OnInit {
     this.gameService.gameActive = false;
    }
 
-    /** Empties out Input dialog form */
+    /** Isprazni sva polja na panelu za unos podataka */
    initEmptyInputUpdateForm(){
      // postavlja sva polja za izmene na prazne stringove
     this.inputGameData = [];
@@ -62,7 +62,7 @@ export class GameTabViewComponent implements OnInit {
     }
    }
 
-   /** This method will use gameService to get the data related to all the games in order to list them and show to the end user.*/
+   /**  Method koristi gameService da uzme podatke o svim igrama i prikazuje ih igracima */
    initMainDataTable(){
      //dovlaci podatke iz baze, kontaktira API
     this.gameService.getAllGames().subscribe((e)=>{
@@ -74,8 +74,8 @@ export class GameTabViewComponent implements OnInit {
     })
    }
   /**
-   * sets gameEndedFlag attribute of GameService class to truue.
-   * calls our local class method initMainDataTable.
+   * Postavlja vrednost gameEndedFlag attributa iz GameService klase na true.
+   * poziva metod initMainDataTable.
    */
   ngOnInit(): void {
     this.gameService.setGameEndedFlag(true);
@@ -84,8 +84,7 @@ export class GameTabViewComponent implements OnInit {
     initializeUpdateGameModalVar();
   }
   /**
-   * When user chooses and option to update the game this method is called.
-   * 
+   * Metod se poziva kada igrac odabere da promeni igru.
    */
   onUpdateGameFormSubmit():void{
     if(!this.checkIfFieldsNotEmpty()){
@@ -112,7 +111,7 @@ export class GameTabViewComponent implements OnInit {
   }
 
   /**
-   * Used to reset all fields and to close the Input Dialog.
+   * Resetuje sva polja i zatvara Input panel za promenu igre.
    */
   onUpdatGameModalClose():void{
     updateGameModalShow(false);
@@ -122,8 +121,8 @@ export class GameTabViewComponent implements OnInit {
   }
 
   /**
-   * Deletes the row in the database that have data about one choosen game.
-   * @param id {number} contains ID of the Game to delete from the database.
+   * Brise vrstu iz baze podataka koja sadrzi podatke o izabranoj igri. 
+   * @param id {number} Sadrzi id igre koja se brise iz baze podataka.
    */
   onDelete(id:number):void{
       console.log(id)
@@ -134,8 +133,8 @@ export class GameTabViewComponent implements OnInit {
   }
 
   /**
-   * Sets the Input Dialog with chosen game values and starts the dialog.
-   * @param {Game} item  contains the data about the GAME data that we want to update.
+   * Prikazuje panel sa podacima izabrane igre.
+   * @param {Game} item  Sadrzi podatke o igri koja se menja.
    */
   onUpdateOpenDialog(item:Game):void{
     this.isCreateModalActive = false;
@@ -146,14 +145,14 @@ export class GameTabViewComponent implements OnInit {
   }
   /**
    * Getter
-   * @returns {Array<any>} gameTableList attribute 
+   * @returns {Array<any>} gameTableList atribut 
    */
   getGameTableList(){
     return this.gameTableList;
   }
   /**
-   * Checks if all fields are filled by the end user in our Input Dialog.
-   * @returns {boolean} value
+   * Proverava da li su sva polja na panelu za unos podataka popunjena.
+   * @returns {boolean} vrednost
    */
   checkIfFieldsNotEmpty():boolean{
     let returnBool = true;
@@ -169,7 +168,7 @@ export class GameTabViewComponent implements OnInit {
   }
 
   /**
-   * Empties out all form fields and opens out Input Dialog.
+   * Isprazni sva polja panela za unos podataka i prikaze panel za unos podataka.
    */
   onCreateNewGame(){
     this.initEmptyInputUpdateForm();
@@ -179,9 +178,9 @@ export class GameTabViewComponent implements OnInit {
   }
 
   /**
-   * Handles the submit User data.
-   * Checks if fields are not empty, if they are returns nothing and stops the method execution
-   * if fields are not empty it will create the Game data structure and deligate that objecct to the GameService pushGame function
+   * Proverava da li su sva polja popunjena.
+   * Ako nisu sva polja popunjena zaustavlja izvrsavanje metode. 
+   * Ako su sva polja popunjena kreirace strukturu podataka igre i prosledice taj objekat GameService pushGame funkciji
    */
   onCreateNewGameSubmit(){
     if(!this.checkIfFieldsNotEmpty()){
@@ -205,7 +204,7 @@ export class GameTabViewComponent implements OnInit {
   }
   /**
    * Getter
-   * @returns {boolean} if out input dialog is active or not.
+   * @returns {boolean} podatak da li je panel za unos podataka aktivan ili ne.
    */
   getIsCreateModalActive():boolean{
     return this.isCreateModalActive;

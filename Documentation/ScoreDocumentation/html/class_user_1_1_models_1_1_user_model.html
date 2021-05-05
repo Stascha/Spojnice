@@ -73,43 +73,66 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Class contains informations about the user.  
+<p>Klasa koja sadrzi informacije o igracu.  
  <a href="class_user_1_1_models_1_1_user_model.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ab4ef38cbac88bdc6588ec680aa23d655"><td class="memItemLeft" align="right" valign="top"><a id="ab4ef38cbac88bdc6588ec680aa23d655"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_user_1_1_models_1_1_user_model.html#ab4ef38cbac88bdc6588ec680aa23d655">Id</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ab4ef38cbac88bdc6588ec680aa23d655"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID primary key of the <a class="el" href="namespace_user.html">User</a> - unique player identifier. <br /></td></tr>
+<tr class="memdesc:ab4ef38cbac88bdc6588ec680aa23d655"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID primary key igraca - jedinstveni identifikator igraca. <br /></td></tr>
 <tr class="separator:ab4ef38cbac88bdc6588ec680aa23d655"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe7ee3406241b8ba3b671f192d4a6c6f"><td class="memItemLeft" align="right" valign="top"><a id="afe7ee3406241b8ba3b671f192d4a6c6f"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_user_1_1_models_1_1_user_model.html#afe7ee3406241b8ba3b671f192d4a6c6f">Username</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:afe7ee3406241b8ba3b671f192d4a6c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Username of the user. <br /></td></tr>
+<tr class="memdesc:afe7ee3406241b8ba3b671f192d4a6c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Korisnicko ime igraca. <br /></td></tr>
 <tr class="separator:afe7ee3406241b8ba3b671f192d4a6c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54ace68293bfc9935ccd8df339ff0359"><td class="memItemLeft" align="right" valign="top"><a id="a54ace68293bfc9935ccd8df339ff0359"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_user_1_1_models_1_1_user_model.html#a54ace68293bfc9935ccd8df339ff0359">Password</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a54ace68293bfc9935ccd8df339ff0359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains hashed user password. <br /></td></tr>
+<tr class="memdesc:a54ace68293bfc9935ccd8df339ff0359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sadrzi hesiranu lozinku igraca. <br /></td></tr>
 <tr class="separator:a54ace68293bfc9935ccd8df339ff0359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63414edd213a0e599c133dac4902e849"><td class="memItemLeft" align="right" valign="top"><a id="a63414edd213a0e599c133dac4902e849"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_user_1_1_models_1_1_user_model.html#a63414edd213a0e599c133dac4902e849">Role</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a63414edd213a0e599c133dac4902e849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains user Role. <br /></td></tr>
+<tr class="memdesc:a63414edd213a0e599c133dac4902e849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sadrzi informaciju da li je igrac admin ili ne. <br /></td></tr>
 <tr class="separator:a63414edd213a0e599c133dac4902e849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf37f338190319a2d39428a86e5f7da6"><td class="memItemLeft" align="right" valign="top"><a id="adf37f338190319a2d39428a86e5f7da6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_user_1_1_models_1_1_user_model.html#adf37f338190319a2d39428a86e5f7da6">Notifications</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:adf37f338190319a2d39428a86e5f7da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean value that tells us if the user wants to receive email notifications. <br /></td></tr>
+<tr class="memdesc:adf37f338190319a2d39428a86e5f7da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean vrednost koja govori da li igrac zeli da dobija email notifikacije od aplikacije. <br /></td></tr>
 <tr class="separator:adf37f338190319a2d39428a86e5f7da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39447a84f9491673b35c87b67672f9cb"><td class="memItemLeft" align="right" valign="top"><a id="a39447a84f9491673b35c87b67672f9cb"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>NotificationToken</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a39447a84f9491673b35c87b67672f9cb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_user_1_1_models_1_1_user_model.html#a39447a84f9491673b35c87b67672f9cb">NotificationToken</a><code> [get, set]</code></td></tr>
 <tr class="separator:a39447a84f9491673b35c87b67672f9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f111c385269a38cbd68c0ee716060b6"><td class="memItemLeft" align="right" valign="top"><a id="a9f111c385269a38cbd68c0ee716060b6"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_user_1_1_models_1_1_user_model.html#a9f111c385269a38cbd68c0ee716060b6">Email</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a9f111c385269a38cbd68c0ee716060b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Email address. <br /></td></tr>
+<tr class="memdesc:a9f111c385269a38cbd68c0ee716060b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Email adresa. <br /></td></tr>
 <tr class="separator:a9f111c385269a38cbd68c0ee716060b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class contains informations about the user. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Korisnik/Desktop/Razvoj softvera 2/Projekat_3/scoreMicroservice/Score/Models/UserModel.cs</li>
+<div class="textblock"><p>Klasa koja sadrzi informacije o igracu. </p>
+</div><h2 class="groupheader">Property Documentation</h2>
+<a id="a39447a84f9491673b35c87b67672f9cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39447a84f9491673b35c87b67672f9cb">&#9670;&nbsp;</a></span>NotificationToken</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string User.Models.UserModel.NotificationToken</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slucajni string koji se koristi za identifikaciju korisnika dok mu se pruza mogucnost da omguci ili onemoguci notifikacije od aplikacije. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>C:/Users/Korisnik/Desktop/Spojnice_documentation Srpski/Spojnice/scoreMicroservice/Score/Models/UserModel.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

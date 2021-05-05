@@ -4,7 +4,7 @@ using User.Models;
 
 namespace Score.Data
 {
-    /// Interface that SqlUserRepo is going to implmenet and thus will need to have all the methods described.
+    /// Interfejs koji SqlScoreRepo klasa implementira i definise sve metode.
     public interface IScoreRepo
     {
         bool SaveChanges();

@@ -4,10 +4,10 @@ using User.Models;
 
 namespace User.Profiles
 {
-    /// GameProfile class
+    /// UsersProfile klasa
     public class UsersProfile : Profile
     {
-        /// UsersProfile constructor where we are mapping source to the target / destination
+        /// UsersProfile konstrktor gde se mapira izvor na cilj/odrediste
         public UsersProfile()
         {
             // mapping source -> target / destination

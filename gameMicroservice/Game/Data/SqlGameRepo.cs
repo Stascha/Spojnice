@@ -7,22 +7,23 @@ using User.Models;
 
 namespace Game.Data
 {
-    /// SQL Game Repository class
+    /// SQL Game Repository klasa
     public class SqlGameRepo : IGameRepo
     {
-        /// _context contains our database context.
+        /// _context sadrzi sadrzaj baze podataka.
         private readonly GameContext _context;
-        /// Constructor of SqlGameRepo Class
+
+        /// Konstruktor SqlGameRepo klase
         public SqlGameRepo(GameContext context)
         {
             _context = context;
         }
         /** ### Description
-        * CreateGame method - creates new game from the GameModel object received. Throws error if GameModel object is not provided.
+        * CreateGame metod - kreira novu igru iz prosledjenog GameModel objekta. \n Izbacuje error ako GameModel objekat nije prosledjen.
         * ### Arguments
-        * GameModel gm - game to add <br>
+        * GameModel gm - igra koja se dodaje <br>
         * ### Return value
-        * None.*/
+        * Nema.*/
         public void CreateGame(GameModel gm)
         {
             if (gm==null){
@@ -30,21 +31,23 @@ namespace Game.Data
             }
             _context.Games.Add(gm); // radi SQL insert 
         }
+
         /** ### Description
-        * GetRandomGame method - chooses random Game from the database and returns it.
+        * GetRandomGame method - Slucajnim izborom odabere igru iz baze podataka i vrati je.
         * ### Arguments
-        * None.
+        * Nema.
         * ### Return value
-        * GameModel - random chosen.*/
+        * GameModel - Slucajno izabrana igra. */
         public GameModel GetRandomGame()
         {
             return _context.Games.OrderBy(c => Guid.NewGuid()).FirstOrDefault();
             //uzima random elemenat iz nase liste, sortira po ovom GUID koji ce uvek sortirati drugacije
         }
+
         /** ### Description
-        * SaveChanges method - saves changes that are made to our _context.
+        * SaveChanges method - cuva promene koje su napravljene u  _context.
         * ### Arguments
-        * None.
+        * Nema.
         * ### Return
         * (_context.SaveChanges() >= 0);*/
         public bool SaveChanges()
@@ -52,22 +55,19 @@ namespace Game.Data
             // potreban da bi cuvali promene nakon da uradimo npr INSERT podataka u nasu bazu
             return (_context.SaveChanges() >= 0);
         }
-        /** ### Description
-        * UpdateGame method - function placeholder, is not implemented at the moment since we can update the Game Easily by maooing.
-        * ### Arguments
-        * None.
-        * ### Return value
-        * Throws NotImplementedException Exception .*/
+
         public void UpdateGame(GameModel gm) 
         {
             throw new NotImplementedException();
         }
+        
+
         /** ### Description
-        * DeleteGame method - Deletes the chosen game from the database
+        * DeleteGame method - Brise izabranu igru iz baze podataka
         * ### Arguments
-        * GameModel gm - which object to delete </br>
+        * GameModel gm - objekat koji treba da se izbrise \n 
         * ### Return value
-        * None. */
+        * Nema. */
         public void DeleteGame(GameModel gm) 
         {
             if(gm == null){
@@ -75,34 +75,35 @@ namespace Game.Data
             }
             _context.Remove(gm);
         }
+
         /** ### Description
-        * GetAllGames method - Returns the list of all Games that are in the database
+        * GetAllGames method - Vraca listu svih igara iz baze podataka
         * ### Arguments
-        * None.
+        * Nema.
         * ### Return value
-        * IEnumerable<GameModel> - Games List */
+        * IEnumerable<GameModel> -  Lista igara */
         public IEnumerable<GameModel> GetAllGames() 
         {
             return _context.Games.ToList();
         }
 
         /** ### Description
-        * GetGameById method - Returns the object by provided ID
+        * GetGameById method - Vraca igru koja ima prosledjeni id
         * ### Arguments
-        * int id - id of the Game that we want to be returned.</br>
+        * int id - id igre koju ce da vrati. \n 
         * ### Return value
-        * GameModel - null if object does not exist. */
+        * GameModel igru ili null ako igra sa prosledjenim id ne postoji. */
         public GameModel GetGameById(int id) 
         {
             return _context.Games.FirstOrDefault(p => p.Id == id);
         }
 
         /** ### Description
-        * GetAllUsersWhereNotificationsIsTrue method - Returns the list of objects that have notifications enabled.
+        * GetAllUsersWhereNotificationsIsTrue method - Vraca listu objekata igraca kod kojih je dobijanje notifikacija omoguceno.
         * ### Arguments
-        * None.
+        * Nema.
         * ### Return value
-        * IEnumerable<UserModel> - List of users that have enabled notifactions. */
+        * IEnumerable<UserModel> - Lista igraca kod kojih je dobijanje notifikacija omuguceno. */
         public IEnumerable<UserModel> GetAllUsersWhereNotificationsIsTrue(){
             return _context.Users.Where(x=>x.Notifications == true);
         }

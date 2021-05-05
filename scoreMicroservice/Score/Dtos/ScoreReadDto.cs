@@ -1,14 +1,14 @@
 using Score.Models;
 namespace Score.Dtos
 {
-    ///ScoreReadDto class that represents the Data transfer object
+    ///  ScoreReadDto klasa predstavlja objekat za transfer podataka
     public class ScoreReadDto
     {
-        /// Represents the id.
+        /// Predstavlja id.
         public int Id { get; set; }
-        /// Represents the Score.
+        /// Predstavlja Score.
         public int Score { get; set; }
-        /// Represents the Username.
+        /// Predstavlja korisnicko ime.
         public string Username { get; set; }
        
     }

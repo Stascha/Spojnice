@@ -7,30 +7,33 @@ import { ScoreService, Score} from 'src/app/services/score.service';
   templateUrl: './score-tab.component.html',
   styleUrls: ['./score-tab.component.css']
 })
-/** Used to show the Score Table at the right top corner to the end user.*/
+/** Prikazuje skor tabelu u gornjem desnom uglu na panelu za igru.*/
 export class ScoreTabComponent implements OnInit {
-  /** Contains an array of our Scores */
-  scoreList : Array<Score> = [];
-  /** Keeps the type of order */
-  scoreSortOrder : string = "asc";
+  /** Sadrzi niz skoreva */
+    scoreList: Array<Score> = [];
+
+  /** Sadrzi tip sortiranja */
+    scoreSortOrder: string = "asc";
+
   /**
-   * Constructor
+   * Konstruktor
    * @param scoreService {ScoreService}
    */
-  constructor(public scoreService : ScoreService) { }
-  /** Calls the updateScoreTableView method */
+    constructor(public scoreService: ScoreService) { }
+
+  /** Poziva updateScoreTableView metod */
   ngOnInit(): void {
     this.updateScoreTableView();
   }
 
-  /** Get the Score list data from scoreService */
+  /** Uzima listu skorova iz scoreService */
   updateScoreTableView(){
     this.scoreService.getScore().subscribe((data)=>{
       this.scoreService.setScoreList(data);
       console.log(data)
     })
   }
- /** Used to sort our Score Table by the user choice ascending or descending order. */
+ /** Sortira Skor tabelu u odnosu na igracev izbor u rastucem ili opadajucem poretku. */
   onScoreSort(){
     console.log(this.scoreSortOrder)
     if(this.scoreSortOrder === "asc"){

@@ -4,24 +4,25 @@ using User.Models;
 
 namespace User.Data
 {
-    /// SQL Game Repository class
+    /// SQL Repository klasa
     public class SqlUserRepo : IUserRepo
     {
-        /// _context contains our database context.
+        /// _context sadrzi database context.
         private readonly UserContext _context;
 
-        /// Constructor of SqlGameRepo Class
+        /// Konstruktor SqlUserRepo Klase
         public SqlUserRepo(UserContext context)
         {
             _context = context;
         }
 
         /** ### Description
-        * CreateUser method - creates new user from the UserModel object received. Throws error if UserModel object is not provided.
+        * CreateUser method - Kreira novog igraca iz dobijenog  UserModel objekta. \n 
+        * Izbacuje error ako nema UserModel objekta.
         * ### Arguments
-        * UserModel usr - user to add <br>
+        * UserModel usr - Igrac koji se dodaje <br>
         * ### Return value
-        * None.*/
+        * Nema.*/
         public void CreateUser(UserModel usr)
         {
             if (usr==null){
@@ -31,14 +32,13 @@ namespace User.Data
         }
 
         /** ### Description
-        * GetUserByUsernameAndPassword method - returns the user if password hash matches the username in the database
+        * GetUserByUsernameAndPassword metod - Prikazuje igraca sa tim korisnickim imenom i lozinkom ako lozika odgovara hesiranoj lozinki iz baze podataka
         * ### Arguments
-        * string usr - represents the username </br>
-        * string pwd - represents the password in plain text</br>
+        * string usr - Korisnicko ime \n 
+        * string pwd - Lozinka koja nije hesirana<br>
         * ### Return value
-        * UserModel - returns user object if password hash in the database matches the plain
-        * password sent as input as well as if it matches the username. If username and password
-        * don't match or if username does not exist null will be returned.*/
+        * UserModel - Vraca objekat igrac ako ne hesirana lozinka odgovara hesiranoj lozinki iz baze podataka
+        * Ako korisnicko ime i lozinka ne odgovaraju ili korisnicko ime ne postoji vraca null */
         public UserModel GetUserByUsernameAndPassword(string usr, string pwd)
         {
             var account = _context.Users.SingleOrDefault(p => p.Username == usr);
@@ -54,46 +54,46 @@ namespace User.Data
         }
 
         /** ### Description
-        * GetUserByUsername method - returns object if provided username exists in the database.
+        * GetUserByUsername method - Vraca objekat igraca ako prosledjeno korisnicko ime postoji u bazi podataka.
         * ### Arguments
-        * string usr - username as input </br>
+        * string usr - Korisnicko ime </br>
         * ### Return value
-        * UserModel - if user exists in the database user object is returned, otherwise null is returned.*/
+        * UserModel - Vraca objekat igraca ako prosledjeno korisnicko ime postoji u bazi podataka, inace vraca null.*/
         public UserModel GetUserByUsername(string usr)
         {
             return _context.Users.FirstOrDefault(p => p.Username == usr );
         }
 
         /** ### Description
-        * GetUserByEmail method - returns object if provided email exists in the database.
+        * GetUserByEmail method -Vraca objekat igraca ako prosledjena email adresa postoji u bazi podataka, inace vraca null. 
         * ### Arguments
-        * string email - email as input </br>
+        * string email - email adresa </br>
         * ### Return value
-        * UserModel - if user exists in the database user object is returned, otherwise null is returned.*/
+        * UserModel - Vraca objekat igraca ako prosledjena email adresa postoji u bazi podataka, inace vraca null.*/
 
         public UserModel GetUserByEmail(string email){
             return _context.Users.FirstOrDefault(p => p.Email == email );
         }
 
         /** ### Description
-        * GetUserByNotificationToken method - returns object if notification token exists.
+        * GetUserByNotificationToken method - Vraca objekat igraca ako prosledjeni notification token postoji u bazi podataka.
         * ### Arguments
-        * string token - token string as input </br>
+        * string token - notification token </br>
         * ### Return value
-        * UserModel - if notification token exists in the database user object is returned, otherwise null is returned.*/
+        * UserModel - Vraca objekat igraca ako prosledjeni notification token postoji u bazi podataka, inace vraca null.*/
         public UserModel GetUserByNotificationToken(string token){
             return _context.Users.SingleOrDefault(p => p.NotificationToken == token);
         }
 
         /** ### Description
-        * SaveChanges method - saves changes that are made to our _context.
+        * SaveChanges method - Cuva promene koje su napravljene u _context.
         * ### Arguments
-        * None.
+        * Nema.
         * ### Return
         * (_context.SaveChanges() >= 0);*/
         public bool SaveChanges()
         {
-            return (_context.SaveChanges() >= 0);
+            return ( _context.SaveChanges() >= 0 );
         }
     }
 }

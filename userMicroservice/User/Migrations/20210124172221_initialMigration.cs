@@ -26,8 +26,7 @@ namespace User.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Users");
+            migrationBuilder.DropTable( name: "Users" );
         }
     }
 }

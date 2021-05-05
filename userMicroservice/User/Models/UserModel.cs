@@ -1,28 +1,29 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace User.Models
-{    /// Class contains informations about the user
+{    /// Klasa koja sadrzi informacije o igracu
     public class UserModel
     {
-        /// ID primary key of the User - unique player identifier
+        /// ID primary key igraca - jedinstveni identifikator igraca
         [Key]
         public int Id { get; set; }
-        /// Username of the user
+        /// Korisnicko ime igraca
         [Required]
         public string Username { get; set; }
-        /// Contains hashed user password
+        /// Sadrzi hesiranu lozinku igraca
         [Required]
         public string Password { get; set; }
         [Required]
-        /// Contains user Role
+        /// Sadrzi informaciju da li je igrac admin ili ne
         public string Role { get; set; }
         [Required]
-        /// Boolean value that tells us if the user wants to receive email notifications.
+        /// Boolean vrednost koja govori da li igrac zeli da dobija email notifikacije od aplikacije.
         public bool Notifications { get; set; }
         [Required]
-        //random string that is used to identify the user while providing the user with the option to enable or disable the notifications.
+        ///Slucajni string koji se koristi za identifikaciju korisnika dok mu se pruza mogucnost da omguci ili 
+        ///onemoguci notifikacije od aplikacije.
         public string NotificationToken { get; set; }
-        /// Email address
+        /// Email adresa
         [Required]
         public string Email { get; set; }
     }

@@ -9,19 +9,19 @@ using User.Models;
 
 namespace Score.Controllers
 {
-    /// Defined route path
-    /// ScoreControler class
+    /// Definisana putanja rute
+    /// ScoreControler klasa
     [Route("api/score")]
     [ApiController]
     public class ScoreControler : ControllerBase
     {
-        /// Our game repository
+        /// Game repository
         private readonly IScoreRepo _repository;
 
-        /// mapper that is used to map source to the target/destination
-        private  readonly IMapper _mapper;
+        /// Maper koji se koristi za mapiranje izvora na cilj/odrediste
+        private readonly IMapper _mapper;
 
-        /// GamesControler Constructor
+        /// ScoreControler Konstruktor
         public ScoreControler(IScoreRepo repository, IMapper mapper)
         {
             _repository = repository;            
@@ -29,11 +29,11 @@ namespace Score.Controllers
         }
 
         /** ### Desctiption
-        * Function that is going to return Score List.
+        * Function koja vraca Skor Listu.
         * ### Arguments
-        * None.
+        * Nema.
         * ### Return value
-        * ActionResult<IEnumerable<ScoreReadDto>> - ScoreReadDto List */
+        * ActionResult<IEnumerable<ScoreReadDto>> - ScoreReadDto Lista */
         [HttpGet]
         public ActionResult<IEnumerable<ScoreReadDto>> GetAllScores()
         {
@@ -42,11 +42,13 @@ namespace Score.Controllers
         }
 
         /** ### Desctiption
-        * CreateScore - creates new score in the database, or updates an old one.
-        * If inserted score provided has highest score, user that was at the first place will receive notification email
-        * in case the user has enabled notifications - if not no email will be sent out.
+        * CreateScore - kreira novi skor u bazi podataka ili menja stari skor.
+        * Ako je kreirani skor najvisi, igracu koji je do tada bio na prvom mestu 
+        * na skor tabeli ce biti poslat notifikacioni email da se vise ne nalazi na prvom mestu
+        * u slucaju da je taj igrac omogucio dobijanje notifikacija od aplikacije a ako nije omogucio dobijanje 
+        * notifikacija od aplikacije nece mu biti poslat email.
         * ### Arguments
-        * ScoreCreateDto scoreCreateDto - score object.
+        * ScoreCreateDto scoreCreateDto - score objekat.
         * ### Return value
         * ActionResult<IEnumerable<ScoreReadDto>> - ScoreReadDto List */
         [HttpPost]
@@ -63,18 +65,18 @@ namespace Score.Controllers
             }
             _repository.SaveChanges();
 
-// Sledeci deo koda salje email ako igrac nije vise prvi na tabeli
+         // Sledeci deo koda salje email ako igrac nije vise prvi na tabeli
             ScoreModel firstAfter = _repository.GetCurrentFirstScore();
             if(firstBefore.Username != firstAfter.Username && firstBefore != null && firstAfter != null){
                 UserModel beforeFirstUser = _repository.GetUserByUsername(firstBefore.Username);
                 if(beforeFirstUser != null){
                     if(beforeFirstUser.Notifications == true){
                         new UserEmailSender().SendNoLongerFirstMail(beforeFirstUser, firstAfter.Username);
-//////////////////////////////////////
+         //////////////////////////////////////
                     }
                 }
             }
-            //GET now First If inserted is first, send mail to other one
+           
             return Ok(); 
         }
 

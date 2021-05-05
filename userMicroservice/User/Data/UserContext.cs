@@ -3,16 +3,16 @@ using User.Models;
 
 namespace User.Data
 {
-    /// DataBase Context Class : SlagalicaDB
+    /// DataBase Context klasa : SlagalicaDB
     public class UserContext : DbContext
     {
-        /// Constructor of DataBase Context Class
+        /// Konstruktor za UserContext klasu
         public UserContext(DbContextOptions<UserContext> opt) : base(opt)
         {
             
         }
 
-        /// DbSet of Users
+        /// DbSet korisnika
         public DbSet<UserModel> Users { get; set; }
         
     }

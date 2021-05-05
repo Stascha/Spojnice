@@ -2,16 +2,16 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Game.Models
 {
-    /// Class contains informations about the game
+    /// Klasa sadrzi informacije o igri
     public class GameModel
     {
-        /// ID primary key of the Game - unique game identifier
+        /// ID primary key igre - jedinstveni identifikator igre
         [Key]
         public int Id { get; set; }
-        //Name of the game
+        // Naziv igre
         [Required]
         public string Name { get; set; }
-        // Game Data contains JSON like structure as string. That has the data about matching pairs.
+        // Podaci za igru su JSON kao string. Podaci su odgovarajuci parovi.
         [Required]
         public string Data { get; set; }
     }
