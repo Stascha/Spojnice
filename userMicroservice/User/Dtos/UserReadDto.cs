@@ -13,7 +13,7 @@ namespace User.Dtos
         public string Role { get; set; }
         // Predstavlja notification token
         public string NotificationToken { get; set; }
-        /// Boolean vrednost koja predstavlja da li igrac zeli da dobija email notificatikacija.
+        /// Boolean vrednost koja predstavlja informaciju da li igrac zeli da dobija email notifikacije.
         public bool Notifications { get; set; }
     }
 }
