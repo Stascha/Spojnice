@@ -22,23 +22,33 @@ namespace User.Data
 
         /// Konstruktor UserEmailSender klase
         public UserEmailSender()
-      {
-            this.myEmail = "slagalica@airmail.cc";
-            this.myEmailPassword = "richgrain16lushkite94";
-            this.smtpURL = "mail.cock.li";
-            this.smtpPort = 587;
-            this.smtpEnableSSL = true;   
+        {
+            this.myEmail = "berlin.alexanderplatz@outlook.com";
+            this.myEmailPassword = "Ganze_Nacht _Feiern_77!!";
+            this.smtpURL = "smtp.live.com";
+            this.smtpPort = 25;
+            this.smtpEnableSSL = true;
         }
 
-        /** ### Description
-       * SendNoLongerFirstMail - Poslace e-mail Igracu koji ce sadrzati poruku 
-       * da on sada nije vise prvi na skor tabeli. \n 
-       * E-mail ce takodje sadrzati link za odjavljivanje od dobijanja notifikacija od aplikacije.
-       * ### Arguments
-       * UserModel account- korisnik kome se salje email \n 
-       * string currentFirst - sadrzi korisnicko ime igraca koji je sada na prvom mestu.
-       * ### Return value
-       * Nema. */
+        /*
+        {
+           this.myEmail = "couplings.newyork@gmail.com";
+           this.myEmailPassword = "NewYork40$$";
+           this.smtpURL = "smtp.gmail.com";
+           this.smtpPort = 465;
+           this.smtpEnableSSL = true;   
+        } 
+        */
+
+       /** ### Description
+      * SendNoLongerFirstMail - Poslace e-mail Igracu koji ce sadrzati poruku 
+      * da on sada nije vise prvi na skor tabeli. \n 
+      * E-mail ce takodje sadrzati link za odjavljivanje od dobijanja notifikacija od aplikacije.
+      * ### Arguments
+      * UserModel account- korisnik kome se salje email \n 
+      * string currentFirst - sadrzi korisnicko ime igraca koji je sada na prvom mestu.
+      * ### Return value
+      * Nema. */
         public void SendNoLongerFirstMail(UserModel account, string currentFirst){
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient(this.smtpURL);

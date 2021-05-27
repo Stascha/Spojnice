@@ -18,15 +18,17 @@ namespace Game.Data
         {
             _context = context;
         }
+
         /** ### Description
-        * CreateGame metod - kreira novu igru iz prosledjenog GameModel objekta. \n Izbacuje error ako GameModel objekat nije prosledjen.
+        * CreateGame metod - kreira novu igru iz prosledjenog GameModel objekta. \n 
+        * Izbacuje error ako GameModel objekat nije prosledjen.
         * ### Arguments
         * GameModel gm - igra koja se dodaje <br>
         * ### Return value
         * Nema.*/
         public void CreateGame(GameModel gm)
         {
-            if (gm==null){
+            if (gm == null){
                 throw new ArgumentNullException(nameof(gm));
             }
             _context.Games.Add(gm); // radi SQL insert 

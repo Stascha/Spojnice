@@ -71,13 +71,14 @@ namespace User.Controllers
             userModel.Email = usrCreateDto.Email;
             userModel.Role = usrCreateDto.Role;
             userModel.Username = usrCreateDto.Username;
-            //disable notifications at the beginning
+         
+          //disable notifications at the beginning
             userModel.Notifications = false;
            
-            //hash password
+          //hash password
             userModel.Password = BCrypt.Net.BCrypt.HashPassword(usrCreateDto.Password);
 
-            //generate random notification token
+          //generate random notification token
             var chars = "abcdefghijklmnopqrstuvwxyz0123456789";
             System.Random random = new System.Random();
             userModel.NotificationToken = new string(Enumerable.Repeat(chars, 20).Select(s => s[random.Next(s.Length)]).ToArray());

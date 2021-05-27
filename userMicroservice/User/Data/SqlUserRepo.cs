@@ -32,7 +32,8 @@ namespace User.Data
         }
 
         /** ### Description
-        * GetUserByUsernameAndPassword metod - Prikazuje igraca sa tim korisnickim imenom i lozinkom ako lozika odgovara hesiranoj lozinki iz baze podataka
+        * GetUserByUsernameAndPassword metod - Prikazuje igraca sa tim korisnickim imenom i 
+        * lozinkom ako lozika odgovara hesiranoj lozinki iz baze podataka
         * ### Arguments
         * string usr - Korisnicko ime \n 
         * string pwd - Lozinka koja nije hesirana<br>
@@ -61,7 +62,7 @@ namespace User.Data
         * UserModel - Vraca objekat igraca ako prosledjeno korisnicko ime postoji u bazi podataka, inace vraca null.*/
         public UserModel GetUserByUsername(string usr)
         {
-            return _context.Users.FirstOrDefault(p => p.Username == usr );
+            return _context.Users.FirstOrDefault( p => p.Username == usr );
         }
 
         /** ### Description

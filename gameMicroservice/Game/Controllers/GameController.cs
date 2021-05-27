@@ -58,10 +58,12 @@ namespace Game.Controllers
             _repository.SaveChanges();
             var commandReadDto = _mapper.Map<GameReadDto>(gameModel);
 
-            // Uzimaju se svi igraci kod kojih je : notifications = true
+            // Uzimaju se svi igraci kod kojih je : Notifications = true
             IEnumerable<UserModel> userListToSendNotifications =  _repository.GetAllUsersWhereNotificationsIsTrue();
+           
             // Salje se poruka svim igracima, koji su omogucili notifikacije od aplikacije, da je kreirana nova igra.
                 new UserEmailSender().SendNotificationNewGameCreatedMail(userListToSendNotifications, gameCreateDto.Name);
+        
             return Ok(commandReadDto); 
         }
 

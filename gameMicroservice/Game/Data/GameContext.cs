@@ -12,8 +12,10 @@ namespace Game.Data
         {
             
         }
+
         /// DbSet igara
         public DbSet<GameModel> Games { get; set; }
+
         /// DbSet igraca
         public DbSet<UserModel> Users { get; set; }
     }

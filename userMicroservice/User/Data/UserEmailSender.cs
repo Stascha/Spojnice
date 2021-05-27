@@ -20,23 +20,33 @@ namespace User.Data
         private bool smtpEnableSSL;
 
         /// Konstruktor za UserEmailSender klasu
+        
         public UserEmailSender()
         {
-            this.myEmail = "slagalica@airmail.cc";
-            this.myEmailPassword = "richgrain16lushkite94";
-            this.smtpURL = "mail.cock.li";
-            this.smtpPort = 587;
+            this.myEmail = "berlin.alexanderplatz@outlook.com";
+            this.myEmailPassword = "Ganze_Nacht _Feiern_77!!";
+            this.smtpURL = "smtp.live.com";
+            this.smtpPort = 25;
             this.smtpEnableSSL = true;   
         }
-    
 
-        /** ### Description
-        * SendWelcomeMail - Poslace email poruku igracu koji se upravo registrovao. \n  
-        * Email poruka ce sadrzati link koji ce igracu omoguciti da dobija notifikacije od aplikacije.
-        * ### Arguments
-        * UserModel account - Igrac objekat kome ce poslati email</br>
-        * ### Return value
-        * Nista. */
+        /*
+       {
+           this.myEmail = "couplings.newyork@gmail.com";
+           this.myEmailPassword = "NewYork40$$";
+           this.smtpURL = "smtp.gmail.com";
+           this.smtpPort = 465;
+           this.smtpEnableSSL = true;   
+        } 
+        */
+
+       /** ### Description
+       * SendWelcomeMail - Poslace email poruku igracu koji se upravo registrovao. \n  
+       * Email poruka ce sadrzati link koji ce igracu omoguciti da dobija notifikacije od aplikacije.
+       * ### Arguments
+       * UserModel account - Igrac objekat kome ce poslati email</br>
+       * ### Return value
+       * Nista. */
         public void SendWelcomeMail(UserModel account){
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient(this.smtpURL);

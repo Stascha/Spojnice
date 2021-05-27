@@ -20,25 +20,34 @@ namespace User.Data
         private bool smtpEnableSSL;
 
         /// Konstruktor za UserEmailSender klasu
-        public UserEmailSender()
+       public UserEmailSender()
         {
-            this.myEmail = "slagalica@airmail.cc";
-            this.myEmailPassword = "richgrain16lushkite94";
-            this.smtpURL = "mail.cock.li";
-            this.smtpPort = 587;
-            this.smtpEnableSSL = true; 
-        }
+            this.myEmail = "berlin.alexanderplatz@outlook.com";
+            this.myEmailPassword = "Ganze_Nacht _Feiern_77!!";
+            this.smtpURL = "smtp.live.com";
+            this.smtpPort = 25;
+            this.smtpEnableSSL = true;
+        } 
 
+        /*
+        {
+           this.myEmail = "couplings.newyork@gmail.com";
+           this.myEmailPassword = "NewYork40$$";
+           this.smtpURL = "smtp.gmail.com";
+           this.smtpPort = 465;
+           this.smtpEnableSSL = true;   
+        } 
+        */
 
-        /** ### Description
-        * SendNotificationNewGameCreatedMail ce poslati email poruke prosledjenoj listi igraca.  \n
-        * Email poruke ce sadrzati informaciju da je kreirana nova igra i ime nove igre. \n 
-        * E-mail poruke ce takodje sadrzati link za odjavljivanje od dobijanja notifikacija od aplikacije.
-        * ### Arguments
-        * IEnumerable<UserModel> accounts - lista UserModels, lista igraca kojima ce biti poslati meilovi. \n 
-        * string gameName - Ime nove igre koja je kreirana. \n 
-        * ### Return value
-        * Nema. */
+       /** ### Description
+       * SendNotificationNewGameCreatedMail ce poslati email poruke prosledjenoj listi igraca.  \n
+       * Email poruke ce sadrzati informaciju da je kreirana nova igra i ime nove igre. \n 
+       * E-mail poruke ce takodje sadrzati link za odjavljivanje od dobijanja notifikacija od aplikacije.
+       * ### Arguments
+       * IEnumerable<UserModel> accounts - lista UserModels, lista igraca kojima ce biti poslati meilovi. \n 
+       * string gameName - Ime nove igre koja je kreirana. \n 
+       * ### Return value
+       * Nema. */
         public void SendNotificationNewGameCreatedMail(IEnumerable<UserModel> accounts, string gameName){
             SmtpClient SmtpServer = new SmtpClient(this.smtpURL);
             SmtpServer.Port = this.smtpPort;
@@ -52,7 +61,7 @@ namespace User.Data
            
                 mail.Subject = "Spojnice - Obavestenje! Nova Igra je dodata!";
                 mail.Body = "Sada je dodata nova igra pod nazivom: " + gameName
-                            + "\nPuno srece Vam zelimo da ostvarite sto bolji rezultat."
+                            + "\nPuno srece Vam zelimo."
                             + "\nAko ne zelite više da dobijate obaveštenja u vezi igre spojnice kliknite na link https://localhost:5101/api/users/notification/change/" + account.NotificationToken + "/false"
                             + "\n\n\nBest Regards,"
                             + "\nIgra Spojnice";
