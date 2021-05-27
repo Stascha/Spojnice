@@ -30,16 +30,6 @@ namespace User.Data
             this.smtpEnableSSL = true;
         }
 
-        /*
-        {
-           this.myEmail = "couplings.newyork@gmail.com";
-           this.myEmailPassword = "NewYork40$$";
-           this.smtpURL = "smtp.gmail.com";
-           this.smtpPort = 465;
-           this.smtpEnableSSL = true;   
-        } 
-        */
-
        /** ### Description
       * SendNoLongerFirstMail - Poslace e-mail Igracu koji ce sadrzati poruku 
       * da on sada nije vise prvi na skor tabeli. \n 

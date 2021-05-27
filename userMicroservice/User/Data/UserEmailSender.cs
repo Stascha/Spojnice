@@ -30,16 +30,6 @@ namespace User.Data
             this.smtpEnableSSL = true;   
         }
 
-        /*
-       {
-           this.myEmail = "couplings.newyork@gmail.com";
-           this.myEmailPassword = "NewYork40$$";
-           this.smtpURL = "smtp.gmail.com";
-           this.smtpPort = 465;
-           this.smtpEnableSSL = true;   
-        } 
-        */
-
        /** ### Description
        * SendWelcomeMail - Poslace email poruku igracu koji se upravo registrovao. \n  
        * Email poruka ce sadrzati link koji ce igracu omoguciti da dobija notifikacije od aplikacije.

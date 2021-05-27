@@ -20,7 +20,7 @@ namespace User.Data
         private bool smtpEnableSSL;
 
         /// Konstruktor za UserEmailSender klasu
-       public UserEmailSender()
+        public UserEmailSender()
         {
             this.myEmail = "berlin.alexanderplatz@outlook.com";
             this.myEmailPassword = "Ganze_Nacht _Feiern_77!!";
@@ -28,16 +28,6 @@ namespace User.Data
             this.smtpPort = 25;
             this.smtpEnableSSL = true;
         } 
-
-        /*
-        {
-           this.myEmail = "couplings.newyork@gmail.com";
-           this.myEmailPassword = "NewYork40$$";
-           this.smtpURL = "smtp.gmail.com";
-           this.smtpPort = 465;
-           this.smtpEnableSSL = true;   
-        } 
-        */
 
        /** ### Description
        * SendNotificationNewGameCreatedMail ce poslati email poruke prosledjenoj listi igraca.  \n
